@@ -1,36 +1,36 @@
 # feedmthiriez
 
-Veille quotidienne — commerce, retail media, mesure, recharge, régulation, IA et contenus.
+Veille personnelle commerce, retail media, mesure, recharge, régulation, IA et contenus.
+Page publique : https://mthiriez.github.io/feedmthiriez/
 
-Le site est publié sur GitHub Pages : https://mthiriez.github.io/feedmthiriez/
+## Fonctionnement
 
-## Principe
+- **Collecte** : 35 flux RSS français et anglophones (`sources.json`).
+- **Dédoublonnage** : URL canonique et titre normalisé, sur 30 jours.
+- **Analyse** : chaque article reçoit sept attributs (thème, sous-thème, secteur, nature, profondeur, utilité, nouveauté, qualité de source).
+- **Classement** : score = 55 % affinité apprise + 25 % qualité intrinsèque + 20 % fraîcheur.
+- **Apprentissage** : chaque 👍 ou 👎 met à jour des poids par attribut, immédiatement et sans réentraînement.
+- **Explication** : la ligne « pour vous » donne les deux attributs qui ont le plus pesé.
+- **Découverte** : les sujets peu explorés restent visibles, le tri ne se referme pas sur les habitudes.
 
-- **Sources** : liste de flux RSS français et anglophones dans `sources.json`, répartis en six rubriques.
-- **Déduplication** : chaque article est enregistré par URL canonique et par titre normalisé. Un article déjà publié dans une édition précédente (fenêtre de 30 jours) n'est jamais republié, même s'il remonte dans un autre flux ou est repris par un autre média.
-- **Langue** : un article anglophone reste en anglais, avec son titre et son résumé d'origine.
-- **Résumé** : une phrase sous chaque article, factuelle, avec les chiffres clés, dans la langue de l'article.
+## Interface
 
-## Structure
+`index.html` (structure et styles), `app.js` (moteur et interactions), `config.js` (paramètres de synchronisation).
+Votes et favoris sont enregistrés dans le navigateur, puis synchronisés entre appareils dès que Supabase est configuré.
 
-```
-index.html        page publique (lit editions.json)
-editions.json     archive des éditions publiées
-feed.xml          flux RSS de la veille
-sources.json      sources suivies, par rubrique et par langue
-seen.json         registre des articles déjà publiés (anti-doublon)
-```
+## Synchronisation Supabase (gratuit)
+
+1. Créer un projet sur supabase.com (offre gratuite).
+2. SQL Editor : coller le contenu de `supabase/schema.sql` et exécuter.
+3. Authentication > Providers : garder Email activé (lien magique).
+4. Project Settings > API : copier `Project URL` et la clé `anon public` dans `config.js`.
+
+La clé `anon` est publique par nature : les règles RLS garantissent qu'un utilisateur ne lit et n'écrit que ses propres lignes. Aucune clé `service_role` n'est utilisée dans le site.
+
+## Limites de l'offre gratuite
+
+Supabase gratuit : 500 Mo de base et authentification par email incluse. Le volume de votes attendu (quelques milliers de lignes) reste très en dessous.
 
 ## Ajouter une source
 
-Ajouter une entrée dans `sources.json` :
-
-```json
-{ "nom": "LSA", "url": "https://...", "lang": "fr", "rubrique": "Commerce" }
-```
-
-Aucun autre changement n'est nécessaire : la source est prise en compte à l'édition suivante.
-
-## Publication
-
-Une édition est générée une fois par jour, du lundi au vendredi, puis publiée sur ce dépôt. Chaque édition est datée et conserve les articles de la veille ou du week-end qu'elle n'a pas encore publiés.
+Ajouter une entrée dans `sources.json` : nom, url, lang, rubrique. Aucun autre changement.
