@@ -21,7 +21,7 @@
   if (state.session && state.session.access_token) h['Authorization'] = 'Bearer ' + state.session.access_token;
   if (opts.headers) for (var k in opts.headers) h[k]=opts.headers[k];
   return fetch(CFG.supabaseUrl.replace(/\/$/,'') + path, { method: opts.method||'GET', headers:h, body: opts.body }).then(function(r){
-   if (!r.ok) return r.text().then(function(t){ throw new Error('HTTP '+r.status+' '+t.slice(0,120)); });
+   if (!r.ok) return r.text().then(function(t){ var err = new Error('HTTP '+r.status+' '+t.slice(0,120)); err.status = r.status; throw err; });
    return r.status===204 ? null : r.json().catch(function(){ return null; });
   });
  }
@@ -34,21 +34,30 @@
  }
 
  function refreshIfNeeded(){
-  if (!state.session || !state.session.refresh_token) return Promise.resolve();
-  if (state.session.expires_at && state.session.expires_at - 60000 > Date.now()) return Promise.resolve();
-  return api('/auth/v1/token?grant_type=refresh_token', { method:'POST', body: JSON.stringify({ refresh_token: state.session.refresh_token }) })
-   .then(function(d){
-     if (!d || !d.access_token) return;
-     state.session.access_token = d.access_token;
-     state.session.refresh_token = d.refresh_token || state.session.refresh_token;
-     state.session.expires_at = Date.now() + (parseInt(d.expires_in||'3600',10)*1000);
-     if (d.user && d.user.id) state.session.user = { id:d.user.id, email:d.user.email };
-     sessionWrite(state.session);
-   })
-   .catch(function(){ state.session = null; sessionWrite(null); });
- }
+   if (!state.session || !state.session.refresh_token) return Promise.resolve();
+   if (state.session.expires_at && state.session.expires_at - 60000 > Date.now()) return Promise.resolve();
+   if (refreshIfNeeded._inflight) return refreshIfNeeded._inflight;
+   refreshIfNeeded._inflight = api('/auth/v1/token?grant_type=refresh_token', { method:'POST', body: JSON.stringify({ refresh_token: state.session.refresh_token }) })
+    .then(function(d){
+      if (!d || !d.access_token) return null;
+      state.session.access_token = d.access_token;
+      state.session.refresh_token = d.refresh_token || state.session.refresh_token;
+      state.session.expires_at = Date.now() + (parseInt(d.expires_in||'3600',10)*1000);
+      if (d.user && d.user.id) state.session.user = { id:d.user.id, email:d.user.email };
+      sessionWrite(state.session);
+      return d;
+    })
+    .catch(function(e){
+      // Jeton vraiment invalide : on repart de zéro. Panne réseau ou serveur : on garde la session pour réessayer plus tard.
+      if (e && (e.status === 400 || e.status === 401)) { state.session = null; sessionWrite(null); }
+      else if (window.console) console.warn('refresh différé :', e && e.message);
+      return null;
+    })
+    .then(function(d){ refreshIfNeeded._inflight = null; return d; });
+   return refreshIfNeeded._inflight;
+  }
 
- function loadSession(){
+  function loadSession(){
   var p = parseHash();
   if (p) {
    state.session = { access_token:p.access_token, refresh_token:p.refresh_token||'', expires_at: Date.now()+ (parseInt(p.expires_in||'3600',10)*1000) };
@@ -318,7 +327,7 @@
   parts.push('<h3>Compte</h3>');
   if (HAS_REMOTE){
    if (state.session) parts.push('<button class="btn" id="signout">Se déconnecter</button>');
-   else parts.push('<input id="email" type="email" placeholder="votre@email"><button class="btn primary" id="signin">Recevoir un lien de connexion</button><p class="hint">Un lien vous est envoyé par email. Le même compte sur téléphone et ordinateur synchronise vos votes.</p>');
+   else parts.push('<input id="email" type="email" placeholder="votre@email"><button class="btn primary" id="signin">Recevoir le code</button><p class="hint">Un code à 6 chiffres arrive par email, dans le même message que le lien. Saisissez-le ici : la session reste ensuite ouverte dans ce navigateur.</p><input id="code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="code à 6 chiffres"><button class="btn" id="verify">Valider le code</button>');
   } else {
    parts.push('<p class="hint">La synchronisation entre appareils sera active dès que Supabase sera configuré (URL et clé publique dans config.js). D\'ici là, les votes restent sur cet appareil.</p>');
   }
@@ -329,19 +338,34 @@
   $('#closeSheet').onclick = closePanel;
   var sv = $('#signout'); if (sv) sv.onclick = function(){ state.session=null; sessionWrite(null); closePanel(); boot(); };
   var si = $('#signin'); if (si) si.onclick = function(){ signIn($('#email').value); };
+   var vf = $('#verify'); if (vf) vf.onclick = function(){ verifyCode($('#email').value, $('#code').value); };
   $('#resetVotes').onclick = function(){ if (!confirm('Effacer tous les votes et favoris ?')) return; state.inter={}; localWrite({}); if (HAS_REMOTE && state.session) api('/rest/v1/'+(CFG.table||'interactions')+'?url=not.is.null',{method:'DELETE'}).catch(function(){}); closePanel(); render(); };
  }
  function closePanel(){ $('#panel').classList.remove('open'); }
 
  function signIn(email){
-  if (!email) return;
-  var back = location.origin + location.pathname;
-  api('/auth/v1/otp?redirect_to=' + encodeURIComponent(back), { method:'POST', body: JSON.stringify({ email:email, create_user:true }) })
-   .then(function(){ alert('Lien de connexion envoyé à '+email); })
-   .catch(function(e){ alert('Connexion impossible : '+e.message); });
- }
+   if (!email) return;
+   var back = location.origin + location.pathname;
+   api('/auth/v1/otp?redirect_to=' + encodeURIComponent(back), { method:'POST', body: JSON.stringify({ email:email, create_user:true }) })
+    .then(function(){ alert('Code envoyé à '+email+'. Il figure dans le même message que le lien de connexion.'); })
+    .catch(function(e){ alert('Envoi impossible : '+e.message); });
+  }
 
- function boot(){
+  function verifyCode(email, code){
+   if (!email || !code) { alert('Renseignez votre email puis le code reçu.'); return; }
+   api('/auth/v1/verify', { method:'POST', body: JSON.stringify({ type:'email', email:email, token:String(code).trim() }) })
+    .then(function(d){
+      if (!d || !d.access_token) throw new Error('code refusé');
+      state.session = { access_token:d.access_token, refresh_token:d.refresh_token||'', expires_at: Date.now() + (parseInt(d.expires_in||'3600',10)*1000), user: d.user ? { id:d.user.id, email:d.user.email } : null };
+      sessionWrite(state.session);
+      var st = $('#status'); if (st) st.textContent = 'Connexion…';
+      closePanel();
+      boot();
+    })
+    .catch(function(e){ alert('Code refusé : '+e.message); });
+  }
+
+  function boot(){
   loadSession().then(function(){ return loadInteractions(); }).then(function(){
    if (state.source==='remote'){ var st=$('#status'); st.textContent='Synchronisé entre vos appareils'; }
    render();
