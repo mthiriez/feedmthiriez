@@ -7,7 +7,16 @@
  var state = { items:[], inter:{}, hidden: hiddenRead(), sort:'pertinence', filter:'Toutes', q:'', favOnly:false, session:null, source:'local', limit:60 };
 
  function $(s){ return document.querySelector(s); }
- function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
+ function decodeEnt(s){
+  return String(s==null?'':s)
+   .replace(/&#x([0-9a-fA-F]+);/g, function(m,h){ var n=parseInt(h,16); return (n>0 && n<=0x10FFFF) ? String.fromCodePoint(n) : m; })
+   .replace(/&#(\d+);/g, function(m,d){ var n=parseInt(d,10); return (n>0 && n<=0x10FFFF) ? String.fromCodePoint(n) : m; })
+   .replace(/&(amp|lt|gt|quot|apos|nbsp|rsquo|lsquo|ldquo|rdquo|hellip|mdash|ndash|euro|deg|laquo|raquo|eacute|egrave|agrave|ccedil);/g, function(m,n){
+     var t={amp:'&',lt:'<',gt:'>',quot:'"',apos:"'",nbsp:' ',rsquo:'\u2019',lsquo:'\u2018',ldquo:'\u201c',rdquo:'\u201d',hellip:'\u2026',mdash:'\u2014',ndash:'\u2013',euro:'\u20ac',deg:'\u00b0',laquo:'\u00ab',raquo:'\u00bb',eacute:'\u00e9',egrave:'\u00e8',agrave:'\u00e0',ccedil:'\u00e7'};
+     return t[n] || m;
+   });
+ }
+ function esc(s){ return decodeEnt(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
 
  /* ---------- stockage ---------- */
  function localRead(){ try { return JSON.parse(localStorage.getItem(LS_KEY)||'{}'); } catch(e){ return {}; } }
@@ -221,13 +230,13 @@
   'lemonde.fr':'FR','francetvinfo.fr':'FR','usine-digitale.fr':'FR','themedialeader.com':'FR','mindmedia.fr':'FR',
   'numerama.com':'FR','journaldunet.com':'FR','viuz.com':'FR','larevuedudigital.com':'FR','automobile-propre.com':'FR',
   'avere-france.org':'FR','revolution-energetique.com':'FR','cnil.fr':'FR',
-  'exchangewire.com':'UK','retailgazette.co.uk':'UK','marketingweek.com':'UK','sifted.eu':'UK',
+  'exchangewire.com':'GB','retailgazette.co.uk':'GB','marketingweek.com':'GB','sifted.eu':'GB',
   'retaildive.com':'US','marketingdive.com':'US','grocerydive.com':'US','digiday.com':'US','modernretail.co':'US',
   'adexchanger.com':'US','supermarketnews.com':'US','techcrunch.com':'US','theverge.com':'US','wired.com':'US',
   'electrek.co':'US','chargedevs.com':'US','insideevs.com':'US',
   'retaildetail.eu':'BE','tech.eu':'BE','iabeurope.eu':'EU','ecommercenews.eu':'EU','eu-startups.com':'EU'
  };
- var PAYS_NOM = { FR:'France', UK:'Royaume-Uni', US:'États-Unis', BE:'Belgique', EU:'Union européenne' };
+ var PAYS_NOM = { FR:'France', GB:'Royaume-Uni', US:'États-Unis', BE:'Belgique', EU:'Union européenne' };
  function paysOf(src){
   var d = String(src||'').toLowerCase().replace(/^www\./,'');
   if (PAYS[d]) return PAYS[d];
