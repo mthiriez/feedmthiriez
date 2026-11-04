@@ -69,6 +69,9 @@ li.item.voted-down{opacity:.5}
 input#email{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:14px;margin:6px 0}
 footer{border-top:1px solid var(--line);padding:16px 0 40px;color:var(--muted);font-size:12px}
 @media(min-width:700px){.h3{font-size:18px}.res{font-size:14.8px}.wrap{padding:0 22px}}
+.item{will-change:transform}
+.item.swiping{transition:none;background:#fff4ef}
+.item.removing{transform:translateX(115%)!important;opacity:0!important;transition:transform .18s ease,opacity .18s ease}
 </style>
 </head>
 <body>
@@ -92,7 +95,7 @@ footer{border-top:1px solid var(--line);padding:16px 0 40px;color:var(--muted);f
 <main class="wrap"><div id="list"><p class="empty">Chargement…</p></div></main>
 <footer class="wrap"><span id="foot"></span></footer>
 <div class="panel" id="panel"><div class="sheet" id="sheet"></div></div>
-<script src="config.js?v=20261104h"></script>
-<script src="app.js?v=20261104h"></script>
+<script src="config.js?v=20261104i"></script>
+<script src="app.js?v=20261104i"></script>
 </body>
 </html>
