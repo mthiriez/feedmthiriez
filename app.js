@@ -213,13 +213,41 @@
  function hhmm(iso){ try { return new Date(iso).toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}).replace(':','h'); } catch(e){ return ''; } }
  function dayLabel(d){ try { return new Date(d+'T12:00:00').toLocaleDateString('fr-FR',{weekday:'long',day:'numeric',month:'long'}); } catch(e){ return d; } }
 
+ 
+ var PAYS = {
+  'lemonde.fr':'FR','francetvinfo.fr':'FR','usine-digitale.fr':'FR','themedialeader.com':'FR','mindmedia.fr':'FR',
+  'numerama.com':'FR','journaldunet.com':'FR','viuz.com':'FR','larevuedudigital.com':'FR','automobile-propre.com':'FR',
+  'avere-france.org':'FR','revolution-energetique.com':'FR','cnil.fr':'FR',
+  'exchangewire.com':'UK','retailgazette.co.uk':'UK','marketingweek.com':'UK','sifted.eu':'UK',
+  'retaildive.com':'US','marketingdive.com':'US','grocerydive.com':'US','digiday.com':'US','modernretail.co':'US',
+  'adexchanger.com':'US','supermarketnews.com':'US','techcrunch.com':'US','theverge.com':'US','wired.com':'US',
+  'electrek.co':'US','chargedevs.com':'US','insideevs.com':'US',
+  'retaildetail.eu':'BE','tech.eu':'BE','iabeurope.eu':'EU','ecommercenews.eu':'EU','eu-startups.com':'EU'
+ };
+ var PAYS_NOM = { FR:'France', UK:'Royaume-Uni', US:'États-Unis', BE:'Belgique', EU:'Union européenne' };
+ function paysOf(src){
+  var d = String(src||'').toLowerCase().replace(/^www\./,'');
+  if (PAYS[d]) return PAYS[d];
+  for (var k in PAYS){ if (d.indexOf(k) !== -1) return PAYS[k]; }
+  return '';
+ }
+ function drapeau(code){
+  if (!code || code.length !== 2) return '';
+  var up = code.toUpperCase();
+  return String.fromCodePoint(0x1F1E6 + up.charCodeAt(0) - 65, 0x1F1E6 + up.charCodeAt(1) - 65);
+ }
+ function flagHtml(src){
+  var c = paysOf(src); if (!c) return '';
+  return '<span class="fl" title="'+(PAYS_NOM[c]||c)+'">'+drapeau(c)+'</span> ';
+ }
+
  function itemHtml(o, showDay){
   var it = o.it, r = state.inter[it.url] || {};
   var cls = 'item' + (r.vote>0?' voted-up':'') + (r.vote<0?' voted-down':'');
   var pct = Math.round(o.s*100);
   var why = o.explore ? 'découverte · sujet peu exploré' : reason(o);
   return '<li class="'+cls+'" data-url="'+esc(it.url)+'">'
-   + '<div class="meta"><span class="rub">'+esc(it.rubrique||'')+'</span><span>'+esc(hhmm(it.iso))+'</span><span>'+esc(it.source||'')+'</span><span class="score" title="Affinité '+(o.aff>0?'+':'')+Math.round(o.aff*100)+' · qualité '+Math.round(o.q*100)+'"><b>'+pct+'</b></span></div>'
+   + '<div class="meta"><span class="rub">'+esc(it.rubrique||'')+'</span><span>'+esc(hhmm(it.iso))+'</span><span>'+flagHtml(it.source)+esc(it.source||'')+'</span><span class="score" title="Affinité '+(o.aff>0?'+':'')+Math.round(o.aff*100)+' · qualité '+Math.round(o.q*100)+'"><b>'+pct+'</b></span></div>'
    + '<p class="h3"><a href="'+esc(it.url)+'" target="_blank" rel="noopener">'+esc(it.titre)+'</a></p>'
    + (it.resume?'<p class="res">'+esc(it.resume)+'</p>':'')
    + (why?'<p class="why">'+esc(why)+'</p>':'')
