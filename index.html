@@ -2,79 +2,97 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Feed — veille commerce, retail media et tech</title>
-<meta name="description" content="Veille quotidienne dédoublonnée : commerce, retail media, mesure, recharge, régulation, IA et contenus. Sources françaises et anglophones.">
-<link rel="alternate" type="application/rss+xml" title="Feed" href="feed.xml">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Feed — veille affinitaire</title>
+<meta name="description" content="Veille commerce, retail media et technologies, personnalisée par vos votes.">
+<link rel="alternate" type="application/rss+xml" href="feed.xml">
 <style>
-:root{--ink:#14161c;--muted:#63687a;--line:#e5e3dd;--bg:#fbfaf7;--card:#fff;--accent:#1a3df0;--chip:#f1efe9}
+:root{--ink:#14161c;--muted:#63687a;--line:#e5e3dd;--bg:#fbfaf7;--card:#fff;--accent:#1a3df0;--up:#0f8a5f;--down:#b4442f;--chip:#f1efe9}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:760px;margin:0 auto;padding:0 22px}
-header{padding:40px 0 0;border-bottom:1px solid var(--line)}
-h1{margin:0;font-size:33px;letter-spacing:-.025em;font-weight:800}
-.tagline{color:var(--muted);font-size:14.5px;margin:9px 0 20px;max-width:62ch}
-nav{display:flex;gap:8px;flex-wrap:wrap;padding-bottom:16px}
-button.chip{border:1px solid var(--line);background:#fff;color:var(--ink);padding:6px 12px;border-radius:999px;font-size:12.5px;cursor:pointer}
-button.chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
-main{padding:22px 0 60px}
-.day{margin:0 0 34px}
-.day h2{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:26px 0 4px;font-weight:600}
-.aretenir{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:4px;padding:14px 16px;margin:14px 0 22px}
-.aretenir b{display:block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
-.aretenir p{margin:0;font-size:15px}
-ul{list-style:none;margin:0;padding:0}
-li{padding:14px 0;border-top:1px solid var(--line);display:flex;gap:16px}
-.stamp{flex:0 0 92px;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding-top:3px}
-.stamp .r{display:block;color:var(--ink);font-weight:600;margin-bottom:2px}
-.body p{margin:0;font-size:16.2px;line-height:1.45;letter-spacing:-.005em}
-.body p a{border-bottom:1px solid transparent}
-.body p a:hover{border-color:var(--accent);color:var(--accent)}
-.body .res{font-size:14.2px;color:#4a4e5c;margin-top:4px;line-height:1.45}
-.src{font-size:11.5px;color:var(--muted);margin-top:5px}
-.src .en{border:1px solid var(--line);border-radius:3px;padding:0 5px;margin-left:6px;letter-spacing:.06em}
-.empty{color:var(--muted);padding:40px 0}
-footer{border-top:1px solid var(--line);padding:22px 0 60px;color:var(--muted);font-size:12.5px}
-@media(max-width:560px){li{display:block}.stamp{flex:none;margin-bottom:5px}h1{font-size:26px}}
+.wrap{max-width:780px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:8px;padding:10px 0 8px}
+.brand{font-weight:800;font-size:19px;letter-spacing:-.02em;flex:0 0 auto}
+#q{flex:1;min-width:0;border:1px solid var(--line);background:var(--card);border-radius:8px;padding:8px 10px;font-size:14px;color:var(--ink)}
+#q:focus{outline:2px solid var(--accent);outline-offset:-1px}
+select,button{font-family:inherit}
+#sort{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:8px 6px;font-size:13px;color:var(--ink)}
+.icon{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:8px 10px;font-size:13px;cursor:pointer;white-space:nowrap}
+.icon[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+nav.filters{display:flex;gap:6px;overflow-x:auto;padding:0 0 9px;scrollbar-width:none}
+nav.filters::-webkit-scrollbar{display:none}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:5px 11px;border-radius:999px;font-size:12.5px;cursor:pointer;white-space:nowrap;flex:0 0 auto}
+.chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.banner{font-size:12px;color:var(--muted);padding:6px 0 0}
+main{padding:6px 0 40px}
+.day{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:20px 0 6px;font-weight:600}
+ul.items{list-style:none;margin:0;padding:0}
+li.item{border-top:1px solid var(--line);padding:13px 0}
+li.item.voted-up{background:linear-gradient(90deg,rgba(15,138,95,.06),transparent 60%)}
+li.item.voted-down{opacity:.5}
+.meta{display:flex;gap:7px;align-items:center;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;flex-wrap:wrap}
+.rub{color:var(--ink);background:var(--chip);padding:1px 7px;border-radius:3px}
+.score{margin-left:auto;font-variant-numeric:tabular-nums;letter-spacing:0;text-transform:none}
+.score b{font-weight:600;color:var(--ink)}
+.h3{margin:0 0 3px;font-size:16.5px;line-height:1.32;font-weight:650;letter-spacing:-.008em}
+.h3 a:hover{color:var(--accent)}
+.res{margin:0;color:#4a4e5c;font-size:14.2px;line-height:1.45}
+.why{margin:5px 0 0;font-size:11.5px;color:var(--muted)}
+.acts{display:flex;gap:6px;margin-top:8px;align-items:center}
+.act{border:1px solid var(--line);background:var(--card);border-radius:7px;padding:4px 9px;font-size:12.5px;cursor:pointer;color:var(--muted);line-height:1.2}
+.act:hover{border-color:#c9c6bd}
+.act.on-up{color:#fff;background:var(--up);border-color:var(--up)}
+.act.on-down{color:#fff;background:var(--down);border-color:var(--down)}
+.act.on-fav{color:#fff;background:var(--ink);border-color:var(--ink)}
+.act.open{margin-left:auto;border:none;background:none;color:var(--muted);padding:4px 2px}
+.empty{color:var(--muted);padding:36px 0;text-align:center}
+.panel{position:fixed;inset:0;background:rgba(20,22,28,.35);display:none;z-index:50}
+.panel.open{display:block}
+.sheet{position:absolute;right:0;top:0;bottom:0;width:min(460px,100%);background:var(--bg);overflow-y:auto;padding:18px 18px 40px;box-shadow:-8px 0 30px rgba(0,0,0,.12)}
+.sheet h2{font-size:16px;margin:0 0 4px}
+.sheet h3{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:22px 0 6px}
+.close{position:sticky;top:0;float:right;border:none;background:none;font-size:20px;cursor:pointer;color:var(--muted)}
+.row{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px solid var(--line);font-size:13.5px}
+.row .v{color:var(--muted);font-variant-numeric:tabular-nums}
+.bar-l{display:inline-block;height:6px;border-radius:3px;background:var(--up);vertical-align:middle;margin-right:6px}
+.bar-l.neg{background:var(--down)}
+.kpi{display:flex;gap:14px;flex-wrap:wrap;margin:6px 0 10px}
+.kpi div{flex:1 1 90px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:9px 10px}
+.kpi b{display:block;font-size:20px;letter-spacing:-.02em}
+.kpi span{font-size:11px;color:var(--muted)}
+.hint{font-size:12px;color:var(--muted);line-height:1.45}
+.btn{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:8px 12px;font-size:13px;cursor:pointer}
+.btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+input#email{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:14px;margin:6px 0}
+footer{border-top:1px solid var(--line);padding:16px 0 40px;color:var(--muted);font-size:12px}
+@media(min-width:700px){.h3{font-size:18px}.res{font-size:14.8px}.wrap{padding:0 22px}}
 </style>
 </head>
 <body>
-<header><div class="wrap">
-  <h1>Feed</h1>
-  <p class="tagline">Veille commerce, retail media et technologies. Sources françaises et anglophones, articles dédoublonnés, un résumé d'une ligne par article.</p>
-  <nav id="filters"></nav>
-</div></header>
-<main><div class="wrap" id="content"><p class="empty">Chargement…</p></div></main>
-<footer><div class="wrap"><span id="meta"></span> · <a href="feed.xml" style="text-decoration:underline">RSS</a> · <a href="sources.html" style="text-decoration:underline">Sources</a></div></footer>
-<script>
-let D=null,CUR="Toutes";
-const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const all=()=> (D&&D.items)||[];
-function rubs(){const s=new Set();all().forEach(i=>i.rubrique&&s.add(i.rubrique));return ["Toutes",...[...s].sort((a,b)=>a.localeCompare(b,"fr"))]}
-function filters(){const n=document.getElementById("filters");n.innerHTML=rubs().map(r=>`<button class="chip" data-r="${esc(r)}" aria-pressed="${r===CUR}">${esc(r)}</button>`).join("");n.querySelectorAll("button").forEach(b=>b.onclick=()=>{CUR=b.dataset.r;filters();render()})}
-function render(){
-  const root=document.getElementById("content");
-  const items=all().filter(i=>CUR==="Toutes"||i.rubrique===CUR);
-  if(!items.length){root.innerHTML='<p class="empty">Aucun article.</p>';return}
-  const byDay={};items.forEach(i=>{const d=(i.iso||"").slice(0,10);(byDay[d]=byDay[d]||[]).push(i)});
-  root.innerHTML=Object.keys(byDay).sort().reverse().map(d=>{
-    const list=byDay[d];
-    const head=list.find(i=>i.a_retenir);
-    return `<section class="day"><h2>${esc(label(d))}</h2>
-      ${head?`<div class="aretenir"><b>À retenir</b><p>${esc(head.titre)}</p></div>`:""}
-      <ul>${list.map(i=>`<li>
-        <div class="stamp"><span class="r">${esc(i.rubrique||"")}</span>${esc(hhmm(i.iso))}</div>
-        <div class="body"><p><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.titre)}</a></p>${i.resume?`<p class="res">${esc(i.resume)}</p>`:""}
-        <div class="src">${esc(i.source||"")}${i.lang==="en"?'<span class="en">EN</span>':""}</div></div>
-      </li>`).join("")}</ul></section>`;
-  }).join("");
-}
-function label(d){try{return new Date(d+"T12:00:00").toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"})}catch(e){return d}}
-function hhmm(iso){try{return new Date(iso).toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"}).replace(":","h")}catch(e){return ""}}
-fetch("editions.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
-  D=d;filters();render();
-  document.getElementById("meta").textContent=(d.meta&&d.meta.sources_count?d.meta.sources_count+" sources · ":"")+all().length+" articles · "+(d.meta&&d.meta.updated||"");
-}).catch(()=>{document.getElementById("content").innerHTML='<p class="empty">Données indisponibles.</p>'});
-</script>
-</body></html>
+<header>
+ <div class="wrap">
+  <div class="bar">
+   <div class="brand">Feed</div>
+   <input id="q" type="search" placeholder="Rechercher" autocomplete="off">
+   <select id="sort" aria-label="Classement">
+    <option value="pertinence">Pertinence</option>
+    <option value="date">Plus récent</option>
+    <option value="source">Source</option>
+   </select>
+   <button class="icon" id="favBtn" aria-pressed="false" title="Articles sauvegardés">★</button>
+   <button class="icon" id="profileBtn" title="Profil et statistiques">Profil</button>
+  </div>
+  <nav class="filters" id="filters"></nav>
+  <div class="banner" id="status"></div>
+ </div>
+</header>
+<main class="wrap"><div id="list"><p class="empty">Chargement…</p></div></main>
+<footer class="wrap"><span id="foot"></span></footer>
+<div class="panel" id="panel"><div class="sheet" id="sheet"></div></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
