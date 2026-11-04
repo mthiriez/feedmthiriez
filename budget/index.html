@@ -1,0 +1,176 @@
+<!doctype html><html lang='fr'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Budget — maquette</title><style>:root{--bg:#f6f6f4;--card:#fff;--ink:#15171b;--muted:#6b7280;--line:#e6e7ea;--accent:#0f766e;--warn:#b45309;--bad:#b91c1c;--good:#15803d;--soft:#eef2f1}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;-webkit-text-size-adjust:100%}.wrap{max-width:760px;margin:0 auto;padding:0 14px 70px}header.top{position:sticky;top:0;z-index:10;background:rgba(246,246,244,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}.topin{max-width:760px;margin:0 auto;padding:10px 14px;display:flex;align-items:center;gap:10px}.brand{font-weight:650;letter-spacing:-.2px;font-size:15px}.brand span{color:var(--muted);font-weight:400}.monthnav{margin-left:auto;display:flex;align-items:center;gap:6px}.monthnav button{border:1px solid var(--line);background:#fff;border-radius:8px;width:30px;height:30px;font-size:15px;color:var(--ink);cursor:pointer}.monthnav b{font-size:14px;min-width:86px;text-align:center}nav.tabs{position:sticky;top:51px;z-index:9;background:rgba(246,246,244,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}.tabsin{max-width:760px;margin:0 auto;padding:0 8px;display:flex;gap:2px;overflow-x:auto}.tabsin button{border:0;background:none;padding:11px 10px;font-size:13.5px;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap}.tabsin button.on{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}h2{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin:26px 0 10px;font-weight:600}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}@media(min-width:640px){.kpis{grid-template-columns:repeat(4,1fr)}}.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}.kpi .lab{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}.kpi .val{font-size:21px;font-weight:650;letter-spacing:-.4px;margin-top:5px}.kpi .sub{font-size:12px;color:var(--muted);margin-top:3px}.up{color:var(--bad)}.down{color:var(--good)}.catrow{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:9px 0;border-bottom:1px solid var(--line)}.catrow:last-child{border-bottom:0}.catrow .n{font-size:14px}.catrow .a{font-size:14px;font-variant-numeric:tabular-nums;font-weight:600}.bar{grid-column:1/-1;height:5px;background:#eef0ef;border-radius:3px;overflow:hidden;margin-top:6px}.bar i{display:block;height:100%;background:var(--accent);border-radius:3px}.bar i.warn{background:var(--warn)}.bar i.bad{background:var(--bad)}.meta{font-size:12px;color:var(--muted);grid-column:1/-1;display:flex;gap:8px;margin-top:2px}table{width:100%;border-collapse:collapse;font-size:13.5px}th{text-align:left;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600;padding:6px 6px;border-bottom:1px solid var(--line)}td{padding:9px 6px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.tag{display:inline-block;font-size:11px;padding:2px 7px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}.tag.bad{color:var(--bad);border-color:#f3c9c9;background:#fdf2f2}.tag.warn{color:var(--warn);border-color:#f0dcc0;background:#fdf7ee}.tag.good{color:var(--good);border-color:#cbe7d3;background:#f1faf4}.lever{border:1px solid var(--line);border-radius:14px;background:#fff;margin-bottom:8px;overflow:hidden}.lever .hd{display:flex;align-items:center;gap:10px;padding:12px 13px;cursor:pointer}.lever .gain{font-weight:700;font-size:15px;color:var(--good);white-space:nowrap}.lever .tt{font-size:14px;line-height:1.3}.lever .tt small{display:block;color:var(--muted);font-size:12px;margin-top:2px}.lever .chev{margin-left:auto;color:var(--muted);font-size:12px}.lever .bd{display:none;padding:0 13px 13px;font-size:13.5px;color:#33373d;border-top:1px solid var(--line);padding-top:11px}.lever.open .bd{display:block}.lever .bd ul{margin:6px 0 0;padding-left:18px}.lever .bd li{margin:3px 0}.btn{border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 12px;font-size:13px;cursor:pointer;color:var(--ink)}.btn.pri{background:var(--accent);border-color:var(--accent);color:#fff}.drop{border:1.5px dashed #c9cdd2;border-radius:14px;padding:22px;text-align:center;background:#fbfbfa}.drop b{display:block;font-size:14px;margin-bottom:4px}.drop span{font-size:12.5px;color:var(--muted)}.steps{counter-reset:s;margin:0;padding:0;list-style:none}.steps li{position:relative;padding:0 0 12px 30px;font-size:13.5px}.steps li:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;background:var(--soft);color:var(--accent);font-size:11.5px;font-weight:700;display:flex;align-items:center;justify-content:center}.steps b{font-weight:600}.grid2{display:grid;gap:10px}@media(min-width:620px){.grid2{grid-template-columns:1fr 1fr}}.hint{font-size:12.5px;color:var(--muted);margin-top:10px}.score{display:flex;align-items:center;gap:12px}.ring{width:54px;height:54px;border-radius:50%;background:conic-gradient(var(--accent) calc(var(--p)*1%),#e9ebe9 0);display:flex;align-items:center;justify-content:center}.ring b{background:#fff;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px}.foot{color:var(--muted);font-size:12px;text-align:center;margin-top:30px;line-height:1.5}.hide{display:none}</style></head><body><header class='top'><div class='topin'><div class='brand'>Budget <span>· foyer Lambersart</span></div>
+<div class='monthnav'><button id='prev' aria-label='Mois précédent'>‹</button><b id='mlab'>Novembre 2026</b><button id='next' aria-label='Mois suivant'>›</button></div></div>
+<nav class='tabs'><div class='tabsin'><button data-t='overview' class='on'>Vue d'ensemble</button><button data-t='charges'>Charges</button><button data-t='eco'>Économies</button><button data-t='import'>Import</button></div></nav></header>
+<div class='wrap'>
+<section id='t-overview'>
+<div class='kpis'>
+<div class='kpi'><div class='lab'>Dépenses</div><div class='val' id='k-dep'>—</div><div class='sub' id='k-dep-s'></div></div>
+<div class='kpi'><div class='lab'>Revenus</div><div class='val' id='k-rev'>—</div><div class='sub' id='k-rev-s'></div></div>
+<div class='kpi'><div class='lab'>Épargne</div><div class='val' id='k-sav'>—</div><div class='sub' id='k-sav-s'></div></div>
+<div class='kpi'><div class='lab'>Coût des charges fixes</div><div class='val' id='k-fix'>—</div><div class='sub' id='k-fix-s'></div></div>
+</div>
+<h2>Où part l'argent</h2><div class='card' id='cats'></div>
+<h2>Budget contre réel</h2><div class='card' id='budget'></div>
+<h2>Santé du mois</h2><div class='card'><div class='score'><div class='ring' style='--p:78'><b>78</b></div><div>
+<div style='font-size:14px;font-weight:600'>Taux d'épargne 23 %, un point au-dessus de votre moyenne</div>
+<div class='hint' style='margin-top:4px'>Deux postes dérapent : courses (+9 %) et restaurants (+31 %). Rien d'inquiétant, mais c'est là que se joue l'essentiel du gisement.</div></div></div></div>
+<h2>Alertes</h2><div class='card' id='alerts'></div>
+</section>
+<section id='t-charges' class='hide'>
+<h2>Charges récurrentes détectées</h2>
+<div class='card' style='padding:6px 12px'><table><thead><tr><th>Marchand</th><th>Rythme</th><th class='num'>Montant</th><th>Statut</th></tr></thead><tbody id='charges'></tbody></table></div>
+<p class='hint'>Détection automatique sur 6 mois de relevés : un même libellé, un montant stable et un espacement régulier. Les doublons probables sont signalés quand deux prélèvements se recouvrent.</p>
+<h2>Ce qui a changé ce mois-ci</h2><div class='card' id='changes'></div>
+</section>
+<section id='t-eco' class='hide'>
+<h2>Gisement identifié · <span id='total-gain'></span> par an</h2>
+<p class='hint' style='margin-top:0'>Classé par euro gagné pour l'effort demandé. Chaque levier s'appuie sur vos douze derniers mois, pas sur des moyennes nationales.</p>
+<div id='levers'></div>
+</section>
+<section id='t-import' class='hide'>
+<h2>Alimenter depuis un relevé</h2>
+<div class='drop'><b>Déposez votre relevé de compte</b><span>PDF de la banque, CSV ou OFX · traité localement, rien ne sort du site</span></div>
+<h2>Ce qui se passe ensuite</h2><ol class='steps'>
+<li><b>Extraction.</b> Date, libellé, montant et sens de chaque ligne. Les doublons entre relevés consécutifs sont écartés.</li>
+<li><b>Rapprochement.</b> Chaque libellé est confronté à vos marchands connus, puis aux règles que vous avez créées.</li>
+<li><b>Catégorisation.</b> Les cas ambigus sont proposés avec un score de confiance ; vous tranchez une fois, la règle est retenue pour les mois suivants.</li>
+<li><b>Détection.</b> Les récurrences, hausses de prix et doublons sont signalés avant le calcul du budget.</li>
+<li><b>Analyse.</b> Comparaison à la moyenne des trois derniers mois, à votre budget et à la même période l'an dernier.</li>
+</ol>
+<h2>Aperçu du rapprochement</h2><div class='card' style='padding:6px 12px'><table><thead><tr><th>Libellé du relevé</th><th>Catégorie proposée</th><th class='num'>Confiance</th></tr></thead><tbody id='match'></tbody></table></div>
+</section>
+<p class='foot'>Maquette de démonstration · données fictives mais cohérentes avec un foyer de cinq personnes<br>Les montants sont calculés à partir des relevés, jamais saisis à la main.</p>
+</div><script>
+var DATA={
+nov:{label:'Novembre 2026',dep:7310,rev:9400,fix:3120,sav:2090,fixPrev:3180,
+cats:[
+{n:'Crédit immobilier',a:1850,p:1850,b:1850},
+{n:'Courses',a:1082,p:992,b:1000},
+{n:'Assurances',a:412,p:412,b:410},
+{n:'Énergie',a:268,p:231,b:240},
+{n:'Transport',a:334,p:318,b:320},
+{n:'Scolarité et activités',a:385,p:385,b:390},
+{n:'Télécom',a:95,p:95,b:80},
+{n:'Abonnements',a:78,p:64,b:60},
+{n:'Santé',a:142,p:118,b:120},
+{n:'Restaurants et sorties',a:326,p:249,b:260},
+{n:'Maison et travaux',a:295,p:410,b:300},
+{n:'Divers',a:243,p:226,b:240}]},
+oct:{label:'Octobre 2026',dep:6964,rev:9400,fix:3180,sav:2436,fixPrev:3210,
+cats:[
+{n:'Crédit immobilier',a:1850,p:1850,b:1850},
+{n:'Courses',a:992,p:1015,b:1000},
+{n:'Assurances',a:412,p:412,b:410},
+{n:'Énergie',a:231,p:188,b:240},
+{n:'Transport',a:318,p:302,b:320},
+{n:'Scolarité et activités',a:385,p:385,b:390},
+{n:'Télécom',a:95,p:95,b:80},
+{n:'Abonnements',a:64,p:64,b:60},
+{n:'Santé',a:118,p:96,b:120},
+{n:'Restaurants et sorties',a:249,p:287,b:260},
+{n:'Maison et travaux',a:410,p:265,b:300},
+{n:'Divers',a:226,p:240,b:240}]},
+sept:{label:'Septembre 2026',dep:7128,rev:9400,fix:3210,sav:2272,fixPrev:3210,
+cats:[
+{n:'Crédit immobilier',a:1850,p:1850,b:1850},
+{n:'Courses',a:1015,p:1040,b:1000},
+{n:'Assurances',a:412,p:412,b:410},
+{n:'Énergie',a:188,p:176,b:240},
+{n:'Transport',a:302,p:290,b:320},
+{n:'Scolarité et activités',a:385,p:250,b:390},
+{n:'Télécom',a:95,p:95,b:80},
+{n:'Abonnements',a:64,p:64,b:60},
+{n:'Santé',a:96,p:130,b:120},
+{n:'Restaurants et sorties',a:287,p:301,b:260},
+{n:'Maison et travaux',a:265,p:320,b:300},
+{n:'Divers',a:240,p:252,b:240}]}};
+var ORDER=['sept','oct','nov'];var cur='nov';
+var CHARGES=[
+['Crédit immobilier Caisse d’Épargne','Mensuel',1850,'ok'],
+['Assurance auto et habitation','Mensuel',184,'warn'],
+['Assurance emprunteur','Mensuel',118,'warn'],
+['Engie — électricité','Mensuel',268,'warn'],
+['Orange — fibre','Mensuel',49.99,'ok'],
+['SFR — mobile (2 lignes)','Mensuel',45,'warn'],
+['Netflix','Mensuel',19.99,'bad'],
+['Disney+','Mensuel',13.99,'bad'],
+['Spotify Famille','Mensuel',17.99,'ok'],
+['Basic Fit — 2 abonnements','Mensuel',49.98,'warn'],
+['Scolarité Sainte-Marie','Mensuel',285,'ok'],
+['Mutuelle famille','Mensuel',210,'warn']];
+var LEVERS=[
+{g:1240,t:'Assurance auto et habitation',s:'1 184 €/an chez le même assureur depuis 2019',e:2,d:'Deux devis comparatifs suffisent : sur ce profil, l’écart entre assureurs atteint 25 à 35 % à garanties équivalentes. Le vrai levier est de sortir du renouvellement tacite, en résiliant à l’échéance avec la loi Hamon.'},
+{g:960,t:'Courses : 210 € par personne et par mois',s:'12 % au-dessus de la moyenne locale pour un foyer de cinq',e:3,d:'Trois gestes : passer les produits secs et l’entretien en drive mensuel, tenir une liste unique, et cuisiner les restes deux soirs par semaine. Sur vos trois derniers mois, le gisement est de 80 à 110 € par mois.'},
+{g:620,t:'Assurance emprunteur',s:'118 €/mois, jamais mise en concurrence',e:2,d:'La délégation d’assurance reste possible à tout moment depuis la loi Lemoine. À âge et garanties égales, un contrat externe tourne souvent 40 % moins cher. Demandez le questionnaire de santé à votre banque avant de signer ailleurs.'},
+{g:520,t:'Énergie : rester au tarif réglementé',s:'268 € ce mois, +16 % sur un an',e:1,d:'Votre consommation est stable, c’est le prix qui bouge. Une offre à prix fixe sur douze mois, ou une bascule heures creuses mieux calée sur la recharge du véhicule, suffit à reprendre 15 à 20 %.'},
+{g:430,t:'Abonnements dormants',s:'Netflix et Disney+ inutilisés depuis 60 jours',e:1,d:'Aucune connexion sur les deux comptes depuis deux mois, alors qu’ils coûtent 34 € par mois. Suspension immédiate, réactivation possible en un clic si besoin.'},
+{g:396,t:'Deux forfaits mobiles surdimensionnés',s:'45 €/mois pour 12 Go consommés',e:1,d:'Les relevés montrent une consommation moyenne de 6 Go par ligne. Un forfait à 12 € couvre le besoin, et la portabilité se fait en une semaine sans changer de numéro.'},
+{g:264,t:'Frais bancaires',s:'22 €/mois de frais de tenue et commissions',e:1,d:'Comparaison faite : une banque en ligne équivalente facture 0 €. Le changement de domiciliation des prélèvements est le seul travail réel, il se fait en une heure avec l’aide au transfert obligatoire.'},
+{g:180,t:'Basic Fit : deux abonnements, une fréquentation',s:'49,98 €/mois, un seul badge utilisé',e:1,d:'Le second abonnement n’a pas été scanné depuis avril. Résiliation possible en ligne, sans frais, avec un préavis d’un mois.'}];
+var MATCH=[
+['CARREFOUR MARKET LAMBERSART','Courses',0.98],
+['SNCF CONNECT 04/11','Transport',0.94],
+['AMAZON EU SARL','Divers',0.62],
+['ENGIE 0948','Énergie',0.99],
+['PRLV BASIC FIT','Abonnements',0.96],
+['CB RESTO LE BISTROT','Restaurants et sorties',0.88],
+['VIR RECU M THIRIEZ','Revenus',0.99],
+['PHARMACIE DU CENTRE','Santé',0.93],
+['APPLE.COM/BILL','Abonnements',0.55]];
+function eur(v){return v.toLocaleString('fr-FR',{maximumFractionDigits:0})+' €';}
+function eur2(v){return v.toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2})+' €';}
+function pct(a,b){if(!b)return '';var d=Math.round((a-b)/b*100);return (d>0?'+':'')+d+' %';}
+function cls(a,b){if(a>b*1.05)return 'bad';if(a>b*1.01)return 'warn';return '';}
+function render(){
+var d=DATA[cur];
+document.getElementById('mlab').textContent=d.label;
+document.getElementById('k-dep').textContent=eur(d.dep);
+document.getElementById('k-dep-s').innerHTML='<span class="'+(d.dep>DATA[ORDER[Math.max(0,ORDER.indexOf(cur)-1)]]?.dep?'up':'down')+'">'+pct(d.dep,d.cats.reduce(function(s,c){return s+c.p;},0))+'</span> vs mois précédent';
+document.getElementById('k-rev').textContent=eur(d.rev);
+document.getElementById('k-rev-s').textContent='deux salaires, stables';
+document.getElementById('k-sav').textContent=eur(d.sav);
+document.getElementById('k-sav-s').textContent='taux d’épargne '+Math.round(d.sav/d.rev*100)+' %';
+document.getElementById('k-fix').textContent=eur(d.fix);
+document.getElementById('k-fix-s').textContent=Math.round(d.fix/d.rev*100)+' % des revenus';
+var max=Math.max.apply(null,d.cats.map(function(c){return c.a;}));
+document.getElementById('cats').innerHTML=d.cats.slice().sort(function(x,y){return y.a-x.a;}).map(function(c){
+var k=cls(c.a,c.b);
+return '<div class="catrow"><div class="n">'+c.n+'</div><div class="a">'+eur(c.a)+'</div>'
++'<div class="bar"><i class="'+k+'" style="width:'+Math.round(c.a/max*100)+'%"></i></div>'
++'<div class="meta"><span>'+Math.round(c.a/d.dep*100)+' % des dépenses</span><span>budget '+eur(c.b)+'</span><span class="'+(c.a>c.b?'up':'down')+'">'+pct(c.a,c.b)+'</span></div></div>';
+}).join('');
+document.getElementById('budget').innerHTML=d.cats.filter(function(c){return c.a>c.b;}).map(function(c){
+return '<div class="catrow"><div class="n">'+c.n+'</div><div class="a up">+'+(c.a-c.b)+' €</div><div class="meta"><span>réel '+eur(c.a)+'</span><span>budget '+eur(c.b)+'</span></div></div>';
+}).join('')||'<div class="hint">Aucun dépassement ce mois-ci.</div>';
+document.getElementById('alerts').innerHTML=[
+'<b>Deux doublons probables</b> : deux abonnements sportifs et deux services de streaming, dont un inutilisé depuis deux mois.',
+'<b>Une hausse de prix</b> : Engie passe de 231 € à 268 € sans changement de consommation.',
+'<b>Un prélèvement inhabituel</b> : 96 € chez un marchand jamais vu, à qualifier ou à contester.'
+].map(function(t){return '<div style="padding:8px 0;border-bottom:1px solid var(--line);font-size:13.5px">'+t+'</div>';}).join('');
+document.getElementById('charges').innerHTML=CHARGES.map(function(c){
+var tag=c[3]==='ok'?'good':(c[3]==='warn'?'warn':'bad');
+var lab=c[3]==='ok'?'normale':(c[3]==='warn'?'à renégocier':'doublon probable');
+return '<tr><td>'+c[0]+'</td><td class="" style="color:var(--muted)">'+c[1]+'</td><td class="num">'+eur2(c[2])+'</td><td><span class="tag '+tag+'">'+lab+'</span></td></tr>';
+}).join('');
+document.getElementById('changes').innerHTML=['Énergie +37 €','Restaurants +77 €','Courses +90 €','Maison −115 €'].map(function(t){return '<span class="tag" style="margin:4px 6px 4px 0">'+t+'</span>';}).join('');
+var total=LEVERS.reduce(function(s,l){return s+l.g;},0);
+document.getElementById('total-gain').textContent=eur(total);
+document.getElementById('levers').innerHTML=LEVERS.slice().sort(function(a,b){return b.g-a.g;}).map(function(l,i){
+return '<div class="lever" data-i="'+i+'"><div class="hd"><div class="gain">'+eur(l.g)+'<span style="font-weight:400;color:var(--muted);font-size:12px">/an</span></div>'
++'<div class="tt">'+l.t+'<small>'+l.s+'</small></div><div class="chev">▾</div></div>'
++'<div class="bd">'+l.d+'<div style="margin-top:10px;display:flex;gap:8px;align-items:center"><span class="tag">effort '+l.e+'/3</span><button class="btn">Marquer comme fait</button></div></div></div>';
+}).join('');
+document.getElementById('match').innerHTML=MATCH.map(function(m){
+var c=m[2]>=0.9?'good':(m[2]>=0.7?'warn':'bad');
+return '<tr><td>'+m[0]+'</td><td>'+m[1]+'</td><td class="num"><span class="tag '+c+'">'+Math.round(m[2]*100)+' %</span></td></tr>';
+}).join('');
+}
+document.querySelectorAll('.tabsin button').forEach(function(b){b.addEventListener('click',function(){
+document.querySelectorAll('.tabsin button').forEach(function(x){x.classList.remove('on');});b.classList.add('on');
+['overview','charges','eco','import'].forEach(function(t){document.getElementById('t-'+t).classList.toggle('hide',t!==b.dataset.t);});
+window.scrollTo({top:0,behavior:'smooth'});});});
+document.getElementById('levers').addEventListener('click',function(ev){var h=ev.target.closest('.hd');if(h)h.parentNode.classList.toggle('open');});
+document.getElementById('prev').onclick=function(){var i=ORDER.indexOf(cur);if(i>0){cur=ORDER[i-1];render();}};
+document.getElementById('next').onclick=function(){var i=ORDER.indexOf(cur);if(i<ORDER.length-1){cur=ORDER[i+1];render();}};
+render();
+</script></body></html>
