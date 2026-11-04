@@ -176,7 +176,7 @@
   var it = o.it, r = state.inter[it.url] || {};
   var cls = 'item' + (r.vote>0?' voted-up':'') + (r.vote<0?' voted-down':'');
   var pct = Math.round(o.s*100);
-  var why = reason(o);
+  var why = o.explore ? 'découverte · sujet peu exploré' : reason(o);
   return '<li class="'+cls+'" data-url="'+esc(it.url)+'">'
    + '<div class="meta"><span class="rub">'+esc(it.rubrique||'')+'</span><span>'+esc(hhmm(it.iso))+'</span><span>'+esc(it.source||'')+'</span><span class="score" title="Affinité '+(o.aff>0?'+':'')+Math.round(o.aff*100)+' · qualité '+Math.round(o.q*100)+'"><b>'+pct+'</b></span></div>'
    + '<p class="h3"><a href="'+esc(it.url)+'" target="_blank" rel="noopener">'+esc(it.titre)+'</a></p>'
@@ -190,12 +190,32 @@
    + '</div></li>';
  }
 
+ function themeVotes(){
+  var t = {};
+  for (var url in state.inter){ var r=state.inter[url]; if (!r || !r.vote) continue; var it=byUrl[url]; if (!it) continue; t[it.rubrique]=(t[it.rubrique]||0)+1; }
+  return t;
+ }
+
+ function withDiscovery(rows){
+  var tv = themeVotes();
+  var pool = rows.filter(function(o){ return (tv[o.it.rubrique]||0) <= 1; });
+  if (!pool.length) return rows;
+  var out = [], pi = 0, used = {};
+  rows.forEach(function(o,i){
+   out.push(o);
+   if ((i+1) % 5 === 0 && pi < pool.length){
+    var cand = pool[pi++];
+    if (!used[cand.it.url]){ used[cand.it.url]=1; cand.explore = true; }
+   }
+  });
+  return out;
+ }
  function render(){
   var list = $('#list');
   var rows = scored().filter(function(o){ return matches(o.it); });
   if (state.sort === 'date') rows.sort(function(a,b){ return Date.parse(b.it.iso)-Date.parse(a.it.iso); });
   else if (state.sort === 'source') rows.sort(function(a,b){ return (a.it.source||'').localeCompare(b.it.source||'') || (Date.parse(b.it.iso)-Date.parse(a.it.iso)); });
-  else rows.sort(function(a,b){ return b.s-a.s; });
+  else { rows.sort(function(a,b){ return b.s-a.s; }); rows = withDiscovery(rows); }
   if (!rows.length){ list.innerHTML='<p class="empty">Aucun article.</p>'; return; }
   var html='', lastDay='';
   rows.forEach(function(o){
