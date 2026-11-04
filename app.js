@@ -436,6 +436,7 @@
  function luSwipe(url, li){
   if (!url) return;
   lastSwipe = Date.now();
+  if (state.sig[url]){ delete state.sig[url]; sigWrite(state.sig); }
   marquerLu(url);
   if (li){ li.classList.add('removing-left'); setTimeout(function(){ render(); }, 180); }
   else render();
