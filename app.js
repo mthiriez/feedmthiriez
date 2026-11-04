@@ -26,12 +26,43 @@
   });
  }
 
- function loadSession(){
+ function parseHash(){
   var h = location.hash || '';
-  if (h.indexOf('access_token=') > -1) {
-   var p = {}; h.replace(/^#/,'').split('&').forEach(function(kv){ var a=kv.split('='); p[a[0]]=decodeURIComponent((a[1]||'').replace(/\+/g,' ')); });
-   if (p.access_token) { state.session = { access_token:p.access_token, refresh_token:p.refresh_token||'', expires_at: Date.now()+ (parseInt(p.expires_in||'3600',10)*1000) }; sessionWrite(state.session); history.replaceState(null,'',location.pathname+location.search); }
+  if (h.indexOf('access_token=') === -1) return null;
+  var p = {}; h.replace(/^#/,'').split('&').forEach(function(kv){ var a=kv.split('='); p[a[0]]=decodeURIComponent((a[1]||'').replace(/\+/g,' ')); });
+  return p.access_token ? p : null;
+ }
+
+ function refreshIfNeeded(){
+  if (!state.session || !state.session.refresh_token) return Promise.resolve();
+  if (state.session.expires_at && state.session.expires_at - 60000 > Date.now()) return Promise.resolve();
+  return api('/auth/v1/token?grant_type=refresh_token', { method:'POST', body: JSON.stringify({ refresh_token: state.session.refresh_token }) })
+   .then(function(d){
+     if (!d || !d.access_token) return;
+     state.session.access_token = d.access_token;
+     state.session.refresh_token = d.refresh_token || state.session.refresh_token;
+     state.session.expires_at = Date.now() + (parseInt(d.expires_in||'3600',10)*1000);
+     if (d.user && d.user.id) state.session.user = { id:d.user.id, email:d.user.email };
+     sessionWrite(state.session);
+   })
+   .catch(function(){ state.session = null; sessionWrite(null); });
+ }
+
+ function loadSession(){
+  var p = parseHash();
+  if (p) {
+   state.session = { access_token:p.access_token, refresh_token:p.refresh_token||'', expires_at: Date.now()+ (parseInt(p.expires_in||'3600',10)*1000) };
+   sessionWrite(state.session);
+   history.replaceState(null,'',location.pathname+location.search);
   } else { state.session = sessionRead(); }
+  if (!HAS_REMOTE || !state.session) return Promise.resolve();
+  return refreshIfNeeded().then(function(){
+   if (!state.session || !state.session.access_token) return null;
+   if (state.session.user && state.session.user.id) return null;
+   return api('/auth/v1/user').then(function(u){
+     if (u && u.id) { state.session.user = { id:u.id, email:u.email }; sessionWrite(state.session); }
+   }).catch(function(e){ console.warn('user lookup failed', e.message); });
+  });
  }
 
  function loadInteractions(){
@@ -52,6 +83,7 @@
   state.inter[url] = next; localWrite(state.inter);
   if (!HAS_REMOTE || !state.session || !state.session.access_token) return Promise.resolve();
   var uid = state.session.user && state.session.user.id;
+  if (!uid) return Promise.resolve();
   var body = [{ user_id: uid, url:url, vote: next.vote||0, favorite: !!next.fav, rank: next.rank||0 }];
   return api('/rest/v1/' + (CFG.table||'interactions') + '?on_conflict=user_id,url', {
    method:'POST', body: JSON.stringify(body),
@@ -295,14 +327,14 @@
 
  function signIn(email){
   if (!email) return;
-  api('/auth/v1/otp', { method:'POST', body: JSON.stringify({ email:email, create_user:true }) })
+  var back = location.origin + location.pathname;
+  api('/auth/v1/otp?redirect_to=' + encodeURIComponent(back), { method:'POST', body: JSON.stringify({ email:email, create_user:true }) })
    .then(function(){ alert('Lien de connexion envoyé à '+email); })
    .catch(function(e){ alert('Connexion impossible : '+e.message); });
  }
 
  function boot(){
-  loadSession();
-  loadInteractions().then(function(){
+  loadSession().then(function(){ return loadInteractions(); }).then(function(){
    if (state.source==='remote'){ var st=$('#status'); st.textContent='Synchronisé entre vos appareils'; }
    render();
   });
