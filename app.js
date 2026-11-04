@@ -4,7 +4,7 @@
  var HAS_REMOTE = !!(CFG.supabaseUrl && CFG.supabaseAnonKey);
  var LS_KEY = 'feed.interactions.v1';
  var LS_SESSION = 'feed.session.v1';
- var state = { items:[], inter:{}, sort:'pertinence', filter:'Toutes', q:'', favOnly:false, session:null, source:'local' };
+ var state = { items:[], inter:{}, sort:'pertinence', filter:'Toutes', q:'', favOnly:false, session:null, source:'local', limit:60 };
 
  function $(s){ return document.querySelector(s); }
  function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
@@ -244,18 +244,26 @@
  }
  function render(){
   var list = $('#list');
+  var sig = state.sort+'|'+state.filter+'|'+state.q+'|'+(state.favOnly?1:0);
+  if (state._sig !== sig){ state._sig = sig; state.limit = 60; }
   var rows = scored().filter(function(o){ return matches(o.it); });
   if (state.sort === 'date') rows.sort(function(a,b){ return Date.parse(b.it.iso)-Date.parse(a.it.iso); });
   else if (state.sort === 'source') rows.sort(function(a,b){ return (a.it.source||'').localeCompare(b.it.source||'') || (Date.parse(b.it.iso)-Date.parse(a.it.iso)); });
   else { rows.sort(function(a,b){ return b.s-a.s; }); rows = withDiscovery(rows); }
   if (!rows.length){ list.innerHTML='<p class="empty">Aucun article.</p>'; return; }
+  var total = rows.length;
+  rows = rows.slice(0, state.limit);
   var html='', lastDay='';
   rows.forEach(function(o){
    var d = (o.it.iso||'').slice(0,10);
    if (state.sort === 'date' && d !== lastDay){ html += '<div class="day">'+esc(dayLabel(d))+'</div>'; lastDay=d; }
    html += itemHtml(o);
   });
-  list.innerHTML = '<ul class="items">'+html+'</ul>';
+  list.innerHTML = '<ul class="items">'+html+'</ul>' +
+   (total > state.limit ? '<button class="btn" id="more">Afficher plus ('+(total - state.limit)+' restants)</button>' : '') +
+   '<p class="hint">'+total+' article'+(total>1?'s':'')+' au total</p>';
+  var more = $('#more');
+  if (more) more.onclick = function(){ state.limit += 60; render(); };
   Array.prototype.forEach.call(list.querySelectorAll('button[data-vote]'), function(b){
    b.onclick = function(ev){
     ev.preventDefault(); ev.stopPropagation();
