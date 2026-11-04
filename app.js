@@ -352,7 +352,17 @@
   state.items = (d.items||[]).slice();
   state.items.forEach(function(i){ byUrl[i.url]=i; });
   var foot = $('#foot');
-  if (foot) foot.textContent = state.items.length + ' articles · ' + ((d.meta&&d.meta.sources_count)||'') + ' sources';
+   if (foot) {
+     var stamp = (d.meta && (d.meta.updated || d.meta.updated_at)) ? new Date(d.meta.updated || d.meta.updated_at) : null;
+     state.items.forEach(function(i){ var t = Date.parse(i.iso); if (!isNaN(t) && (!stamp || isNaN(stamp.getTime()) || t > stamp.getTime())) stamp = new Date(t); });
+     var when = '';
+     if (stamp && !isNaN(stamp.getTime())) {
+       var dd = String(stamp.getDate()).padStart(2,'0'), mo = String(stamp.getMonth()+1).padStart(2,'0');
+       var hh = String(stamp.getHours()).padStart(2,'0'), mi = String(stamp.getMinutes()).padStart(2,'0');
+       when = ' \u00b7 mis \u00e0 jour le '+dd+'/'+mo+' \u00e0 '+hh+':'+mi;
+     }
+     foot.textContent = state.items.length + ' articles \u00b7 ' + ((d.meta&&d.meta.sources_count)||'') + ' sources' + when;
+   }
   renderFilters();
   boot();
  }).catch(function(){ $('#list').innerHTML='<p class="empty">Données indisponibles.</p>'; });
