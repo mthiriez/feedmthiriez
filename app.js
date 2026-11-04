@@ -4,7 +4,7 @@
  var HAS_REMOTE = !!(CFG.supabaseUrl && CFG.supabaseAnonKey);
  var LS_KEY = 'feed.interactions.v1';
  var LS_SESSION = 'feed.session.v1';
- var state = { items:[], inter:{}, hidden: hiddenRead(), read: readRead(), unreadOnly: true, sort:'pertinence', filter:'Toutes', q:'', favOnly:false, session:null, source:'local', limit:60 };
+ var state = { items:[], inter:{}, hidden: hiddenRead(), read: readRead(), sig: sigRead(), unreadOnly: true, sort:'pertinence', filter:'Toutes', q:'', favOnly:false, session:null, source:'local', limit:60 };
 
  function $(s){ return document.querySelector(s); }
  function decodeEnt(s){
@@ -27,6 +27,67 @@
  function readWrite(o){ try { localStorage.setItem(LS_READ, JSON.stringify(o)); } catch(e){} }
  function hiddenRead(){ try { return JSON.parse(localStorage.getItem(LS_HIDDEN)||'{}'); } catch(e){ return {}; } }
  function hiddenWrite(o){ try { localStorage.setItem(LS_HIDDEN, JSON.stringify(o)); } catch(e){} }
+ var LS_SIG = 'feed.sig.v1';
+ function sigRead(){ try { return JSON.parse(localStorage.getItem('feed.sig.v1')||'{}'); } catch(e){ return {}; } }
+ function sigWrite(o){ try { localStorage.setItem('feed.sig.v1', JSON.stringify(o)); } catch(e){} }
+ function sigRec(url, patch){
+  if (!url) return;
+  var s = state.sig[url] || { o:0, t:0, q:0, s:0, last:0 };
+  for (var k in patch){ if (k==='o'||k==='t'||k==='q'||k==='s') s[k] += patch[k]; else s[k] = patch[k]; }
+  s.last = Date.now(); state.sig[url] = s; sigWrite(state.sig);
+ }
+ function impValue(url){
+  var s = state.sig[url]; if (!s) return 0;
+  var v = 0;
+  if (s.o > 0){
+   v += 0.45;
+   var avg = s.t / Math.max(1, s.o);
+   if (avg >= 20000) v += 0.45; else if (avg >= 8000) v += 0.2;
+   v -= 0.4 * Math.min(1, (s.q||0) / Math.max(1, s.o));
+  } else if ((s.s||0) >= 1){
+   v -= 0.18;
+  }
+  return Math.max(-1, Math.min(1, v));
+ }
+ function ouvrir(url){ if (!url) return; state._open = { url:url, at:Date.now() }; sigRec(url, { o:1 }); }
+ function finLecture(){
+  var o = state._open; if (!o) return;
+  state._open = null;
+  var ms = Date.now() - o.at; if (ms < 300) return;
+  sigRec(o.url, { t: ms, q: (ms < 4000 ? 1 : 0) });
+ }
+ function observerApercu(list){
+  if (!('IntersectionObserver' in window) || !list) return;
+  if (state._io) state._io.disconnect();
+  state._io = new IntersectionObserver(function(entries){
+   entries.forEach(function(en){
+    var li = en.target, u = li.getAttribute('data-url');
+    if (!u) return;
+    if (en.isIntersecting){
+     if (li._t) return;
+     li._t = setTimeout(function(){
+      li._t = null;
+      var rec = state.sig[u];
+      if (rec && (rec.o || rec.s)) return;
+      sigRec(u, { s:1 });
+     }, 1500);
+    } else if (li._t){ clearTimeout(li._t); li._t = null; }
+   });
+  }, { threshold: 0.55 });
+  Array.prototype.forEach.call(list.querySelectorAll('li.item'), function(li){ state._io.observe(li); });
+ }
+ function gestes(){
+  var o=0, lng=0, q=0, seen=0;
+  for (var u in state.sig){
+   var v = state.sig[u] || {};
+   o += v.o||0;
+   if (v.o && (v.t / (v.o||1)) >= 20000) lng++;
+   q += v.q||0;
+   if (!v.o && v.s) seen++;
+  }
+  return { o:o, long:lng, q:q, s:seen };
+ }
+
  function sessionRead(){ try { return JSON.parse(localStorage.getItem(LS_SESSION)||'null'); } catch(e){ return null; } }
  function sessionWrite(s){ try { s ? localStorage.setItem(LS_SESSION, JSON.stringify(s)) : localStorage.removeItem(LS_SESSION); } catch(e){} }
 
@@ -156,6 +217,17 @@
     if (r.vote > 0) o.u++; else o.d++;
    });
   }
+  for (var su in state.sig){
+   var si = state.sig[su]; if (!si) continue;
+   var siIt = byUrl[su]; if (!siIt) continue;
+   var xi = state.inter[su]; if (xi && xi.vote) continue;
+   var vi = impValue(su); if (!vi) continue;
+   var wi = Math.abs(vi) * 0.55;
+   features(siIt).forEach(function(f){
+    var key = f.k + '|' + f.v; var o = c[key] || (c[key] = { u:0, d:0, k:f.k, v:f.v });
+    if (vi > 0) o.u += wi; else o.d += wi;
+   });
+  }
   return c;
  }
 
@@ -270,7 +342,6 @@
    + (it.resume?'<p class="res">'+esc(it.resume)+'</p>':'')
    + (why?'<p class="why">'+esc(why)+'</p>':'')
    + '<div class="acts">'
-   + '<button class="act '+((r.vote>0)?'on-up':'')+'" data-vote="1" title="Intéressant">👍</button>'
    + '<button class="act '+((r.vote<0)?'on-down':'')+'" data-vote="-1" title="Pas intéressant">👎</button>'
    + '<button class="act '+((r.fav)?'on-fav':'')+'" data-vote="fav" title="Garder pour plus tard">★</button>'
    + '<a class="act open" href="'+esc(it.url)+'" target="_blank" rel="noopener">ouvrir ↗</a>'
@@ -324,6 +395,7 @@
   list.innerHTML = '<ul class="items">'+html+'</ul>' +
    (total > state.limit ? '<button class="btn" id="more">Afficher plus ('+(total - state.limit)+' restants)</button>' : '') +
    '<p class="hint">'+total+' article'+(total>1?'s':'')+' au total</p>';
+  observerApercu(list);
   var more = $('#more');
   if (more) more.onclick = function(){ state.limit += 60; render(); };
   Array.prototype.forEach.call(list.querySelectorAll('button[data-vote]'), function(b){
@@ -392,7 +464,7 @@
   list.addEventListener('click', function(e){
    if (Date.now() - lastSwipe < 400){ e.preventDefault(); e.stopPropagation(); return; }
    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
-   if (a) marquerLu(a.getAttribute('href'));
+   if (a) { var uo = a.getAttribute('href'); marquerLu(uo); ouvrir(uo); }
   }, true);
  }
 
@@ -436,8 +508,9 @@ function compterNonLus(){
   parts.push('<button class="close" id="closeSheet">×</button>');
   parts.push('<h2>Profil affinitaire</h2>');
   parts.push('<p class="hint">'+(HAS_REMOTE ? (state.session ? 'Synchronisé · '+esc((state.session.user&&state.session.user.email)||'compte connecté') : 'Non connecté · votes enregistrés sur cet appareil') : 'Mode local · votes enregistrés sur cet appareil')+'</p>');
-  parts.push('<div class="kpi"><div><b>'+s.votes+'</b><span>articles évalués</span></div><div><b>'+(s.votes?Math.round(100*s.ups/s.votes):0)+'%</b><span>de 👍</span></div><div><b>'+s.favs+'</b><span>favoris</span></div><div><b>'+(s.top10?Math.round(100*s.top10up/s.top10):0)+'%</b><span>pertinence top 10</span></div></div>');
-  parts.push('<p class="hint">La pertinence top 10 mesure la part de 👍 parmi les articles que vous avez évalués alors qu\'ils figuraient dans les dix premiers recommandés.</p>');
+  var g = gestes();
+  parts.push('<div class="kpi"><div><b>'+g.o+'</b><span>articles ouverts</span></div><div><b>'+g.long+'</b><span>lus longuement</span></div><div><b>'+g.q+'</b><span>quittés en moins de 4 s</span></div><div><b>'+g.s+'</b><span>aperçus sans ouvrir</span></div></div>');
+  parts.push('<p class="hint">'+(s.votes?('Vous avez voté sur '+s.votes+' article'+(s.votes>1?'s':'')+', dont '+s.favs+' gardé'+(s.favs>1?'s':'')+'.'):'Aucun vote explicite pour l\'instant : le classement repose entièrement sur vos gestes et sur la qualité de source.')+'</p>');
   ['theme','sous_theme','secteur','nature','source'].forEach(function(dim){
    var arr = topList(counts, dim, 6); if (!arr.length) return;
    parts.push('<h3>'+esc(pretty(dim))+'</h3>');
@@ -465,7 +538,7 @@ function compterNonLus(){
   var si = $('#signin'); if (si) si.onclick = function(){ signIn($('#email').value); };
    var uh = $('#unhide'); if (uh) uh.onclick = function(){ state.hidden={}; hiddenWrite({}); closePanel(); render(); };
    var vf = $('#verify'); if (vf) vf.onclick = function(){ verifyCode($('#email').value, $('#code').value); };
-  $('#resetVotes').onclick = function(){ if (!confirm('Effacer tous les votes et favoris ?')) return; state.inter={}; localWrite({}); state.hidden={}; hiddenWrite({}); if (HAS_REMOTE && state.session) api('/rest/v1/'+(CFG.table||'interactions')+'?url=not.is.null',{method:'DELETE'}).catch(function(){}); closePanel(); render(); };
+  $('#resetVotes').onclick = function(){ if (!confirm('Effacer tous les votes et favoris ?')) return; state.inter={}; localWrite({}); state.hidden={}; hiddenWrite({}); state.sig={}; sigWrite({}); if (HAS_REMOTE && state.session) api('/rest/v1/'+(CFG.table||'interactions')+'?url=not.is.null',{method:'DELETE'}).catch(function(){}); closePanel(); render(); };
  }
  function closePanel(){ $('#panel').classList.remove('open'); }
 
@@ -523,6 +596,7 @@ function compterNonLus(){
  $('#unreadBtn').onclick = function(e){ state.unreadOnly = !state.unreadOnly; e.currentTarget.setAttribute('aria-pressed', String(state.unreadOnly)); render(); };
  $('#favBtn').onclick = function(e){ state.favOnly = !state.favOnly; e.currentTarget.setAttribute('aria-pressed', String(state.favOnly)); render(); };
  $('#panel').onclick = function(e){ if (e.target.id==='panel') closePanel(); };
- document.addEventListener('visibilitychange', function(){ if (!document.hidden && state.unreadOnly) render(); });
+ document.addEventListener('visibilitychange', function(){ if (!document.hidden){ finLecture(); if (state.unreadOnly) render(); } });
+ window.addEventListener('pagehide', finLecture);
  document.addEventListener('keydown', function(e){ if (e.key==='Escape') closePanel(); });
 })();
