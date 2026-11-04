@@ -1,0 +1,216 @@
+{
+  "updated": "2026-11-04",
+  "note": "Flux RSS suivis à chaque édition. Les rubriques sont indicatives : la rubrique finale est calculée article par article.",
+  "sources": [
+    {
+      "nom": "Le Monde — Économie",
+      "url": "https://www.lemonde.fr/economie/rss_full.xml",
+      "lang": "fr",
+      "rubrique": "Commerce"
+    },
+    {
+      "nom": "franceinfo — Économie",
+      "url": "https://www.francetvinfo.fr/economie.rss",
+      "lang": "fr",
+      "rubrique": "Commerce"
+    },
+    {
+      "nom": "L'Usine Digitale",
+      "url": "https://www.usine-digitale.fr/rss/",
+      "lang": "fr",
+      "rubrique": "IA"
+    },
+    {
+      "nom": "The Media Leader FR",
+      "url": "https://fr.themedialeader.com/feed/",
+      "lang": "fr",
+      "rubrique": "Retail media"
+    },
+    {
+      "nom": "Mind Media",
+      "url": "https://www.mindmedia.fr/feed/",
+      "lang": "fr",
+      "rubrique": "Contenus"
+    },
+    {
+      "nom": "Numerama",
+      "url": "https://www.numerama.com/feed/",
+      "lang": "fr",
+      "rubrique": "IA"
+    },
+    {
+      "nom": "Journal du Net",
+      "url": "https://www.journaldunet.com/rss/",
+      "lang": "fr",
+      "rubrique": "Adtech"
+    },
+    {
+      "nom": "Viuz",
+      "url": "https://viuz.com/feed",
+      "lang": "fr",
+      "rubrique": "Adtech"
+    },
+    {
+      "nom": "La Revue du Digital",
+      "url": "https://www.larevuedudigital.com/feed/",
+      "lang": "fr",
+      "rubrique": "Adtech"
+    },
+    {
+      "nom": "Automobile Propre",
+      "url": "https://www.automobile-propre.com/feed/",
+      "lang": "fr",
+      "rubrique": "Recharge"
+    },
+    {
+      "nom": "Avere-France",
+      "url": "https://www.avere-france.org/feed/",
+      "lang": "fr",
+      "rubrique": "Recharge"
+    },
+    {
+      "nom": "Révolution Énergétique",
+      "url": "https://www.revolution-energetique.com/feed/",
+      "lang": "fr",
+      "rubrique": "Recharge"
+    },
+    {
+      "nom": "CNIL",
+      "url": "https://www.cnil.fr/fr/rss.xml",
+      "lang": "fr",
+      "rubrique": "Régulation"
+    },
+    {
+      "nom": "ExchangeWire",
+      "url": "https://www.exchangewire.com/feed/",
+      "lang": "en",
+      "rubrique": "Adtech"
+    },
+    {
+      "nom": "Retail Dive",
+      "url": "https://www.retaildive.com/feeds/news/",
+      "lang": "en",
+      "rubrique": "Commerce"
+    },
+    {
+      "nom": "Marketing Dive",
+      "url": "https://www.marketingdive.com/feeds/news/",
+      "lang": "en",
+      "rubrique": "Retail media"
+    },
+    {
+      "nom": "Grocery Dive",
+      "url": "https://www.grocerydive.com/feeds/news/",
+      "lang": "en",
+      "rubrique": "Commerce"
+    },
+    {
+      "nom": "Digiday",
+      "url": "https://digiday.com/feed/",
+      "lang": "en",
+      "rubrique": "Adtech"
+    },
+    {
+      "nom": "Modern Retail",
+      "url": "https://www.modernretail.co/feed/",
+      "lang": "en",
+      "rubrique": "Retail media"
+    },
+    {
+      "nom": "AdExchanger",
+      "url": "https://www.adexchanger.com/feed/",
+      "lang": "en",
+      "rubrique": "Adtech"
+    },
+    {
+      "nom": "IAB Europe",
+      "url": "https://iabeurope.eu/feed/",
+      "lang": "en",
+      "rubrique": "Mesure"
+    },
+    {
+      "nom": "Ecommerce News Europe",
+      "url": "https://ecommercenews.eu/feed/",
+      "lang": "en",
+      "rubrique": "Commerce"
+    },
+    {
+      "nom": "Retail Detail",
+      "url": "https://www.retaildetail.eu/rss/",
+      "lang": "en",
+      "rubrique": "Commerce"
+    },
+    {
+      "nom": "Retail Gazette",
+      "url": "https://www.retailgazette.co.uk/feed/",
+      "lang": "en",
+      "rubrique": "Commerce"
+    },
+    {
+      "nom": "Marketing Week",
+      "url": "https://www.marketingweek.com/feed/",
+      "lang": "en",
+      "rubrique": "Retail media"
+    },
+    {
+      "nom": "Supermarket News",
+      "url": "https://www.supermarketnews.com/rss.xml",
+      "lang": "en",
+      "rubrique": "Commerce"
+    },
+    {
+      "nom": "TechCrunch",
+      "url": "https://techcrunch.com/feed/",
+      "lang": "en",
+      "rubrique": "IA"
+    },
+    {
+      "nom": "The Verge",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "lang": "en",
+      "rubrique": "IA"
+    },
+    {
+      "nom": "Wired",
+      "url": "https://www.wired.com/feed/rss",
+      "lang": "en",
+      "rubrique": "IA"
+    },
+    {
+      "nom": "Sifted",
+      "url": "https://sifted.eu/feed",
+      "lang": "en",
+      "rubrique": "Commerce"
+    },
+    {
+      "nom": "Tech.eu",
+      "url": "https://tech.eu/feed/",
+      "lang": "en",
+      "rubrique": "IA"
+    },
+    {
+      "nom": "EU-Startups",
+      "url": "https://www.eu-startups.com/feed/",
+      "lang": "en",
+      "rubrique": "Commerce"
+    },
+    {
+      "nom": "Electrek",
+      "url": "https://electrek.co/feed/",
+      "lang": "en",
+      "rubrique": "Recharge"
+    },
+    {
+      "nom": "Charged EVs",
+      "url": "https://chargedevs.com/feed/",
+      "lang": "en",
+      "rubrique": "Recharge"
+    },
+    {
+      "nom": "InsideEVs",
+      "url": "https://insideevs.com/rss/articles/all/",
+      "lang": "en",
+      "rubrique": "Recharge"
+    }
+  ]
+}
