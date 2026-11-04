@@ -1,11 +1,239 @@
 {
  "meta": {
-  "updated": "2026-11-04T09:57:12.450Z",
+  "updated": "2026-11-04T13:30:05.950Z",
   "sources_count": 35,
   "day": "Édition du 4 novembre 2026",
-  "version": 2
+  "version": 3
  },
  "items": [
+  {
+   "rubrique": "Retail media",
+   "iso": "2026-11-04T09:39:34.000Z",
+   "titre": "Du retail media au commerce media : la quête de la donnée qualifiée",
+   "resume": "Face à la saturation du digital, le marketing direct s’appuie sur les données des marques pour concevoir des campagnes ciblées et mesurables, diffusées auprès des consommateurs à domicile.",
+   "url": "https://www.journaldunet.com/retail/1557377-depuis-plus-de-vingt-ans-les-budgets-media-ne-cessent-de-se-concentrer-sur-le-digital-aujourd-hui-ce-pari-touche-ses-limites-les-performances-obtenues-par-les-annonceurs-se-degradent-notablement-a-mesure-que-l-attention-reelle-des-consomma",
+   "source": "journaldunet.com",
+   "lang": "fr",
+   "a_retenir": false,
+   "attrs": {
+    "nature": "analyse",
+    "nouveaute": 2,
+    "profondeur": 2,
+    "qualite_source": 3,
+    "secteur": "retail media",
+    "sous_theme": "données qualifiées",
+    "utilite": 3
+   }
+  },
+  {
+   "rubrique": "Mesure",
+   "iso": "2026-11-04T12:57:44.000Z",
+   "titre": "Top-Performing Marketers Report Higher Measurement Confidence With Connected Customer Data",
+   "resume": "StackAdapt’s report finds that 69% of marketers reporting significantly stronger year-on-year performance also have high confidence in linking advertising investment to results, in a study addressing connected customer data.",
+   "url": "https://www.exchangewire.com/blog/2026/11/04/top-performing-marketers-report-higher-measurement-confidence-with-connected-customer-data",
+   "source": "exchangewire.com",
+   "lang": "en",
+   "a_retenir": false,
+   "attrs": {
+    "nature": "étude",
+    "nouveaute": 2,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "publicité numérique",
+    "sous_theme": "mesure publicitaire",
+    "utilite": 3
+   }
+  },
+  {
+   "rubrique": "Commerce",
+   "iso": "2026-11-04T12:22:33.000Z",
+   "titre": "Bie Buelens (Kringwinkel): “Secondhand should be the best choice, not just the cheapest”",
+   "resume": "Kringwinkel is developing an e-commerce platform, a revamped store concept and sharper brand positioning, while CEO Bie Buelens stresses that commercial viability must support its social mission and affordable circularity.",
+   "url": "https://www.retaildetail.eu/news/general/bie-buelens-kringwinkel-groep-secondhand-should-be-the-best-choice-not-just-the-cheapest",
+   "source": "retaildetail.eu",
+   "lang": "en",
+   "a_retenir": false,
+   "attrs": {
+    "nature": "interview",
+    "nouveaute": 3,
+    "profondeur": 3,
+    "qualite_source": 4,
+    "secteur": "commerce circulaire",
+    "sous_theme": "seconde main",
+    "utilite": 3
+   }
+  },
+  {
+   "rubrique": "Commerce",
+   "iso": "2026-11-04T10:41:32.000Z",
+   "titre": "Morrisons and Too Good To Go expand partnership with chilled surprise bags",
+   "resume": "Morrisons and Too Good To Go are extending their partnership with chilled surprise bags containing dairy, deli, meat and seafood products worth £12 at full price, sold at a reduced price.",
+   "url": "https://www.retailgazette.co.uk/blog/2026/11/morrisons-too-good",
+   "source": "retailgazette.co.uk",
+   "lang": "en",
+   "a_retenir": false,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "grande distribution",
+    "sous_theme": "anti-gaspillage alimentaire",
+    "utilite": 3
+   }
+  },
+  {
+   "rubrique": "Commerce",
+   "iso": "2026-11-04T08:09:53.000Z",
+   "titre": "Cyberattack will cost Ahold Delhaize up to 250 million euros in revenue",
+   "resume": "The October cyberattack that disrupted Ahold Delhaize’s IT systems for over a week is expected to reduce revenue by up to €250 million and weigh on profits, with regional results mixed.",
+   "url": "https://www.retaildetail.eu/news/food/cyberattack-costs-ahold-delhaize-up-to-250-million-euros-in-revenue",
+   "source": "retaildetail.eu",
+   "lang": "en",
+   "a_retenir": false,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 2,
+    "qualite_source": 3,
+    "secteur": "grande distribution",
+    "sous_theme": "cybersécurité retail",
+    "utilite": 3
+   }
+  },
+  {
+   "rubrique": "Commerce",
+   "iso": "2026-11-04T13:15:57.000Z",
+   "titre": "After 10 years, is it time Aldi cooked Kevin?",
+   "resume": "Retail Gazette examines whether Aldi should retire Kevin the Carrot after a decade of festive advertising, following confirmation that the character will return in the supermarket’s 2026 Christmas campaign.",
+   "url": "https://www.retailgazette.co.uk/blog/2026/11/christmas-2026-campaigns-aldi",
+   "source": "retailgazette.co.uk",
+   "lang": "en",
+   "a_retenir": false,
+   "attrs": {
+    "nature": "analyse",
+    "nouveaute": 2,
+    "profondeur": 2,
+    "qualite_source": 4,
+    "secteur": "grande distribution",
+    "sous_theme": "campagne de Noël",
+    "utilite": 2
+   }
+  },
+  {
+   "rubrique": "Adtech",
+   "iso": "2026-11-04T13:00:00.000Z",
+   "titre": "Adelaide’s AU Ecosystem Reaches 100 Partners With Expansion Into Video Curation",
+   "resume": "Adelaide’s AU Ecosystem has reached 100 partners and introduced a video-curation category, with Pixability, Sightly, Silverpush and Cadent joining as its first members to help clients assess and improve curated media quality.",
+   "url": "https://www.exchangewire.com/blog/2026/11/04/adelaides-au-ecosystem-reaches-100-partners-with-expansion-into-video-curation",
+   "source": "exchangewire.com",
+   "lang": "en",
+   "a_retenir": false,
+   "attrs": {
+    "nature": "communiqué",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 2,
+    "secteur": "adtech",
+    "sous_theme": "curation vidéo",
+    "utilite": 2
+   }
+  },
+  {
+   "rubrique": "Commerce",
+   "iso": "2026-11-04T10:25:00.000Z",
+   "titre": "Pour le Black Friday, la carte Fnac+ Jackpot arrive avec 30 € déjà chargés dans la cagnotte",
+   "resume": "Pendant le Black Friday, Fnac commercialise sa carte Fnac+ Jackpot à 19,99 €, avec 30 € crédités dans la cagnotte et à dépenser lors de l’événement.",
+   "url": "https://www.numerama.com/pop-culture/2367331-pour-le-black-friday-la-carte-fnac-jackpot-arrive-avec-30-e-deja-charges-dans-la-cagnotte.html",
+   "source": "numerama.com",
+   "lang": "fr",
+   "a_retenir": false,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 2,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "commerce",
+    "sous_theme": "offres promotionnelles",
+    "utilite": 1
+   }
+  },
+  {
+   "rubrique": "Recharge",
+   "iso": "2026-11-04T12:10:00.000Z",
+   "titre": "En Moselle, TotalEnergies inaugure son premier superchargeur de 1 000 kW pour camions électriques",
+   "resume": "À Phalsbourg, la station AS 24 de TotalEnergies inaugure une piste MCS alimentée par une armoire de 1 000 kW, première installation du groupe pour la recharge des camions électriques.",
+   "url": "https://www.bevolt.com/fr-fr/entreprises/actualites/camions-electriques/350644-en-moselle-totalenergies-inaugure-son-premier-superchargeur-de-1-000-kw-pour-camions-electriques",
+   "source": "bevolt.com",
+   "lang": "fr",
+   "a_retenir": false,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 4,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "énergie",
+    "sous_theme": "recharge poids lourds",
+    "utilite": 3
+   }
+  },
+  {
+   "rubrique": "Commerce",
+   "iso": "2026-11-04T06:00:41.000Z",
+   "titre": "Intent Data Is A Gift, With Edible Brands",
+   "resume": "Edible Arrangements sells 350 products online throughout the year but intentionally makes only about 10% available for purchase on Valentine’s Day and Mother’s Day, its busiest occasions.",
+   "url": "https://www.adexchanger.com/adexchanger-talks/intent-data-is-a-gift-with-edible-brands",
+   "source": "adexchanger.com",
+   "lang": "en",
+   "a_retenir": false,
+   "attrs": {
+    "nature": "analyse",
+    "nouveaute": 2,
+    "profondeur": 2,
+    "qualite_source": 4,
+    "secteur": "commerce",
+    "sous_theme": "assortiment saisonnier",
+    "utilite": 2
+   }
+  },
+  {
+   "rubrique": "Régulation",
+   "iso": "2026-11-04T09:54:32.000Z",
+   "titre": "L’utilisation d’articles de presse pour générer les réponses de Gemini, le chatbot de Google, pourrait porter atteinte aux droits voisins des éditeurs",
+   "resume": "L’utilisation d’articles de presse par Gemini pour générer ses réponses pourrait enfreindre les droits voisins des éditeurs, un enjeu juridique pour Google et les services d’intelligence artificielle.",
+   "url": "https://www.usine-digitale.fr/intelligence-artificielle/lutilisation-darticles-de-presse-pour-generer-les-reponses-de-gemini-le-chatbot-de-google-pourrait-porter-atteinte-aux-droits-voisins-des-editeurs.CRSZ64SZSJCZNBQZQ2XU7K7LKE.html",
+   "source": "usine-digitale.fr",
+   "lang": "fr",
+   "a_retenir": false,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 4,
+    "secteur": "médias numériques",
+    "sous_theme": "droits voisins",
+    "utilite": 2
+   }
+  },
+  {
+   "rubrique": "Contenus",
+   "iso": "2026-11-04T09:00:00.000Z",
+   "titre": "Digest: #AskForNews Campaign aims to Bring Advertisers Back to News; Chord buys Zenlytic in $5m all-stock deal",
+   "resume": "The digest covers a News Alliance effort to attract advertisers back to news, Chord’s $5 million all-stock purchase of Zenlytic for conversational analytics, and Apple’s first earnings beat under CEO John Ternus.",
+   "url": "https://www.exchangewire.com/blog/2026/11/04/digest-askfornews-campaign-aims-to-bring-advertisers-back-to-news-chord-buys-zenlytic-in-5m-all-stock-deal",
+   "source": "exchangewire.com",
+   "lang": "en",
+   "a_retenir": false,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "publicité numérique",
+    "sous_theme": "publicité dans l’actualité",
+    "utilite": 2
+   }
+  },
   {
    "rubrique": "Commerce",
    "iso": "2026-11-04T09:33:23.000Z",
@@ -16,12 +244,12 @@
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 2,
     "profondeur": 1,
     "qualite_source": 4,
     "secteur": "grande distribution",
-    "sous_theme": "réaménagement de magasin",
+    "sous_theme": "rÃ©amÃ©nagement de magasin",
     "utilite": 1
    }
   },
@@ -35,12 +263,12 @@
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 1,
     "qualite_source": 3,
     "secteur": "grande distribution",
-    "sous_theme": "gouvernance d’enseigne",
+    "sous_theme": "gouvernance dâenseigne",
     "utilite": 1
    }
   },
@@ -48,13 +276,13 @@
    "rubrique": "Commerce",
    "iso": "2026-11-04T09:05:36.000Z",
    "titre": "M&S fashion and home sales recover but profits remain below pre-cyber attack levels",
-   "resume": "Over the 26 weeks to 26 September 2026, M&S reports a recovery in Fashion, Home & Beauty sales, but profits remain below pre-cyber-attack levels as the division addresses the attack’s lasting impact.",
+   "resume": "Over the 26 weeks to 26 September 2026, M&S reports a recovery in Fashion, Home & Beauty sales, but profits remain below pre-cyber-attack levels as the division addresses the attackâs lasting impact.",
    "url": "https://www.retailgazette.co.uk/blog/2026/11/ms-fashion-and-home-sales/",
    "source": "retailgazette.co.uk",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
@@ -64,20 +292,20 @@
    }
   },
   {
-   "rubrique": "Régulation",
+   "rubrique": "RÃ©gulation",
    "iso": "2026-11-04T09:00:16.000Z",
-   "titre": "La justice brésilienne interdit à Meta d'utiliser des contenus de presse pour son IA",
-   "resume": "La justice brésilienne suspend provisoirement l’obligation faite aux médias de fournir gratuitement leurs contenus à Meta, lui interdisant de les utiliser pour entraîner son intelligence artificielle.",
+   "titre": "La justice brÃ©silienne interdit Ã  Meta d'utiliser des contenus de presse pour son IA",
+   "resume": "La justice brÃ©silienne suspend provisoirement lâobligation faite aux mÃ©dias de fournir gratuitement leurs contenus Ã  Meta, lui interdisant de les utiliser pour entraÃ®ner son intelligence artificielle.",
    "url": "https://www.journaldunet.com/business/1557563-la-justice-bresilienne-interdit-a-meta-d-utiliser-des-contenus-de-presse-pour-son-ia/",
    "source": "journaldunet.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 1,
     "qualite_source": 3,
-    "secteur": "médias",
+    "secteur": "mÃ©dias",
     "sous_theme": "droits des contenus presse",
     "utilite": 2
    }
@@ -92,20 +320,20 @@
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 2,
     "profondeur": 1,
     "qualite_source": 3,
     "secteur": "mode",
-    "sous_theme": "campagne de Noël",
+    "sous_theme": "campagne de NoÃ«l",
     "utilite": 1
    }
   },
   {
    "rubrique": "Commerce",
    "iso": "2026-11-04T05:35:59.000Z",
-   "titre": "DoorDash’s Instacart Deal: What A Successful Integration Will Mean For Retailers",
-   "resume": "DoorDash’s $17 billion acquisition of Instacart could ease local retailers’ advertising workload if the combined company offers practical tools that do not require specialized marketing teams.",
+   "titre": "DoorDashâs Instacart Deal: What A Successful Integration Will Mean For Retailers",
+   "resume": "DoorDashâs $17 billion acquisition of Instacart could ease local retailersâ advertising workload if the combined company offers practical tools that do not require specialized marketing teams.",
    "url": "https://www.adexchanger.com/data-driven-thinking/doordashs-instacart-deal-what-a-successful-integration-will-mean-for-retailers/",
    "source": "adexchanger.com",
    "lang": "en",
@@ -116,14 +344,14 @@
     "profondeur": 3,
     "qualite_source": 4,
     "secteur": "services",
-    "sous_theme": "intégration retail media",
+    "sous_theme": "intÃ©gration retail media",
     "utilite": 4
    }
   },
   {
    "rubrique": "Commerce",
    "iso": "2026-11-04T05:01:00.000Z",
-   "titre": "Here are the questions on advertisers’ minds after the DoorDash-Instacart deal",
+   "titre": "Here are the questions on advertisersâ minds after the DoorDash-Instacart deal",
    "resume": "DoorDash and Instacart are joining forces, prompting advertisers to seek clarity on how the deal will affect advertising costs, access to shopper data and campaign measurement.",
    "url": "https://digiday.com/marketing/here-are-the-questions-on-advertisers-minds-after-the-doordash-instacart-deal/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss",
    "source": "digiday.com",
@@ -135,15 +363,15 @@
     "profondeur": 2,
     "qualite_source": 4,
     "secteur": "grande distribution",
-    "sous_theme": "publicité après rapprochement",
+    "sous_theme": "publicitÃ© aprÃ¨s rapprochement",
     "utilite": 5
    }
   },
   {
    "rubrique": "Adtech",
    "iso": "2026-11-04T05:01:00.000Z",
-   "titre": "Case for and against – sticking with a Publicis-owned LiveRamp",
-   "resume": "With Publicis’s acquisition of LiveRamp complete, marketers must decide whether to keep using the identity platform or move to alternatives under its new ownership.",
+   "titre": "Case for and against â sticking with a Publicis-owned LiveRamp",
+   "resume": "With Publicisâs acquisition of LiveRamp complete, marketers must decide whether to keep using the identity platform or move to alternatives under its new ownership.",
    "url": "https://digiday.com/media-buying/the-case-for-and-against-sticking-with-a-publicis-owned-liveramp/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss",
    "source": "digiday.com",
    "lang": "en",
@@ -154,26 +382,26 @@
     "profondeur": 2,
     "qualite_source": 4,
     "secteur": "technologie",
-    "sous_theme": "plateforme d’identité",
+    "sous_theme": "plateforme dâidentitÃ©",
     "utilite": 4
    }
   },
   {
    "rubrique": "Adtech",
    "iso": "2026-11-04T05:01:00.000Z",
-   "titre": "Good ads have a new name, ‘entertainment-first’ and SharkNinja is using it for its holiday campaign",
-   "resume": "SharkNinja’s celebrity-filled holiday campaign applies an entertainment-first advertising strategy, reflecting brands’ growing effort to make ads audiences actively want to watch.",
+   "titre": "Good ads have a new name, âentertainment-firstâ and SharkNinja is using it for its holiday campaign",
+   "resume": "SharkNinjaâs celebrity-filled holiday campaign applies an entertainment-first advertising strategy, reflecting brandsâ growing effort to make ads audiences actively want to watch.",
    "url": "https://digiday.com/marketing/good-ads-have-a-new-name-entertainment-first-and-sharkninja-is-using-it-for-its-holiday-campaign/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss",
    "source": "digiday.com",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 2,
     "profondeur": 2,
     "qualite_source": 4,
-    "secteur": "médias",
-    "sous_theme": "publicité divertissante",
+    "secteur": "mÃ©dias",
+    "sous_theme": "publicitÃ© divertissante",
     "utilite": 2
    }
   },
@@ -191,8 +419,8 @@
     "nouveaute": 2,
     "profondeur": 2,
     "qualite_source": 4,
-    "secteur": "médias",
-    "sous_theme": "avenir des médias tech",
+    "secteur": "mÃ©dias",
+    "sous_theme": "avenir des mÃ©dias tech",
     "utilite": 2
    }
   },
@@ -211,14 +439,14 @@
     "profondeur": 3,
     "qualite_source": 4,
     "secteur": "mode",
-    "sous_theme": "stratégie de marques propres",
+    "sous_theme": "stratÃ©gie de marques propres",
     "utilite": 2
    }
   },
   {
    "rubrique": "Commerce",
    "iso": "2026-11-04T00:01:00.000Z",
-   "titre": "‘Open the aperture’: Boots’ CMO on getting shoppers talking this Christmas",
+   "titre": "âOpen the apertureâ: Bootsâ CMO on getting shoppers talking this Christmas",
    "resume": "Boots focuses on value and range this festive season, broadens its media mix and builds on the early success of its new Give It Some Boots brand voice.",
    "url": "https://www.marketingweek.com/boots-gifting-christmas-2026/",
    "source": "marketingweek.com",
@@ -230,102 +458,102 @@
     "profondeur": 3,
     "qualite_source": 4,
     "secteur": "grande distribution",
-    "sous_theme": "stratégie média festive",
+    "sous_theme": "stratÃ©gie mÃ©dia festive",
     "utilite": 3
    }
   },
   {
    "rubrique": "Contenus",
    "iso": "2026-11-03T23:03:00.000Z",
-   "titre": "M6 accroît son chiffre d’affaires de 9,4% grâce au Mondial",
-   "resume": "Au troisième trimestre, le groupe M6 réalise un chiffre d’affaires de 294,5 millions d’euros, en hausse de 9,4 %, porté par la diffusion de la Coupe du monde.",
+   "titre": "M6 accroÃ®t son chiffre dâaffaires de 9,4% grÃ¢ce au Mondial",
+   "resume": "Au troisiÃ¨me trimestre, le groupe M6 rÃ©alise un chiffre dâaffaires de 294,5 millions dâeuros, en hausse de 9,4 %, portÃ© par la diffusion de la Coupe du monde.",
    "url": "https://fr.themedialeader.com/m6-accroit-son-chiffre-daffaires-de-94-grace-au-mondial/",
    "source": "fr.themedialeader.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 2,
     "profondeur": 1,
     "qualite_source": 4,
-    "secteur": "médias",
-    "sous_theme": "résultats financiers M6",
+    "secteur": "mÃ©dias",
+    "sous_theme": "rÃ©sultats financiers M6",
     "utilite": 1
    }
   },
   {
    "rubrique": "Adtech",
    "iso": "2026-11-03T23:02:00.000Z",
-   "titre": "xpln.ai nomme deux Chief Commercial Officers régionaux",
-   "resume": "Le spécialiste de l’attention xpln.ai promeut Massi Mekla et Dominic Di Talamo à deux nouveaux postes régionaux de Chief Commercial Officer.",
+   "titre": "xpln.ai nomme deux Chief Commercial Officers rÃ©gionaux",
+   "resume": "Le spÃ©cialiste de lâattention xpln.ai promeut Massi Mekla et Dominic Di Talamo Ã  deux nouveaux postes rÃ©gionaux de Chief Commercial Officer.",
    "url": "https://fr.themedialeader.com/xpln-ai-nomme-deux-chief-commercial-officers-regionaux/",
    "source": "fr.themedialeader.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 1,
     "qualite_source": 4,
     "secteur": "technologie",
-    "sous_theme": "mesure de l’attention",
+    "sous_theme": "mesure de lâattention",
     "utilite": 2
    }
   },
   {
    "rubrique": "Contenus",
    "iso": "2026-11-03T23:02:00.000Z",
-   "titre": "Upfront TF1+ : feed vertical, performance, agentique… la feuille de route de Sylvia Tassan Toffola (TF1 PUB)",
-   "resume": "TF1+ revendique un record de plus de 46 millions de streamers mensuels, tandis que TF1 PUB présente sa feuille de route publicitaire autour des formats verticaux, de la performance, de l’IA agentique et de Media Reach.",
+   "titre": "Upfront TF1+ : feed vertical, performance, agentiqueâ¦ la feuille de route de Sylvia Tassan Toffola (TF1 PUB)",
+   "resume": "TF1+ revendique un record de plus de 46 millions de streamers mensuels, tandis que TF1 PUB prÃ©sente sa feuille de route publicitaire autour des formats verticaux, de la performance, de lâIA agentique et de Media Reach.",
    "url": "https://fr.themedialeader.com/upfront-tf1-feed-vertical-performance-agentique-la-feuille-de-route-de-sylvia-tassan-toffola-tf1-pub/",
    "source": "fr.themedialeader.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
-    "secteur": "médias",
-    "sous_theme": "stratégie publicitaire TF1+",
+    "secteur": "mÃ©dias",
+    "sous_theme": "stratÃ©gie publicitaire TF1+",
     "utilite": 4
    }
   },
   {
    "rubrique": "Contenus",
    "iso": "2026-11-03T23:01:42.000Z",
-   "titre": "Azerion Morning : Au cœur du parcours shopper, du lieu de vente au média",
-   "resume": "Azerion organise le 10 novembre, avec Westfield Rise, un Azerion Morning consacré au parcours shopper du lieu de vente au média, présenté par François Quairel, directeur de la rédaction de The Media Leader.",
+   "titre": "Azerion Morning : Au cÅur du parcours shopper, du lieu de vente au mÃ©dia",
+   "resume": "Azerion organise le 10 novembre, avec Westfield Rise, un Azerion Morning consacrÃ© au parcours shopper du lieu de vente au mÃ©dia, prÃ©sentÃ© par FranÃ§ois Quairel, directeur de la rÃ©daction de The Media Leader.",
    "url": "https://fr.themedialeader.com/azerion-morning-au-coeur-du-parcours-shopper-du-lieu-de-vente-au-media/",
    "source": "fr.themedialeader.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 2,
     "profondeur": 1,
     "qualite_source": 4,
-    "secteur": "médias",
+    "secteur": "mÃ©dias",
     "sous_theme": "retail media en magasin",
     "utilite": 2
    }
   },
   {
-   "rubrique": "Régulation",
+   "rubrique": "RÃ©gulation",
    "iso": "2026-11-03T22:55:00.000Z",
-   "titre": "Moins de 16 ans : Reddit conteste l’interdiction australienne",
-   "resume": "Reddit et le Digital Freedom Project contestent devant la Haute Cour australienne l’interdiction des réseaux sociaux aux moins de 16 ans, en vigueur depuis décembre.",
+   "titre": "Moins de 16 ans : Reddit conteste lâinterdiction australienne",
+   "resume": "Reddit et le Digital Freedom Project contestent devant la Haute Cour australienne lâinterdiction des rÃ©seaux sociaux aux moins de 16 ans, en vigueur depuis dÃ©cembre.",
    "url": "https://fr.themedialeader.com/moins-de-16-ans-reddit-conteste-linterdiction-australienne/",
    "source": "fr.themedialeader.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 1,
     "qualite_source": 3,
-    "secteur": "médias",
-    "sous_theme": "régulation des réseaux sociaux",
+    "secteur": "mÃ©dias",
+    "sous_theme": "rÃ©gulation des rÃ©seaux sociaux",
     "utilite": 1
    }
   },
@@ -333,13 +561,13 @@
    "rubrique": "Commerce",
    "iso": "2026-11-03T22:45:59.000Z",
    "titre": "Quel avenir pour les magasins de l'enseigne Gifi, plac&#xE9;e en redressement judiciaire ? \"&#xC7;a va se jouer au cas par cas\", explique un expert",
-   "resume": "Le tribunal de commerce de Toulouse place Gifi en redressement judiciaire et doit évaluer sa capacité à poursuivre son activité, tandis que quelque 6 000 salariés s’interrogent sur leur avenir.",
+   "resume": "Le tribunal de commerce de Toulouse place Gifi en redressement judiciaire et doit Ã©valuer sa capacitÃ© Ã  poursuivre son activitÃ©, tandis que quelque 6 000 salariÃ©s sâinterrogent sur leur avenir.",
    "url": "https://www.franceinfo.fr/economie/commerce/quel-avenir-pour-les-magasins-de-l-enseigne-gifi-placee-en-redressement-judiciaire-ca-va-se-jouer-au-cas-par-cas-explique-un-expert_8266568.html#xtor=RSS-3-%5Bgeneral%5D",
    "source": "francetvinfo.fr",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
@@ -351,33 +579,33 @@
   {
    "rubrique": "Mesure",
    "iso": "2026-11-03T22:45:00.000Z",
-   "titre": "Médiamétrie choisit IAS comme partenaire exclusif de MediaReach",
-   "resume": "Médiamétrie confie à Integral Ad Science (IAS), partenaire exclusif de MediaReach, la fourniture des données de visibilité et de complétion pour sa mesure cross-vidéo.",
+   "titre": "MÃ©diamÃ©trie choisit IAS comme partenaire exclusif de MediaReach",
+   "resume": "MÃ©diamÃ©trie confie Ã  Integral Ad Science (IAS), partenaire exclusif de MediaReach, la fourniture des donnÃ©es de visibilitÃ© et de complÃ©tion pour sa mesure cross-vidÃ©o.",
    "url": "https://fr.themedialeader.com/mediametrie-choisit-ias-comme-partenaire-exclusif-de-mediareach/",
    "source": "fr.themedialeader.com",
    "lang": "fr",
    "a_retenir": true,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
-    "secteur": "médias",
-    "sous_theme": "mesure cross-vidéo",
+    "secteur": "mÃ©dias",
+    "sous_theme": "mesure cross-vidÃ©o",
     "utilite": 4
    }
   },
   {
    "rubrique": "Adtech",
    "iso": "2026-11-03T22:40:00.000Z",
-   "titre": "Burger King s’invite chez Reef, l’opérateur fictif de Free",
-   "resume": "Burger King détourne avec Buzzman l’univers de Reef, l’opérateur fictif des publicités de Free, pour promouvoir sa Box Mystère à 10 euros dans une campagne VOL et digitale orchestrée par WPP Media.",
+   "titre": "Burger King sâinvite chez Reef, lâopÃ©rateur fictif de Free",
+   "resume": "Burger King dÃ©tourne avec Buzzman lâunivers de Reef, lâopÃ©rateur fictif des publicitÃ©s de Free, pour promouvoir sa Box MystÃ¨re Ã  10 euros dans une campagne VOL et digitale orchestrÃ©e par WPP Media.",
    "url": "https://fr.themedialeader.com/burger-king-sinvite-chez-reef-loperateur-fictif-de-free/",
    "source": "fr.themedialeader.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 2,
     "profondeur": 1,
     "qualite_source": 4,
@@ -389,14 +617,14 @@
   {
    "rubrique": "Adtech",
    "iso": "2026-11-03T22:30:00.000Z",
-   "titre": "Intersport s’appuie sur Médiaperformances pour son retail media",
-   "resume": "Intersport confie à Médiaperformances le déploiement et la commercialisation de son offre retail media en magasin, équipée de trois écrans DOOH dans chaque point de vente.",
+   "titre": "Intersport sâappuie sur MÃ©diaperformances pour son retail media",
+   "resume": "Intersport confie Ã  MÃ©diaperformances le dÃ©ploiement et la commercialisation de son offre retail media en magasin, Ã©quipÃ©e de trois Ã©crans DOOH dans chaque point de vente.",
    "url": "https://fr.themedialeader.com/intersport-sappuie-sur-mediaperformances-pour-son-retail-media/",
    "source": "fr.themedialeader.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 1,
     "qualite_source": 4,
@@ -408,19 +636,19 @@
   {
    "rubrique": "IA",
    "iso": "2026-11-03T22:05:00.000Z",
-   "titre": "Virgin Media O2 va supprimer des milliers d’emplois en misant sur l’IA",
-   "resume": "Virgin Media O2 prévoit de supprimer des milliers d’emplois d’ici deux ans dans le cadre d’un plan d’économies reposant sur un recours accru à l’intelligence artificielle.",
+   "titre": "Virgin Media O2 va supprimer des milliers dâemplois en misant sur lâIA",
+   "resume": "Virgin Media O2 prÃ©voit de supprimer des milliers dâemplois dâici deux ans dans le cadre dâun plan dâÃ©conomies reposant sur un recours accru Ã  lâintelligence artificielle.",
    "url": "https://fr.themedialeader.com/virgin-media-o2-va-supprimer-des-milliers-demplois-en-misant-sur-lia/",
    "source": "fr.themedialeader.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 1,
     "qualite_source": 4,
-    "secteur": "télécommunications",
-    "sous_theme": "suppressions d’emplois par IA",
+    "secteur": "tÃ©lÃ©communications",
+    "sous_theme": "suppressions dâemplois par IA",
     "utilite": 1
    }
   },
@@ -428,13 +656,13 @@
    "rubrique": "Commerce",
    "iso": "2026-11-03T20:51:31.000Z",
    "titre": "The Retail Daily podcast",
-   "resume": "Produced with CSP Daily News editors, The Retail Daily podcast covers the day’s top headlines across the grocery and convenience-store industries.",
+   "resume": "Produced with CSP Daily News editors, The Retail Daily podcast covers the dayâs top headlines across the grocery and convenience-store industries.",
    "url": "https://www.supermarketnews.com/grocery-trends-data/the-retail-daily-podcast",
    "source": "supermarketnews.com",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 1,
     "profondeur": 1,
     "qualite_source": 4,
@@ -446,18 +674,18 @@
   {
    "rubrique": "Recharge",
    "iso": "2026-11-03T20:38:11.000Z",
-   "titre": "Pennsylvania is way ahead on NEVI charging – now comes another $37M",
+   "titre": "Pennsylvania is way ahead on NEVI charging â now comes another $37M",
    "resume": "Pennsylvania allocates another $37 million in federal NEVI funding for 515 public EV charging ports across the Philadelphia region, including curbside chargers.",
    "url": "https://electrek.co/2026/11/03/pennsylvania-is-way-ahead-on-nevi-charging-now-comes-another-37m/",
    "source": "electrek.co",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 1,
     "qualite_source": 3,
-    "secteur": "énergie",
+    "secteur": "Ã©nergie",
     "sous_theme": "bornes de recharge",
     "utilite": 1
    }
@@ -477,7 +705,7 @@
     "profondeur": 2,
     "qualite_source": 4,
     "secteur": "grande distribution",
-    "sous_theme": "valorisation boursière",
+    "sous_theme": "valorisation boursiÃ¨re",
     "utilite": 1
    }
   },
@@ -485,18 +713,18 @@
    "rubrique": "Adtech",
    "iso": "2026-11-03T19:24:37.000Z",
    "titre": "Reddit tests ads in search results as traffic declines and growth concerns mount",
-   "resume": "Reddit is testing ads in search results to increase revenue from existing users as traffic declines and Google’s AI-powered search changes how people discover its content.",
+   "resume": "Reddit is testing ads in search results to increase revenue from existing users as traffic declines and Googleâs AI-powered search changes how people discover its content.",
    "url": "https://techcrunch.com/2026/11/03/reddit-tests-ads-in-search-results-as-traffic-declines-and-growth-concerns-mount/",
    "source": "techcrunch.com",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
-    "secteur": "médias",
-    "sous_theme": "publicité dans la recherche",
+    "secteur": "mÃ©dias",
+    "sous_theme": "publicitÃ© dans la recherche",
     "utilite": 3
    }
   },
@@ -510,31 +738,31 @@
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 1,
     "qualite_source": 3,
     "secteur": "grande distribution",
-    "sous_theme": "stratégie tarifaire",
+    "sous_theme": "stratÃ©gie tarifaire",
     "utilite": 2
    }
   },
   {
    "rubrique": "Contenus",
    "iso": "2026-11-03T18:42:16.000Z",
-   "titre": "Netflix’s new AI Discover tab helps you find something to watch based on your mood",
+   "titre": "Netflixâs new AI Discover tab helps you find something to watch based on your mood",
    "resume": "Netflix is testing an AI-powered Discover tab whose first experimental feature recommends titles based on what users are currently in the mood to watch.",
    "url": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
    "source": "techcrunch.com",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 1,
     "qualite_source": 4,
-    "secteur": "médias",
-    "sous_theme": "recommandation personnalisée",
+    "secteur": "mÃ©dias",
+    "sous_theme": "recommandation personnalisÃ©e",
     "utilite": 1
    }
   },
@@ -542,13 +770,13 @@
    "rubrique": "Commerce",
    "iso": "2026-11-03T18:02:56.000Z",
    "titre": "Concurrence accrue, direction instable, finances dans le rouge... Pourquoi Gifi, plac&#xE9;e en redressement judiciaire, se retrouve en grande difficult&#xE9;",
-   "resume": "Placée en redressement judiciaire, Gifi emploie 6 000 personnes en France et cumule concurrence accrue, direction instable et finances dans le rouge, avant une audience début janvier sur sa capacité à poursuivre son activité.",
+   "resume": "PlacÃ©e en redressement judiciaire, Gifi emploie 6 000 personnes en France et cumule concurrence accrue, direction instable et finances dans le rouge, avant une audience dÃ©but janvier sur sa capacitÃ© Ã  poursuivre son activitÃ©.",
    "url": "https://www.franceinfo.fr/economie/concurrence-accrue-direction-instable-finances-dans-le-rouge-pourquoi-gifi-placee-en-redressement-judiciaire-se-retrouve-en-grande-difficulte_8265626.html#xtor=RSS-3-%5Bgeneral%5D",
    "source": "francetvinfo.fr",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
@@ -560,19 +788,19 @@
   {
    "rubrique": "Commerce",
    "iso": "2026-11-03T17:00:00.000Z",
-   "titre": "Levi’s claymation holiday campaign celebrates handmade craft amid AI bloat",
-   "resume": "Levi’s holiday campaign uses claymation to emphasize handmade craft amid AI-generated advertising, following a back-to-school effort that CEO Michelle Gass says missed demand and traffic targets.",
+   "titre": "Leviâs claymation holiday campaign celebrates handmade craft amid AI bloat",
+   "resume": "Leviâs holiday campaign uses claymation to emphasize handmade craft amid AI-generated advertising, following a back-to-school effort that CEO Michelle Gass says missed demand and traffic targets.",
    "url": "https://www.marketingdive.com/news/levis-claymation-holiday-campaign-celebrates-handmade-craft-amid-ai-bloat/873496/",
    "source": "marketingdive.com",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
     "secteur": "mode",
-    "sous_theme": "campagne de Noël",
+    "sous_theme": "campagne de NoÃ«l",
     "utilite": 1
    }
   },
@@ -580,13 +808,13 @@
    "rubrique": "Commerce",
    "iso": "2026-11-03T16:41:03.000Z",
    "titre": "Black Friday : voici les meilleures offres chez Amazon, Fnac, Boulanger ce mardi 3 novembre",
-   "resume": "Amazon, Fnac, Boulanger et Darty lancent déjà leurs premières promotions du Black Friday, et Numerama recense les meilleures offres dans un direct ce mardi 3 novembre.",
+   "resume": "Amazon, Fnac, Boulanger et Darty lancent dÃ©jÃ  leurs premiÃ¨res promotions du Black Friday, et Numerama recense les meilleures offres dans un direct ce mardi 3 novembre.",
    "url": "https://www.numerama.com/tech/2363357-pre-black-friday-november-2026-meilleures-offres.html",
    "source": "numerama.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 2,
     "profondeur": 1,
     "qualite_source": 4,
@@ -596,16 +824,16 @@
    }
   },
   {
-   "rubrique": "Régulation",
+   "rubrique": "RÃ©gulation",
    "iso": "2026-11-03T16:32:55.000Z",
-   "titre": "Les petites mains de l’IA surveillées à leur insu ? Scale AI visée par cinq plaintes en Europe",
-   "resume": "Cinq plaintes déposées en Europe visent Scale AI et dénoncent la surveillance à leur insu de travailleurs chargés d’annoter des données pour entraîner des modèles d’intelligence artificielle.",
+   "titre": "Les petites mains de lâIA surveillÃ©es Ã  leur insu ? Scale AI visÃ©e par cinq plaintes en Europe",
+   "resume": "Cinq plaintes dÃ©posÃ©es en Europe visent Scale AI et dÃ©noncent la surveillance Ã  leur insu de travailleurs chargÃ©s dâannoter des donnÃ©es pour entraÃ®ner des modÃ¨les dâintelligence artificielle.",
    "url": "https://www.usine-digitale.fr/intelligence-artificielle/ia-generative/les-petites-mains-de-lia-surveillees-a-leur-insu-scale-ai-visee-par-cinq-plaintes-en-europe.IFZPTYTGX5G4FGXIDKIYINQXRA.html",
    "source": "usine-digitale.fr",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
@@ -617,14 +845,14 @@
   {
    "rubrique": "Commerce",
    "iso": "2026-11-03T16:32:00.000Z",
-   "titre": "Publix’s comp sales slide once again",
-   "resume": "Publix’s comparable sales growth moderates for a fifth consecutive quarter as the grocer contends with lower prescription drug prices tied to the federal Inflation Reduction Act.",
+   "titre": "Publixâs comp sales slide once again",
+   "resume": "Publixâs comparable sales growth moderates for a fifth consecutive quarter as the grocer contends with lower prescription drug prices tied to the federal Inflation Reduction Act.",
    "url": "https://www.grocerydive.com/news/publixs-comp-sales-slide-once-again/873510/",
    "source": "grocerydive.com",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
@@ -637,13 +865,13 @@
    "rubrique": "Commerce",
    "iso": "2026-11-03T16:20:46.000Z",
    "titre": "Lefties rolls out second UK store at Lakeside shopping centre",
-   "resume": "Lefties opens its second UK store at Lakeside shopping centre in West Thurrock, Essex, marking the retailer’s second location in the UK market.",
+   "resume": "Lefties opens its second UK store at Lakeside shopping centre in West Thurrock, Essex, marking the retailerâs second location in the UK market.",
    "url": "https://www.retailgazette.co.uk/blog/2026/11/lefties-lakeside-store/",
    "source": "retailgazette.co.uk",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 2,
     "profondeur": 1,
     "qualite_source": 4,
@@ -656,23 +884,23 @@
    "rubrique": "Commerce",
    "iso": "2026-11-03T16:20:36.000Z",
    "titre": "BHV department stores in Paris placed under court supervision",
-   "resume": "A French court places BHV’s Paris department stores under judicial reorganization, shielding them from creditors after months of financial strain, supplier disputes and controversy over Shein, while stores remain open.",
+   "resume": "A French court places BHVâs Paris department stores under judicial reorganization, shielding them from creditors after months of financial strain, supplier disputes and controversy over Shein, while stores remain open.",
    "url": "https://www.retaildetail.eu/news/fashion/bhv-department-stores-in-paris-placed-under-court-supervision/",
    "source": "retaildetail.eu",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 1,
     "qualite_source": 4,
     "secteur": "grande distribution",
-    "sous_theme": "redressement d’enseigne",
+    "sous_theme": "redressement dâenseigne",
     "utilite": 1
    }
   },
   {
-   "rubrique": "Régulation",
+   "rubrique": "RÃ©gulation",
    "iso": "2026-11-03T15:55:27.000Z",
    "titre": "You Can Put a Price on Privacy",
    "resume": "Julie Austin, chief commerce officer at VML, examines the data value exchange and whether consumers receive a fair share of the value they help create.",
@@ -685,8 +913,8 @@
     "nouveaute": 2,
     "profondeur": 3,
     "qualite_source": 4,
-    "secteur": "médias",
-    "sous_theme": "valorisation des données",
+    "secteur": "mÃ©dias",
+    "sous_theme": "valorisation des donnÃ©es",
     "utilite": 4
    }
   },
@@ -700,87 +928,87 @@
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "étude",
+    "nature": "Ã©tude",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 3,
-    "secteur": "médias",
-    "sous_theme": "représentation du handicap",
+    "secteur": "mÃ©dias",
+    "sous_theme": "reprÃ©sentation du handicap",
     "utilite": 3
    }
   },
   {
    "rubrique": "Mesure",
    "iso": "2026-11-03T15:50:59.000Z",
-   "titre": "Médiamétrie va aussi s’appuyer sur Integral Ad Science pour le développement de MediaReach",
-   "resume": "Le 3 novembre, Médiamétrie annonce renforcer sa collaboration avec Integral Ad Science pour développer MediaReach, sa solution de mesure unifiée cross-vidéo des campagnes publicitaires.",
+   "titre": "MÃ©diamÃ©trie va aussi sâappuyer sur Integral Ad Science pour le dÃ©veloppement de MediaReach",
+   "resume": "Le 3 novembre, MÃ©diamÃ©trie annonce renforcer sa collaboration avec Integral Ad Science pour dÃ©velopper MediaReach, sa solution de mesure unifiÃ©e cross-vidÃ©o des campagnes publicitaires.",
    "url": "https://www.mind.eu.com/media/article/mediametrie-va-aussi-sappuyer-sur-integral-ad-science-pour-le-developpement-de-mediareach/",
    "source": "mindmedia.fr",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 1,
     "qualite_source": 4,
-    "secteur": "médias",
-    "sous_theme": "mesure cross-vidéo",
+    "secteur": "mÃ©dias",
+    "sous_theme": "mesure cross-vidÃ©o",
     "utilite": 4
    }
   },
   {
-   "rubrique": "Régulation",
+   "rubrique": "RÃ©gulation",
    "iso": "2026-11-03T15:38:23.000Z",
-   "titre": "Droit d’auteur et IA : l’avocat général de la CJUE a rendu ses conclusions dans l’affaire Like Company / Google",
-   "resume": "L’avocat général de la CJUE rend ses conclusions dans l’affaire Like Company/Google, saisie par un tribunal hongrois sur l’application de l’article 15 de la directive européenne sur le droit d’auteur.",
+   "titre": "Droit dâauteur et IA : lâavocat gÃ©nÃ©ral de la CJUE a rendu ses conclusions dans lâaffaire Like Company / Google",
+   "resume": "Lâavocat gÃ©nÃ©ral de la CJUE rend ses conclusions dans lâaffaire Like Company/Google, saisie par un tribunal hongrois sur lâapplication de lâarticle 15 de la directive europÃ©enne sur le droit dâauteur.",
    "url": "https://www.mind.eu.com/media/article/droit-dauteur-et-ia-dans-laffaire-like-company-google-lavocat-general-de-la-cjue-propose-de-faire-prevaloir-le-refus-dentrainement-exprime-par-les-medias/",
    "source": "mindmedia.fr",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
-    "secteur": "médias",
-    "sous_theme": "droit d’auteur et IA",
+    "secteur": "mÃ©dias",
+    "sous_theme": "droit dâauteur et IA",
     "utilite": 2
    }
   },
   {
    "rubrique": "Adtech",
    "iso": "2026-11-03T15:33:00.000Z",
-   "titre": "As Publicis closes LiveRamp deal, some brands say they’re jumping ship",
-   "resume": "As Publicis closes its LiveRamp deal, some brands say they are leaving, while Liquid Death’s media chief warns that marketers should worry about a holding company owning their data.",
+   "titre": "As Publicis closes LiveRamp deal, some brands say theyâre jumping ship",
+   "resume": "As Publicis closes its LiveRamp deal, some brands say they are leaving, while Liquid Deathâs media chief warns that marketers should worry about a holding company owning their data.",
    "url": "https://www.marketingdive.com/news/as-publicis-closes-liveramp-deal-some-brands-say-theyre-jumping-ship/873561/",
    "source": "marketingdive.com",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
-    "secteur": "médias",
-    "sous_theme": "propriété des données",
+    "secteur": "mÃ©dias",
+    "sous_theme": "propriÃ©tÃ© des donnÃ©es",
     "utilite": 4
    }
   },
   {
-   "rubrique": "Régulation",
+   "rubrique": "RÃ©gulation",
    "iso": "2026-11-03T15:16:49.000Z",
-   "titre": "\"L'Alliance examine les données envoyées par Meta censées nous permettre d'évaluer les droits voisins\"",
-   "resume": "L’Alliance de la presse d’information générale examine les données transmises par Meta pour évaluer les droits voisins et demande la reprise sans délai de négociations de bonne foi.",
+   "titre": "\"L'Alliance examine les donnÃ©es envoyÃ©es par Meta censÃ©es nous permettre d'Ã©valuer les droits voisins\"",
+   "resume": "LâAlliance de la presse dâinformation gÃ©nÃ©rale examine les donnÃ©es transmises par Meta pour Ã©valuer les droits voisins et demande la reprise sans dÃ©lai de nÃ©gociations de bonne foi.",
    "url": "https://www.journaldunet.com/publishers/1557535-l-alliance-examine-les-donnees-envoyees-par-meta-censees-nous-permettre-d-evaluer-les-droits-voisins/",
    "source": "journaldunet.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 3,
-    "secteur": "médias",
+    "secteur": "mÃ©dias",
     "sous_theme": "droits voisins",
     "utilite": 2
    }
@@ -795,11 +1023,11 @@
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 3,
-    "secteur": "énergie",
+    "secteur": "Ã©nergie",
     "sous_theme": "recharge de flottes",
     "utilite": 1
    }
@@ -807,19 +1035,19 @@
   {
    "rubrique": "Recharge",
    "iso": "2026-11-03T14:56:08.000Z",
-   "titre": "Voiture électrique : pourquoi deux conducteurs sur trois ne programment toujours pas leur recharge",
-   "resume": "Une enquête d’Enedis indique que deux conducteurs de voitures électriques sur trois ne programment toujours pas leur recharge à domicile, une pratique dont la part stagne.",
+   "titre": "Voiture Ã©lectrique : pourquoi deux conducteurs sur trois ne programment toujours pas leur recharge",
+   "resume": "Une enquÃªte dâEnedis indique que deux conducteurs de voitures Ã©lectriques sur trois ne programment toujours pas leur recharge Ã  domicile, une pratique dont la part stagne.",
    "url": "https://www.revolution-energetique.com/actus/voiture-electrique-pourquoi-deux-conducteurs-sur-trois-ne-programment-toujours-pas-leur-recharge/",
    "source": "revolution-energetique.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "étude",
+    "nature": "Ã©tude",
     "nouveaute": 2,
     "profondeur": 2,
     "qualite_source": 3,
-    "secteur": "énergie",
-    "sous_theme": "recharge à domicile",
+    "secteur": "Ã©nergie",
+    "sous_theme": "recharge Ã  domicile",
     "utilite": 1
    }
   },
@@ -827,13 +1055,13 @@
    "rubrique": "IA",
    "iso": "2026-11-03T14:49:11.000Z",
    "titre": "Chord Buys Its Rival Zenlytic To Build An Agentic Version Of A CDP",
-   "resume": "Chord acquires AI startup Zenlytic for $5 million, combining its Zoë data analyst agent with commerce infrastructure to develop an agentic customer data platform; the merged company has about 30 employees.",
+   "resume": "Chord acquires AI startup Zenlytic for $5 million, combining its ZoÃ« data analyst agent with commerce infrastructure to develop an agentic customer data platform; the merged company has about 30 employees.",
    "url": "https://www.adexchanger.com/commerce/chord-buys-its-rival-zenlytic-to-build-an-agentic-version-of-a-cdp/",
    "source": "adexchanger.com",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 4,
     "profondeur": 2,
     "qualite_source": 4,
@@ -845,19 +1073,19 @@
   {
    "rubrique": "Recharge",
    "iso": "2026-11-03T14:45:00.000Z",
-   "titre": "Vols de câbles des bornes de recharge : déjà 850 sites touchés en 2026, une députée veut une protection renforcée",
-   "resume": "En 2026, les vols de câbles touchent déjà 850 sites de recharge et entraînent 637 plaintes pour près de 14 millions d’euros de préjudice, poussant une députée à proposer une protection renforcée.",
+   "titre": "Vols de cÃ¢bles des bornes de recharge : dÃ©jÃ  850 sites touchÃ©s en 2026, une dÃ©putÃ©e veut une protection renforcÃ©e",
+   "resume": "En 2026, les vols de cÃ¢bles touchent dÃ©jÃ  850 sites de recharge et entraÃ®nent 637 plaintes pour prÃ¨s de 14 millions dâeuros de prÃ©judice, poussant une dÃ©putÃ©e Ã  proposer une protection renforcÃ©e.",
    "url": "https://www.bevolt.com/fr-fr/automobile/actualites/actualites-recharge/350701-vols-de-cables-des-bornes-de-recharge-deja-850-sites-touches-en-2026-une-deputee-veut-une-protection-renforcee/",
    "source": "automobile-propre.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 3,
     "secteur": "automobile",
-    "sous_theme": "vols de câbles",
+    "sous_theme": "vols de cÃ¢bles",
     "utilite": 1
    }
   },
@@ -871,7 +1099,7 @@
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "communiqué",
+    "nature": "communiquÃ©",
     "nouveaute": 2,
     "profondeur": 1,
     "qualite_source": 4,
@@ -883,27 +1111,27 @@
   {
    "rubrique": "Recharge",
    "iso": "2026-11-03T13:12:13.000Z",
-   "titre": "Recharge des voitures électriques : Mercedes fait marche arrière et cède ses bornes à Electra",
-   "resume": "Mercedes cède à Electra ses 47 stations rapides, soit 374 points de recharge, transférées au réseau français depuis le 1er novembre 2026.",
+   "titre": "Recharge des voitures Ã©lectriques : Mercedes fait marche arriÃ¨re et cÃ¨de ses bornes Ã  Electra",
+   "resume": "Mercedes cÃ¨de Ã  Electra ses 47 stations rapides, soit 374 points de recharge, transfÃ©rÃ©es au rÃ©seau franÃ§ais depuis le 1er novembre 2026.",
    "url": "https://www.bevolt.com/fr-fr/automobile/actualites/actualites-recharge/350680-recharge-des-voitures-electriques-mercedes-fait-marche-arriere-et-cede-ses-bornes-a-electra/",
    "source": "automobile-propre.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 1,
     "qualite_source": 4,
-    "secteur": "énergie",
+    "secteur": "Ã©nergie",
     "sous_theme": "cession de bornes",
     "utilite": 1
    }
   },
   {
-   "rubrique": "Régulation",
+   "rubrique": "RÃ©gulation",
    "iso": "2026-11-03T13:00:00.000Z",
-   "titre": "[IA Insider] La France préfère taxer les flux de données plutôt que miser sur l’IA",
-   "resume": "La France privilégie la taxation des flux de données plutôt que les investissements dans l’intelligence artificielle, révélant un arbitrage politique entre fiscalité numérique et innovation.",
+   "titre": "[IA Insider] La France prÃ©fÃ¨re taxer les flux de donnÃ©es plutÃ´t que miser sur lâIA",
+   "resume": "La France privilÃ©gie la taxation des flux de donnÃ©es plutÃ´t que les investissements dans lâintelligence artificielle, rÃ©vÃ©lant un arbitrage politique entre fiscalitÃ© numÃ©rique et innovation.",
    "url": "https://www.usine-digitale.fr/intelligence-artificielle/le-recap-ia/ia-insider-la-france-prefere-taxer-les-flux-de-donnees-plutot-que-miser-sur-lia.PDNACXD4VRE5ZJDIOPAU6CTR2Q.html",
    "source": "usine-digitale.fr",
    "lang": "fr",
@@ -914,7 +1142,7 @@
     "profondeur": 2,
     "qualite_source": 4,
     "secteur": "technologie",
-    "sous_theme": "fiscalité des données",
+    "sous_theme": "fiscalitÃ© des donnÃ©es",
     "utilite": 1
    }
   },
@@ -922,18 +1150,18 @@
    "rubrique": "Recharge",
    "iso": "2026-11-03T12:02:24.000Z",
    "titre": "Finding And Using BP Pulse EV Chargers Just Got A Whole Lot Easier",
-   "resume": "BP Pulse joins North America’s largest EV charging roaming network, allowing drivers to locate and use its chargers through a broader network of compatible apps and services.",
+   "resume": "BP Pulse joins North Americaâs largest EV charging roaming network, allowing drivers to locate and use its chargers through a broader network of compatible apps and services.",
    "url": "https://insideevs.com/news/814227/bp-pulse-chargehub-roaming-app-integration/",
    "source": "insideevs.com",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 1,
     "qualite_source": 4,
-    "secteur": "énergie",
-    "sous_theme": "itinérance des bornes",
+    "secteur": "Ã©nergie",
+    "sous_theme": "itinÃ©rance des bornes",
     "utilite": 1
    }
   },
@@ -947,20 +1175,20 @@
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "étude",
+    "nature": "Ã©tude",
     "nouveaute": 2,
     "profondeur": 2,
     "qualite_source": 4,
     "secteur": "grande distribution",
-    "sous_theme": "usage de l’IA",
+    "sous_theme": "usage de lâIA",
     "utilite": 2
    }
   },
   {
    "rubrique": "IA",
    "iso": "2026-11-03T11:04:08.000Z",
-   "titre": "L'IA peut libérer les marques des intermédiaires, ou les enfermer pour de bon",
-   "resume": "L’IA agentique offre aux marques, pour la première fois en deux décennies, la possibilité de contrôler directement leurs interactions en ligne avec les clients, tout en comportant un risque d’enfermement.",
+   "titre": "L'IA peut libÃ©rer les marques des intermÃ©diaires, ou les enfermer pour de bon",
+   "resume": "LâIA agentique offre aux marques, pour la premiÃ¨re fois en deux dÃ©cennies, la possibilitÃ© de contrÃ´ler directement leurs interactions en ligne avec les clients, tout en comportant un risque dâenfermement.",
    "url": "https://www.journaldunet.com/retail/1557369-l-ia-peut-liberer-les-marques-des-intermediaires-ou-les-enfermer-pour-de-bon/",
    "source": "journaldunet.com",
    "lang": "fr",
@@ -978,8 +1206,8 @@
   {
    "rubrique": "Adtech",
    "iso": "2026-11-03T10:52:48.000Z",
-   "titre": "La carte cadeau, un véritable média pour les marques",
-   "resume": "Les distributeurs de cartes cadeaux deviennent des écosystèmes d’audience, permettant aux enseignes de considérer la carte cadeau comme un média à part entière plutôt que comme un produit annexe.",
+   "titre": "La carte cadeau, un vÃ©ritable mÃ©dia pour les marques",
+   "resume": "Les distributeurs de cartes cadeaux deviennent des Ã©cosystÃ¨mes dâaudience, permettant aux enseignes de considÃ©rer la carte cadeau comme un mÃ©dia Ã  part entiÃ¨re plutÃ´t que comme un produit annexe.",
    "url": "https://www.journaldunet.com/retail/1557253-la-carte-cadeau-un-veritable-media-pour-les-marques/",
    "source": "journaldunet.com",
    "lang": "fr",
@@ -989,8 +1217,8 @@
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
-    "secteur": "médias",
-    "sous_theme": "cartes cadeaux média",
+    "secteur": "mÃ©dias",
+    "sous_theme": "cartes cadeaux mÃ©dia",
     "utilite": 4
    }
   },
@@ -1004,11 +1232,11 @@
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "étude",
+    "nature": "Ã©tude",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
-    "secteur": "médias",
+    "secteur": "mÃ©dias",
     "sous_theme": "mesure retail media",
     "utilite": 5
    }
@@ -1017,13 +1245,13 @@
    "rubrique": "Recharge",
    "iso": "2026-11-03T09:17:49.000Z",
    "titre": "Mercedes-Benz Is Giving Up On Its EV Charging Network In Europe",
-   "resume": "Mercedes-Benz sells its European EV fast-charging network to a local operator in a quiet transaction, withdrawing from the continent’s public charging market.",
+   "resume": "Mercedes-Benz sells its European EV fast-charging network to a local operator in a quiet transaction, withdrawing from the continentâs public charging market.",
    "url": "https://insideevs.com/news/814190/mercedes-benz-ev-charging-network-sale-europe/",
    "source": "insideevs.com",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 3,
@@ -1035,19 +1263,19 @@
   {
    "rubrique": "Adtech",
    "iso": "2026-11-03T09:00:00.000Z",
-   "titre": "Digest: Amazon Ad Revenue Nears $20bn Per Quarter; Walmart Brings Shopper Data to Vibe’s CTV Platform",
-   "resume": "Amazon’s ad revenue approaches $20bn per quarter as it bets on an AI buying agent, while Walmart adds shopper data to Vibe’s self-serve CTV platform and Reach titles record the steepest audience declines.",
+   "titre": "Digest: Amazon Ad Revenue Nears $20bn Per Quarter; Walmart Brings Shopper Data to Vibeâs CTV Platform",
+   "resume": "Amazonâs ad revenue approaches $20bn per quarter as it bets on an AI buying agent, while Walmart adds shopper data to Vibeâs self-serve CTV platform and Reach titles record the steepest audience declines.",
    "url": "https://www.exchangewire.com/blog/2026/11/03/digest-amazon-ad-revenue-nears-20bn-per-quarter-walmart-brings-shopper-data-to-vibes-ctv-platform/",
    "source": "exchangewire.com",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
-    "secteur": "médias",
-    "sous_theme": "retail media vidéo",
+    "secteur": "mÃ©dias",
+    "sous_theme": "retail media vidÃ©o",
     "utilite": 5
    }
   },
@@ -1061,12 +1289,12 @@
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 1,
     "qualite_source": 3,
-    "secteur": "médias",
-    "sous_theme": "données de dépenses",
+    "secteur": "mÃ©dias",
+    "sous_theme": "donnÃ©es de dÃ©penses",
     "utilite": 4
    }
   },
@@ -1074,7 +1302,7 @@
    "rubrique": "IA",
    "iso": "2026-11-03T07:45:12.000Z",
    "titre": "The Marketing Week Podcast: Implementing AI effectively with Rightmove CMO Matt Bushby",
-   "resume": "Recorded live at the Festival of Marketing, the Marketing Week Podcast features Rightmove CMO Matt Bushby discussing the company’s approach to implementing AI effectively.",
+   "resume": "Recorded live at the Festival of Marketing, the Marketing Week Podcast features Rightmove CMO Matt Bushby discussing the companyâs approach to implementing AI effectively.",
    "url": "https://www.marketingweek.com/podcast-ai-effectively-rightmove/",
    "source": "marketingweek.com",
    "lang": "en",
@@ -1085,21 +1313,21 @@
     "profondeur": 2,
     "qualite_source": 4,
     "secteur": "immobilier",
-    "sous_theme": "mise en œuvre IA",
+    "sous_theme": "mise en Åuvre IA",
     "utilite": 2
    }
   },
   {
    "rubrique": "Recharge",
    "iso": "2026-11-03T07:32:23.000Z",
-   "titre": "500 km d'autonomie en 5 minutes : on a découvert la recharge électrique du futur !",
-   "resume": "À Wuhu, Chery présente Volt-Dragon Charging, un système de recharge pouvant délivrer jusqu’à 1,44 MW et ajouter 500 km d’autonomie en cinq minutes.",
+   "titre": "500 km d'autonomie en 5 minutes : on a dÃ©couvert la recharge Ã©lectrique du futur !",
+   "resume": "Ã Wuhu, Chery prÃ©sente Volt-Dragon Charging, un systÃ¨me de recharge pouvant dÃ©livrer jusquâÃ  1,44 MW et ajouter 500 km dâautonomie en cinq minutes.",
    "url": "https://www.bevolt.com/fr-fr/automobile/actualites/innovation/344608-500-km-dautonomie-en-5-minutes-on-a-decouvert-la-recharge-electrique-du-futur/",
    "source": "automobile-propre.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
@@ -1112,17 +1340,17 @@
    "rubrique": "Mesure",
    "iso": "2026-11-03T06:45:03.000Z",
    "titre": "Mentions, engagement, ROI : un an d'influence commerciale en France en chiffres",
-   "resume": "En France, l’activité des créateurs recule légèrement mais reste soutenue, tandis que les taux d’engagement varient fortement selon le secteur des annonceurs, relève le deuxième baromètre.",
+   "resume": "En France, lâactivitÃ© des crÃ©ateurs recule lÃ©gÃ¨rement mais reste soutenue, tandis que les taux dâengagement varient fortement selon le secteur des annonceurs, relÃ¨ve le deuxiÃ¨me baromÃ¨tre.",
    "url": "https://www.journaldunet.com/martech/1557469-mentions-engagement-roi-la-big-picture-de-l-influence-commerciale-en-france/",
    "source": "journaldunet.com",
    "lang": "fr",
    "a_retenir": false,
    "attrs": {
-    "nature": "étude",
+    "nature": "Ã©tude",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
-    "secteur": "publicité",
+    "secteur": "publicitÃ©",
     "sous_theme": "marketing d'influence",
     "utilite": 3
    }
@@ -1130,18 +1358,18 @@
   {
    "rubrique": "Mesure",
    "iso": "2026-11-03T06:40:00.000Z",
-   "titre": "IAB Europe’s Latest Retail Media Report Reveals Growing Gap Between Buyer Expectations and Measurement Capabilities",
-   "resume": "IAB Europe’s latest report finds that 71% of European retail media buyers have partnered with retailers for over a year, while measurement capabilities lag buyer expectations.",
+   "titre": "IAB Europeâs Latest Retail Media Report Reveals Growing Gap Between Buyer Expectations and Measurement Capabilities",
+   "resume": "IAB Europeâs latest report finds that 71% of European retail media buyers have partnered with retailers for over a year, while measurement capabilities lag buyer expectations.",
    "url": "https://iabeurope.eu/iab-europes-latest-retail-media-report-reveals-growing-gap-between-buyer-expectations-and-measurement-capabilities/",
    "source": "iabeurope.eu",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "étude",
+    "nature": "Ã©tude",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
-    "secteur": "médias",
+    "secteur": "mÃ©dias",
     "sous_theme": "mesure retail media",
     "utilite": 5
    }
@@ -1149,8 +1377,8 @@
   {
    "rubrique": "Contenus",
    "iso": "2026-11-03T05:01:00.000Z",
-   "titre": "‘They hold us hostage’: Publishers furious over terms change still can’t quit Facebook",
-   "resume": "Publishers challenge Meta’s new AI-scraping terms and test their negotiating leverage, but their continued reliance on Facebook limits their ability to leave the platform.",
+   "titre": "âThey hold us hostageâ: Publishers furious over terms change still canât quit Facebook",
+   "resume": "Publishers challenge Metaâs new AI-scraping terms and test their negotiating leverage, but their continued reliance on Facebook limits their ability to leave the platform.",
    "url": "https://digiday.com/media/they-hold-us-hostage-publishers-furious-over-terms-change-still-cant-quit-facebook/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss",
    "source": "digiday.com",
    "lang": "en",
@@ -1160,7 +1388,7 @@
     "nouveaute": 3,
     "profondeur": 3,
     "qualite_source": 4,
-    "secteur": "médias",
+    "secteur": "mÃ©dias",
     "sous_theme": "conditions de scraping IA",
     "utilite": 2
    }
@@ -1169,18 +1397,18 @@
    "rubrique": "IA",
    "iso": "2026-11-02T15:49:00.000Z",
    "titre": "After AI backlash, Svedka challenges consumers to create Super Bowl ad",
-   "resume": "After backlash over its AI-produced 2026 Super Bowl debut, Svedka invites consumers to create its next big-game ad, shifting the vodka brand’s campaign toward audience participation.",
+   "resume": "After backlash over its AI-produced 2026 Super Bowl debut, Svedka invites consumers to create its next big-game ad, shifting the vodka brandâs campaign toward audience participation.",
    "url": "https://www.marketingdive.com/news/after-ai-backlash-svedka-challenges-consumers-to-create-super-bowl-ad/873445/",
    "source": "marketingdive.com",
    "lang": "en",
    "a_retenir": false,
    "attrs": {
-    "nature": "actualité",
+    "nature": "actualitÃ©",
     "nouveaute": 3,
     "profondeur": 2,
     "qualite_source": 4,
-    "secteur": "médias",
-    "sous_theme": "publicité participative",
+    "secteur": "mÃ©dias",
+    "sous_theme": "publicitÃ© participative",
     "utilite": 2
    }
   }
