@@ -433,6 +433,14 @@
   } else { render(); }
  }
 
+ function luSwipe(url, li){
+  if (!url) return;
+  lastSwipe = Date.now();
+  marquerLu(url);
+  if (li){ li.classList.add('removing-left'); setTimeout(function(){ render(); }, 180); }
+  else render();
+ }
+
  function bindSwipe(){
   var list = $('#list'); if (!list) return;
   list.addEventListener('touchstart', function(e){
@@ -447,19 +455,21 @@
    var dy = e.touches[0].clientY - SW.y0;
    if (!SW.active){
     if (Math.abs(dy) > Math.abs(dx) + 4){ SW.el = null; return; }
-    if (dx < 12) return;
+    if (Math.abs(dx) < 12) return;
     SW.active = true; SW.el.classList.add('swiping');
    }
-   SW.dx = Math.min(dx, 150);
+   SW.dx = Math.max(-150, Math.min(dx, 150));
    SW.el.style.transform = 'translateX(' + SW.dx + 'px)';
-   SW.el.style.opacity = String(Math.max(0.3, 1 - SW.dx / 240));
+   SW.el.style.opacity = String(Math.max(0.3, 1 - Math.abs(SW.dx) / 240));
+   SW.el.classList.toggle('swiping-left', SW.dx < 0);
   }, { passive:true });
   list.addEventListener('touchend', function(){
    var li = SW.el; if (!li) return;
    var dx = SW.dx, url = li.getAttribute('data-url');
-   li.classList.remove('swiping'); li.style.transform = ''; li.style.opacity = '';
+   li.classList.remove('swiping'); li.classList.remove('swiping-left'); li.style.transform = ''; li.style.opacity = '';
    SW.el = null; SW.dx = 0; SW.active = false;
    if (dx > 90) ecarter(url, li);
+   else if (dx < -90) luSwipe(url, li);
   });
   list.addEventListener('click', function(e){
    if (Date.now() - lastSwipe < 400){ e.preventDefault(); e.stopPropagation(); return; }
