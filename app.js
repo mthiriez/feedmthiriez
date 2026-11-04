@@ -4,7 +4,7 @@
  var HAS_REMOTE = !!(CFG.supabaseUrl && CFG.supabaseAnonKey);
  var LS_KEY = 'feed.interactions.v1';
  var LS_SESSION = 'feed.session.v1';
- var state = { items:[], inter:{}, sort:'pertinence', filter:'Toutes', q:'', favOnly:false, session:null, source:'local', limit:60 };
+ var state = { items:[], inter:{}, hidden: hiddenRead(), sort:'pertinence', filter:'Toutes', q:'', favOnly:false, session:null, source:'local', limit:60 };
 
  function $(s){ return document.querySelector(s); }
  function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
@@ -12,6 +12,9 @@
  /* ---------- stockage ---------- */
  function localRead(){ try { return JSON.parse(localStorage.getItem(LS_KEY)||'{}'); } catch(e){ return {}; } }
  function localWrite(o){ try { localStorage.setItem(LS_KEY, JSON.stringify(o)); } catch(e){} }
+ var LS_HIDDEN = 'feed.hidden.v1';
+ function hiddenRead(){ try { return JSON.parse(localStorage.getItem(LS_HIDDEN)||'{}'); } catch(e){ return {}; } }
+ function hiddenWrite(o){ try { localStorage.setItem(LS_HIDDEN, JSON.stringify(o)); } catch(e){} }
  function sessionRead(){ try { return JSON.parse(localStorage.getItem(LS_SESSION)||'null'); } catch(e){ return null; } }
  function sessionWrite(s){ try { s ? localStorage.setItem(LS_SESSION, JSON.stringify(s)) : localStorage.removeItem(LS_SESSION); } catch(e){} }
 
@@ -283,7 +286,7 @@
   var list = $('#list');
   var sig = state.sort+'|'+state.filter+'|'+state.q+'|'+(state.favOnly?1:0);
   if (state._sig !== sig){ state._sig = sig; state.limit = 60; }
-  var rows = scored().filter(function(o){ return matches(o.it); });
+  var rows = scored().filter(function(o){ return matches(o.it) && !state.hidden[o.it.url]; });
   if (state.sort === 'date') rows.sort(function(a,b){ return Date.parse(b.it.iso)-Date.parse(a.it.iso); });
   else if (state.sort === 'source') rows.sort(function(a,b){ return (a.it.source||'').localeCompare(b.it.source||'') || (Date.parse(b.it.iso)-Date.parse(a.it.iso)); });
   else { rows.sort(function(a,b){ return b.s-a.s; }); rows = withDiscovery(rows); }
@@ -317,7 +320,59 @@
   });
  }
 
- /* ---------- profil et stats ---------- */
+ 
+ /* ---------- balayage : écarter un article ---------- */
+ var SW = { el:null, x0:0, y0:0, dx:0, active:false };
+ var lastSwipe = 0;
+
+ function ecarter(url, li){
+  if (!url) return;
+  state.hidden[url] = 1; hiddenWrite(state.hidden);
+  var cur = state.inter[url] || {};
+  var rank = 0;
+  scored().sort(function(a,b){ return b.s-a.s; }).forEach(function(o,i){ if (o.it.url===url) rank=i+1; });
+  saveInteraction(url, { vote:-1, rank: rank || cur.rank || 0 });
+  lastSwipe = Date.now();
+  if (li){
+    li.classList.add('removing');
+    setTimeout(function(){ render(); }, 180);
+  } else { render(); }
+ }
+
+ function bindSwipe(){
+  var list = $('#list'); if (!list) return;
+  list.addEventListener('touchstart', function(e){
+   if (e.touches.length !== 1) return;
+   var t = e.target; var li = t && t.closest ? t.closest('li.item') : null;
+   if (!li) return;
+   SW.el = li; SW.x0 = e.touches[0].clientX; SW.y0 = e.touches[0].clientY; SW.dx = 0; SW.active = false;
+  }, { passive:true });
+  list.addEventListener('touchmove', function(e){
+   if (!SW.el || e.touches.length !== 1) return;
+   var dx = e.touches[0].clientX - SW.x0;
+   var dy = e.touches[0].clientY - SW.y0;
+   if (!SW.active){
+    if (Math.abs(dy) > Math.abs(dx) + 4){ SW.el = null; return; }
+    if (dx < 12) return;
+    SW.active = true; SW.el.classList.add('swiping');
+   }
+   SW.dx = Math.min(dx, 150);
+   SW.el.style.transform = 'translateX(' + SW.dx + 'px)';
+   SW.el.style.opacity = String(Math.max(0.3, 1 - SW.dx / 240));
+  }, { passive:true });
+  list.addEventListener('touchend', function(){
+   var li = SW.el; if (!li) return;
+   var dx = SW.dx, url = li.getAttribute('data-url');
+   li.classList.remove('swiping'); li.style.transform = ''; li.style.opacity = '';
+   SW.el = null; SW.dx = 0; SW.active = false;
+   if (dx > 90) ecarter(url, li);
+  });
+  list.addEventListener('click', function(e){
+   if (Date.now() - lastSwipe < 400){ e.preventDefault(); e.stopPropagation(); }
+  }, true);
+ }
+
+/* ---------- profil et stats ---------- */
  function stats(){
   var votes=0, ups=0, favs=0, top10=0, top10up=0;
   for (var url in state.inter){
@@ -359,15 +414,18 @@
   } else {
    parts.push('<p class="hint">La synchronisation entre appareils sera active dès que Supabase sera configuré (URL et clé publique dans config.js). D\'ici là, les votes restent sur cet appareil.</p>');
   }
-  parts.push('<h3>Réinitialiser</h3>');
+  var nh = Object.keys(state.hidden||{}).length;
+   if (nh) parts.push('<h3>Articles écartés</h3><button class="btn" id="unhide">Réafficher '+nh+' article'+(nh>1?'s':'')+'</button>');
+   parts.push('<h3>Réinitialiser</h3>');
   parts.push('<button class="btn" id="resetVotes">Effacer mes votes</button>');
   $('#sheet').innerHTML = parts.join('');
   $('#panel').classList.add('open');
   $('#closeSheet').onclick = closePanel;
   var sv = $('#signout'); if (sv) sv.onclick = function(){ state.session=null; sessionWrite(null); closePanel(); boot(); };
   var si = $('#signin'); if (si) si.onclick = function(){ signIn($('#email').value); };
+   var uh = $('#unhide'); if (uh) uh.onclick = function(){ state.hidden={}; hiddenWrite({}); closePanel(); render(); };
    var vf = $('#verify'); if (vf) vf.onclick = function(){ verifyCode($('#email').value, $('#code').value); };
-  $('#resetVotes').onclick = function(){ if (!confirm('Effacer tous les votes et favoris ?')) return; state.inter={}; localWrite({}); if (HAS_REMOTE && state.session) api('/rest/v1/'+(CFG.table||'interactions')+'?url=not.is.null',{method:'DELETE'}).catch(function(){}); closePanel(); render(); };
+  $('#resetVotes').onclick = function(){ if (!confirm('Effacer tous les votes et favoris ?')) return; state.inter={}; localWrite({}); state.hidden={}; hiddenWrite({}); if (HAS_REMOTE && state.session) api('/rest/v1/'+(CFG.table||'interactions')+'?url=not.is.null',{method:'DELETE'}).catch(function(){}); closePanel(); render(); };
  }
  function closePanel(){ $('#panel').classList.remove('open'); }
 
@@ -393,7 +451,7 @@
     .catch(function(e){ alert('Code refusé : '+e.message); });
   }
 
-  function boot(){
+  function boot(){ bindSwipe();
   loadSession().then(function(){ return loadInteractions(); }).then(function(){
    if (state.source==='remote'){ var st=$('#status'); st.textContent='Synchronisé entre vos appareils'; }
    render();
