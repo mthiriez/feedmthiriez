@@ -47,6 +47,9 @@
 
  function refreshIfNeeded(){
    if (!state.session || !state.session.refresh_token) return Promise.resolve();
+   // un autre onglet a peut-être déjà renouvelé le jeton : on reprend le sien avant d'appeler
+   var _st = sessionRead();
+   if (_st && _st.refresh_token && state.session && _st.refresh_token !== state.session.refresh_token) { state.session = _st; }
    if (state.session.expires_at && state.session.expires_at - 60000 > Date.now()) return Promise.resolve();
    if (refreshIfNeeded._inflight) return refreshIfNeeded._inflight;
    refreshIfNeeded._inflight = api('/auth/v1/token?grant_type=refresh_token', { method:'POST', body: JSON.stringify({ refresh_token: state.session.refresh_token }) })
@@ -61,7 +64,7 @@
     })
     .catch(function(e){
       // Jeton vraiment invalide : on repart de zéro. Panne réseau ou serveur : on garde la session pour réessayer plus tard.
-      if (e && (e.status === 400 || e.status === 401)) { state.session = null; sessionWrite(null); }
+      if (e && (e.status === 400 || e.status === 401)) { var _cur = sessionRead(); if (!_cur || _cur.refresh_token === state.session.refresh_token) { state.session = null; sessionWrite(null); } else { state.session = _cur; } }
       else if (window.console) console.warn('refresh différé :', e && e.message);
       return null;
     })
