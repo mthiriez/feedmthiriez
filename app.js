@@ -50,6 +50,10 @@
   return Math.max(-1, Math.min(1, v));
  }
  function ouvrir(url){ if (!url) return; state._open = { url:url, at:Date.now() }; sigRec(url, { o:1 }); }
+ var ANALYSES = {};
+ function loadAnalyses(){
+  return fetch('analyses.json',{cache:'no-store'}).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){ if (d && d.items) ANALYSES = d.items; state._anaLoaded = true; }).catch(function(){ state._anaLoaded = true; });
+ }
  function finLecture(){
   var o = state._open; if (!o) return;
   state._open = null;
@@ -337,14 +341,15 @@
   var pct = Math.round(o.s*100);
   var why = o.explore ? 'découverte · sujet peu exploré' : reason(o);
   return '<li class="'+cls+'" data-url="'+esc(it.url)+'">'
-   + '<div class="meta"><span class="rub">'+esc(it.rubrique||'')+'</span><span>'+esc(hhmm(it.iso))+'</span><span>'+flagHtml(it.source)+esc(it.source||'')+'</span><span class="score" title="Affinité '+(o.aff>0?'+':'')+Math.round(o.aff*100)+' · qualité '+Math.round(o.q*100)+'"><b>'+pct+'</b></span></div>'
-   + '<p class="h3"><a href="'+esc(it.url)+'" target="_blank" rel="noopener">'+esc(it.titre)+'</a></p>'
+   + '<div class="meta"><span class="rub">'+esc(it.rubrique||'')+'</span>'+(ANALYSES[it.url]?'<span class="rub ana-b">analyse</span>':'')+'<span>'+esc(hhmm(it.iso))+'</span><span>'+flagHtml(it.source)+esc(it.source||'')+'</span><span class="score" title="Affinité '+(o.aff>0?'+':'')+Math.round(o.aff*100)+' · qualité '+Math.round(o.q*100)+'"><b>'+pct+'</b></span></div>'
+   + '<p class="h3"><a href="'+esc(it.url)+'" data-fiche="1">'+esc(it.titre)+'</a></p>'
    + (it.resume?'<p class="res">'+esc(it.resume)+'</p>':'')
    + (why?'<p class="why">'+esc(why)+'</p>':'')
    + '<div class="acts">'
    + '<button class="act '+((r.vote<0)?'on-down':'')+'" data-vote="-1" title="Pas intéressant">👎</button>'
    + '<button class="act '+((r.fav)?'on-fav':'')+'" data-vote="fav" title="Garder pour plus tard">★</button>'
-   + '<a class="act open" href="'+esc(it.url)+'" target="_blank" rel="noopener">ouvrir ↗</a>'
+   + '<button class="act" data-fiche="1" title="Fiche et analyse">fiche</button>'
+    + '<a class="act open" href="'+esc(it.url)+'" target="_blank" rel="noopener">ouvrir ↗</a>'
    + '</div></li>';
  }
 
@@ -410,6 +415,13 @@
       scored().sort(function(a,b){return b.s-a.s;}).forEach(function(o,i){ if (o.it.url===url) rank=i+1; });
       saveInteraction(url, { vote: nv, rank: rank || cur.rank || 0 }); }
     render();
+   };
+  });
+  Array.prototype.forEach.call(list.querySelectorAll('[data-fiche]'), function(a){
+   a.onclick = function(ev){
+    ev.preventDefault(); ev.stopPropagation();
+    var li = a.closest('li');
+    openFiche(a.getAttribute('href') || (li ? li.getAttribute('data-url') : ''));
    };
   });
  }
@@ -511,6 +523,81 @@ function compterNonLus(){
   for (var k in counts){ var o=counts[k]; if (o.k!==dim) continue; var t=o.u+o.d; if (!t) continue; var p=(o.u+1)/(t+2); arr.push({v:o.v,p:p,n:t,u:o.u}); }
   arr.sort(function(a,b){ return (b.p-0.5)*Math.min(b.n,6) - (a.p-0.5)*Math.min(a.n,6); });
   return arr.slice(0,n);
+ }
+
+
+ function horodatage(iso){
+  try { var d = new Date(iso); if (isNaN(d.getTime())) return ''; return d.toLocaleDateString('fr-FR',{day:'numeric',month:'short'}) + ' · ' + d.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}).replace(':','h'); } catch(e){ return ''; }
+ }
+ function jauge(label, v, max){
+  var n = Number(v||0); if (!n) return '';
+  var p = Math.max(6, Math.min(100, Math.round(n/(max||3)*100)));
+  return '<div class="ab"><div class="k"><span>'+esc(label)+'</span><span>'+n+'/'+(max||3)+'</span></div><div class="t"><i style="width:'+p+'%"></i></div></div>';
+ }
+ function openFiche(url){
+  var it = byUrl[url]; if (!it) return;
+  if (!state._anaLoaded){ loadAnalyses().then(function(){ openFiche(url); }); return; }
+  var o = scored().filter(function(x){ return x.it.url === url; })[0] || { s:0, aff:0, q:0, parts:[] };
+  var a = it.attrs || {};
+  var A = ANALYSES[url];
+  var h = '<button class="close" id="closeSheet" aria-label="Fermer">×</button>';
+  h += '<div class="dt"><span class="rub">'+esc(it.rubrique||'')+'</span><span>'+flagHtml(it.source)+esc(it.source||'')+'</span><span>'+esc(horodatage(it.iso))+'</span><span class="score">score <b>'+Math.round(o.s*100)+'</b></span></div>';
+  h += '<h2>'+esc(it.titre)+'</h2>';
+  if (it.resume) h += '<p class="lede">'+esc(it.resume)+'</p>';
+  if (it.a_retenir) h += '<h3>À retenir</h3><p class="lede">'+esc(it.a_retenir)+'</p>';
+  h += '<h3>Analyse approfondie</h3>';
+  if (A && (A.texte || (A.points && A.points.length))){
+   h += '<div class="ana">';
+   if (A.texte) h += String(A.texte).split(/\n{2,}/).filter(function(p){ return p.trim(); }).map(function(p){ return '<p>'+esc(p.trim())+'</p>'; }).join('');
+   if (A.points && A.points.length) h += '<ul>'+A.points.map(function(p){ return '<li>'+esc(p)+'</li>'; }).join('')+'</ul>';
+   h += '</div><p class="src">Analyse du '+esc(A.date||'')+(A.mode?' · '+esc(A.mode):'')+'</p>';
+  } else {
+   h += '<p class="hint">L’analyse lit l’article en entier, le replace dans son contexte et dit ce qui bouge. Elle n’est produite que si vous la demandez, puis reste attachée à l’article.</p>';
+   h += '<button class="btn primary" id="demandeAna">Analyser cet article</button>';
+   h += '<p class="hint" id="anaEtat"></p>';
+  }
+  var b1 = jauge('profondeur', a.profondeur, 3), b2 = jauge('nouveauté', a.nouveaute, 3), b3 = jauge('utilité', a.utilite, 3), b4 = jauge('qualité de source', a.qualite_source, 3);
+  if (b1||b2||b3||b4){
+   h += '<h3>Lecture</h3>' + b1 + b2 + b3 + b4;
+   var tags = [];
+   if (a.nature) tags.push(a.nature);
+   if (a.secteur) tags.push(a.secteur);
+   if (a.sous_theme) tags.push(a.sous_theme);
+   if (tags.length) h += '<p class="src">'+tags.join(' · ')+'</p>';
+  }
+  var why = reason(o);
+  h += '<h3>Pourquoi ici</h3><p class="hint">'+esc(why || 'score de qualité et de fraîcheur, sans affinité marquée')+'</p>';
+  h += '<a class="btn" href="'+esc(it.url)+'" target="_blank" rel="noopener" style="display:block;text-align:center;margin-top:14px">Ouvrir l’article ↗</a>';
+  var sheet = $('#sheet');
+  sheet.innerHTML = h;
+  $('#panel').classList.add('open');
+  sheet.scrollTop = 0;
+  $('#closeSheet').onclick = closePanel;
+  var btn = $('#demandeAna');
+  if (btn) btn.onclick = function(){ demanderAna(it, btn); };
+  ouvrir(url); marquerLu(url);
+ }
+
+ function demanderAna(it, btn){
+  var etat = $('#anaEtat');
+  if (CFG.analyseEndpoint){
+   btn.disabled = true; btn.textContent = 'Analyse en cours…';
+   if (etat) etat.textContent = 'Lecture de l’article et mise en perspective.';
+   fetch(CFG.analyseEndpoint, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ url: it.url, titre: it.titre, resume: it.resume, rubrique: it.rubrique, source: it.source }) })
+    .then(function(r){ if (!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+    .then(function(d){
+     if (!d || !d.texte) throw new Error('réponse vide');
+     ANALYSES[it.url] = { texte:d.texte, points:d.points||[], date:d.date||new Date().toISOString().slice(0,10), mode:d.mode||'' };
+     openFiche(it.url);
+    })
+    .catch(function(e){
+     btn.disabled = false; btn.textContent = 'Analyser cet article';
+     if (etat) etat.textContent = 'Échec : ' + e.message + '. Réessayez, ou demandez-moi dans WhatsApp.';
+    });
+   return;
+  }
+  window.open('https://wa.me/33682522979?text=' + encodeURIComponent('Analyse approfondie : ' + it.titre + ' — ' + it.url), '_blank');
+  if (etat) etat.textContent = 'Demande envoyée dans WhatsApp : l’analyse s’ajoutera ici après génération.';
  }
 
  function openPanel(){
