@@ -487,7 +487,7 @@
   list.addEventListener('click', function(e){
    if (Date.now() - lastSwipe < 400){ e.preventDefault(); e.stopPropagation(); return; }
    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
-   if (a) { var uo = a.getAttribute('href'); marquerLu(uo); ouvrir(uo); }
+   if (a) { var uo = a.getAttribute('href'); if (!a.hasAttribute('data-fiche')) { marquerLu(uo); ouvrir(uo); } }
   }, true);
  }
 
