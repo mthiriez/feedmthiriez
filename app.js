@@ -596,7 +596,7 @@ function compterNonLus(){
     });
    return;
   }
-  window.open('https://wa.me/33682522979?text=' + encodeURIComponent('Analyse approfondie : ' + it.titre + ' — ' + it.url), '_blank');
+  window.open('https://wa.me/?text=' + encodeURIComponent('Analyse approfondie : ' + it.titre + ' — ' + it.url), '_blank');
   if (etat) etat.textContent = 'Demande envoyée dans WhatsApp : l’analyse s’ajoutera ici après génération.';
  }
 
