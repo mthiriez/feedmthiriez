@@ -89,6 +89,22 @@ footer{border-top:1px solid var(--line);padding:16px 0 40px;color:var(--muted);f
  #sort{order:6;flex:0 0 auto;font-size:16px;padding:7px 4px}
 }
 @media(max-width:360px){.brand{display:none}}
+/* --- fiche article --- */
+.dt{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin:4px 0 2px}
+.dt .score{margin-left:auto;letter-spacing:0;text-transform:none}
+.sheet h2{font-size:19px;line-height:1.3;margin:10px 0 10px;padding-right:26px}
+.lede{font-size:15px;line-height:1.52;color:#33384a;margin:0 0 10px}
+.ab{margin:9px 0}
+.ab .k{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:3px}
+.ab .t{height:5px;background:var(--chip);border-radius:3px;overflow:hidden}
+.ab .t i{display:block;height:100%;background:var(--ink);border-radius:3px}
+.ana{font-size:15px;line-height:1.55;color:#33384a}
+.ana p{margin:0 0 11px}
+.ana ul{margin:0 0 12px;padding-left:18px}
+.ana li{margin:3px 0}
+.src{font-size:11.5px;color:var(--muted);margin:6px 0 0}
+.ana-b{background:#e9efff;color:#1a3df0}
+@media(max-width:430px){.dt{font-size:10.5px;gap:6px}}
 </style>
 </head>
 <body>
@@ -113,7 +129,7 @@ footer{border-top:1px solid var(--line);padding:16px 0 40px;color:var(--muted);f
 <main class="wrap"><div id="list"><p class="empty">Chargement…</p></div></main>
 <footer class="wrap"><span id="foot"></span></footer>
 <div class="panel" id="panel"><div class="sheet" id="sheet"></div></div>
-<script src="config.js?v=20261104o"></script>
-<script src="app.js?v=20261104o"></script>
+<script src="config.js?v=20261105a"></script>
+<script src="app.js?v=20261105a"></script>
 </body>
 </html>
