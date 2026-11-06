@@ -1,7 +1,20 @@
 {
  "meta": {
-  "updated": "2026-11-05T08:30:00Z",
-  "count": 0
+  "updated": "2026-11-06T09:29:25Z",
+  "count": 1
  },
- "items": {}
+ "items": {
+  "https://digiday.com/media-buying/digiday-media-buying-summit-october-recap-assessing-the-ups-and-challenges-of-ais-spread-across-the-media-agency-landscape": {
+   "texte": "Compte rendu du Media Buying Summit d'octobre, publié le 6 novembre : dix sessions dominées par un même basculement, l'IA passée du statut de promesse à celui de ligne de coût à justifier.\n\nSur l'IA, le ton a changé. Tony Russo (Mile Marker) résume l'année : des directions qui demandaient d'« adopter l'IA à tout prix » et pratiquaient le « token maxxing » à plusieurs centaines de millions de dollars, avant de constater que « ce n'est plus un robinet ouvert ». Christina Riccitelli (OpAd) reconnaît que les agences cherchent encore comment monétiser en interne ce qu'elles ne facturent pas au client.\n\nSur le retail media, Aisha Khan (Dentsu) acte une consolidation inévitable de la longue traîne des réseaux, mais situe la croissance à venir dans le magasin physique et dans une mesure incrémentale plus sophistiquée — « agile MMM » — pour sortir le canal du seul lower funnel.\n\nSur l'agentique, David Dweck (Go Fish) prévient que construire un agent par-dessus Meta ou Google revient à arriver « des années en retard ». Son pari : supprimer des couches dans le DSP et côté supply pour acheter moins cher un inventaire de meilleure qualité. Gila Wilensky (Monks) annonce pour sa part un métier à part entière, celui de contrôleur de production IA, et rappelle que l'IA ne prend pas de risque et n'est pas créative.\n\nDerrière le discours, la valeur se déplace vers ce qui n'est pas automatisable : inventaire propriétaire, donnée first party, mesure incrémentale. Le débat sur le principal media est perdu à 72 % par ses défenseurs, mais tout le monde s'accorde sur l'absence de boîte noire sur les coûts et la mesure.",
+   "points": [
+    "Les coûts d'IA deviennent un poste budgétaire débattu, après une année de dépenses sans contrôle.",
+    "Retail media : consolidation de la longue traîne attendue, croissance suivante dans le magasin physique.",
+    "La mesure incrémentale remplace le ROAS comme argument de budget.",
+    "L'agentique n'a de valeur qu'avec un accès à de l'inventaire et à une audience exclusifs.",
+    "Transparence des coûts et de la mesure posée comme condition de la relation agence-annonceur."
+   ],
+   "date": "2026-11-06",
+   "mode": "lecture intégrale"
+  }
+ }
 }
