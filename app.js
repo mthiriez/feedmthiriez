@@ -4,7 +4,7 @@
  var HAS_REMOTE = !!(CFG.supabaseUrl && CFG.supabaseAnonKey);
  var LS_KEY = 'feed.interactions.v1';
  var LS_SESSION = 'feed.session.v1';
- var state = { items:[], inter:{}, hidden: hiddenRead(), read: readRead(), sig: sigRead(), unreadOnly: true, sort:'pertinence', filter:'Toutes', q:'', favOnly:false, session:null, source:'local', limit:60 };
+ var state = { items:[], inter:{}, hidden: hiddenRead(), read: readRead(), sig: sigRead(), slid:{}, unreadOnly: true, sort:'pertinence', filter:'Toutes', q:'', favOnly:false, session:null, source:'local', limit:60 };
 
  function $(s){ return document.querySelector(s); }
  function decodeEnt(s){
@@ -377,7 +377,7 @@
   var list = $('#list');
   var sig = state.sort+'|'+state.filter+'|'+state.q+'|'+(state.favOnly?1:0);
   if (state._sig !== sig){ state._sig = sig; state.limit = 60; }
-  var rows = scored().filter(function(o){ return matches(o.it) && !state.hidden[o.it.url] && (!state.unreadOnly || !state.read[o.it.url]); });
+  var rows = scored().filter(function(o){ return matches(o.it) && !state.hidden[o.it.url] && !state.slid[o.it.url] && (!state.unreadOnly || !state.read[o.it.url]); });
   if (state.sort === 'date') rows.sort(function(a,b){ return Date.parse(b.it.iso)-Date.parse(a.it.iso); });
   else if (state.sort === 'source') rows.sort(function(a,b){ return (a.it.source||'').localeCompare(b.it.source||'') || (Date.parse(b.it.iso)-Date.parse(a.it.iso)); });
   else { rows.sort(function(a,b){ return b.s-a.s; }); rows = withDiscovery(rows); }
@@ -448,10 +448,22 @@
  function luSwipe(url, li){
   if (!url) return;
   lastSwipe = Date.now();
+  var dejaLu = !!state.read[url];
+  state.slid[url] = 1;
   if (state.sig[url]){ delete state.sig[url]; sigWrite(state.sig); }
   marquerLu(url);
-  if (li){ li.classList.add('removing-left'); setTimeout(function(){ render(); }, 180); }
-  else render();
+  if (li){
+   li.classList.add('removing-left');
+   li.style.transform = 'translateX(-115%)';
+   li.style.opacity = '0';
+   setTimeout(function(){ render(); }, 180);
+  } else render();
+  var st = $('#status');
+  if (st){
+   st.textContent = dejaLu ? 'Déjà lu · article rangé' : 'Marqué lu';
+   clearTimeout(state._luT);
+   state._luT = setTimeout(function(){ if (st.textContent.indexOf('lu') >= 0) st.textContent = ''; }, 1600);
+  }
  }
 
  function bindSwipe(){
