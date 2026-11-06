@@ -1,7 +1,7 @@
 {
  "meta": {
-  "updated": "2026-11-06T09:29:25Z",
-  "count": 1
+  "updated": "2026-11-06T09:37:02Z",
+  "count": 2
  },
  "items": {
   "https://digiday.com/media-buying/digiday-media-buying-summit-october-recap-assessing-the-ups-and-challenges-of-ais-spread-across-the-media-agency-landscape": {
@@ -12,6 +12,18 @@
     "La mesure incrémentale remplace le ROAS comme argument de budget.",
     "L'agentique n'a de valeur qu'avec un accès à de l'inventaire et à une audience exclusifs.",
     "Transparence des coûts et de la mesure posée comme condition de la relation agence-annonceur."
+   ],
+   "date": "2026-11-06",
+   "mode": "lecture intégrale"
+  },
+  "https://ecommercenews.eu/zalando-sees-new-revenue-potential-in-external-shops": {
+   "texte": "Zalando ouvre sa plateforme à des produits vendus par d'autres boutiques en ligne, en commençant par Westwing, et prévoit dès 2027 qu'un agent IA finalise l'achat sans que le client quitte son application. Le service, baptisé Zalando Extended, doit rapporter deux fois : par une commission prélevée sur la vente externe et par la publicité que ces marchands achèteront sur Zalando. Le groupe n'a publié ni taux de commission, ni conditions d'accès, ni calendrier de déploiement.\n\nLe contexte explique le mouvement. Les vendeurs tiers représentent désormais 33,6 % du volume d'affaires B2C du groupe, contre 30,7 % un an plus tôt, et leur volume a progressé de 18 % sur le trimestre quand le commerce en propre n'a fait que 3 %. Sur le troisième trimestre, le chiffre d'affaires atteint 3,17 milliards d'euros (+5,1 %) et le résultat opérationnel ajusté 107 millions (+10,6 %), dont 42 millions portés par la division B2B, en hausse de 27,9 % à 354 millions.\n\nLa logique économique est celle d'un basculement d'actif : Zalando cesse de porter le stock, la logistique et le risque de démarque sur une partie de son catalogue, et se rémunère sur le trafic et l'interface. Marge brute diluée côté produits, mais revenus publicitaires et commissions à plus forte marge, sans capital immobilisé.\n\nLa manœuvre est surtout défensive. Face à Amazon, mais aussi face aux agents d'achat conversationnels qui menacent de s'interposer entre le consommateur et les marques, Zalando choisit de devenir lui-même l'agent plutôt que de subir la désintermédiation. Son argument affiché : être le point de départ de l'achat mode, dans un environnement qu'il contrôle, y compris pour des catégories volumineuses comme le mobilier.\n\nPour les marchands, l'enjeu se déplace de la place de marché vers l'indexation dans un agent : être référencé et recommandé comptera davantage que d'avoir une boutique bien tenue. Pour la régie de Zalando, l'inventaire publicitaire s'étend au-delà de son propre stock, avec la difficulté classique de mesurer une conversion qui se conclut chez un tiers.",
+   "points": [
+    "Zalando Extended : produits de boutiques externes visibles dans l'app, achat finalisé par un agent IA à partir de 2027.",
+    "Deux sources de revenus : commission sur la vente externe et publicité achetée par les marchands.",
+    "Les tiers pèsent 33,6 % du volume B2C, en hausse de 18 % quand le propre progresse de 3 %.",
+    "T3 2026 : 3,17 Md€ de chiffre d'affaires (+5,1 %), 107 M€ d'EBIT ajusté, dont 42 M€ venus du B2B.",
+    "Aucun taux de commission, aucune condition d'accès ni calendrier publiés."
    ],
    "date": "2026-11-06",
    "mode": "lecture intégrale"
