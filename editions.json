@@ -1,19 +1,145 @@
 {
   "meta": {
-    "updated": "2026-11-08T13:02:37.842Z",
+    "updated": "2026-11-09T05:52:15.323Z",
     "sources_count": 35,
-    "day": "Édition du 8 novembre 2026",
-    "version": 12
+    "day": "Édition du 9 novembre 2026",
+    "version": 13
   },
   "items": [
     {
+      "rubrique": "Adtech",
+      "iso": "2026-11-09T05:03:39.000Z",
+      "titre": "The NYT Opens Pandora’s Letterboxd; Roku Joins The Skulk",
+      "resume": "Cette brève réunit trois sujets : le potentiel des données de Letterboxd pour l’entraînement de l’IA, présenté comme susceptible de justifier un rachat ; la finalisation d’une opération d’acquisition entre Fox et Roku ; et une modification apportée par Google à un accord, sans autre détail dans l’extrait. Pour les professionnels, ces éléments touchent à la valeur des données, à la consolidation des médias et à l’évolution des relations commerciales dans la publicité numérique.",
+      "url": "https://www.adexchanger.com/daily-news-roundup/the-nyt-opens-pandoras-letterboxd-roku-joins-the-skulk/",
+      "source": "adexchanger.com",
+      "lang": "en",
+      "a_retenir": false,
+      "attrs": {
+        "nature": "brève",
+        "nouveaute": 2,
+        "profondeur": 1,
+        "qualite_source": 4,
+        "secteur": "Médias numériques",
+        "sous_theme": "IA et consolidation médias",
+        "utilite": 2
+      }
+    },
+    {
+      "rubrique": "Adtech",
+      "iso": "2026-11-09T05:01:00.000Z",
+      "titre": "As publishers await click data, Google’s AI visibility push complicates the opt-out decision",
+      "resume": "Google avance simultanément sur deux sujets qui pèsent dans la relation entre recherche et éditeurs : la mise au point d’une option de désactivation de la recherche, demandée de longue date par les éditeurs et prescrite par l’autorité britannique de la concurrence, et l’amélioration de ses AI Overviews. Selon Digiday, ces évolutions pourraient rendre le choix de se retirer moins attractif, ce qui complique l’arbitrage des éditeurs entre contrôle de leur présence dans Google et visibilité dans ses réponses générées par IA.",
+      "url": "https://digiday.com/media/as-publishers-await-click-data-googles-ai-visibility-push-complicates-the-opt-out-decision/?utm_campaign=digidaydis&#038;utm_medium=rss&#038;utm_source=general-rss",
+      "source": "digiday.com",
+      "lang": "en",
+      "a_retenir": false,
+      "attrs": {
+        "nature": "analyse",
+        "nouveaute": 3,
+        "profondeur": 2,
+        "qualite_source": 4,
+        "secteur": "Médias numériques",
+        "sous_theme": "Opt-out et visibilité IA",
+        "utilite": 3
+      }
+    },
+    {
+      "rubrique": "Contenus",
+      "iso": "2026-11-09T05:01:00.000Z",
+      "titre": "How performance metrics are rewriting creator rate cards",
+      "resume": "Les annonceurs demandent désormais, pour évaluer les créateurs, des indicateurs comme le coût par lead et les conversions plutôt que le seul nombre d’abonnés ; cette évolution transforme les grilles tarifaires des créateurs. Pour les équipes marketing et publicité, elle déplace la discussion de la taille d’audience vers les résultats mesurables et peut orienter les échanges sur les tarifs vers la performance, ce qui modifie la façon de comparer les propositions et de négocier les campagnes.",
+      "url": "https://digiday.com/marketing/how-performance-metrics-are-rewriting-creator-rate-cards/?utm_campaign=digidaydis&#038;utm_medium=rss&#038;utm_source=general-rss",
+      "source": "digiday.com",
+      "lang": "en",
+      "a_retenir": false,
+      "attrs": {
+        "nature": "tendance",
+        "nouveaute": 3,
+        "profondeur": 2,
+        "qualite_source": 4,
+        "secteur": "Marketing d’influence",
+        "sous_theme": "Mesure de performance",
+        "utilite": 3
+      }
+    },
+    {
+      "rubrique": "Adtech",
+      "iso": "2026-11-08T23:02:00.000Z",
+      "titre": "Gimii lève 1,5 million d’euros pour ses cookies solidaires",
+      "resume": "Gimii, une adtech solidaire, a levé 1,5 million d’euros pour accélérer en Europe son modèle, qui transforme le consentement publicitaire en dons aux associations. Pour les acteurs de la publicité digitale et des médias, cette opération met en lumière une proposition qui associe activation du consentement et financement associatif, tandis que l’expansion européenne constitue l’objectif annoncé ; l’extrait ne détaille ni les investisseurs ni les modalités de déploiement.",
+      "url": "https://fr.themedialeader.com/gimii-leve-15-million-deuros-pour-ses-cookies-solidaires/",
+      "source": "fr.themedialeader.com",
+      "lang": "fr",
+      "a_retenir": false,
+      "attrs": {
+        "nature": "financement",
+        "nouveaute": 3,
+        "profondeur": 1,
+        "qualite_source": 4,
+        "secteur": "Publicité digitale",
+        "sous_theme": "Consentement publicitaire solidaire",
+        "utilite": 3
+      }
+    },
+    {
+      "rubrique": "Retail media",
+      "iso": "2026-11-08T23:01:00.000Z",
+      "titre": "Alexis Marcombe (Unlimitail) : « Notre terrain, c’est le retail media omnicanal »",
+      "resume": "Dans cet entretien, Alexis Marcombe présente le développement d’Unlimitail, qui revendique trois ans après son lancement 40 retailers partenaires dans 21 pays et vise une croissance d’environ 35 % en 2026. Il évoque notamment l’arrivée de Coopérative U et l’essor de Social Retail, dans une année qu’il décrit comme contrastée pour le marché mais marquée par l’accélération de l’entreprise. Sa vision place l’omnicanalité au cœur du retail media européen, un enjeu de structuration pour les enseignes et leurs partenaires publicitaires.",
+      "url": "https://fr.themedialeader.com/alexis-marcombe-unlimitail-amazon-ne-viendra-pas-sur-le-terrain-du-magasin/",
+      "source": "fr.themedialeader.com",
+      "lang": "fr",
+      "a_retenir": false,
+      "attrs": {
+        "nature": "interview",
+        "nouveaute": 3,
+        "profondeur": 3,
+        "qualite_source": 4,
+        "secteur": "Retail media",
+        "sous_theme": "Stratégie omnicanale européenne",
+        "utilite": 3
+      }
+    },
+    {
+      "rubrique": "Recharge",
+      "iso": "2026-11-08T13:30:00.000Z",
+      "titre": "Camions électriques : Orève et ABB vont ouvrir 12 nouvelles stations en France d’ici 2028",
+      "resume": "Orève, réseau de recharge du groupe Ortec destiné notamment aux camions et utilitaires, étend son partenariat avec ABB E-mobility : douze nouvelles stations doivent ouvrir en France d’ici 2028, avec environ une centaine de points de charge supplémentaires et un premier site compatible avec la recharge au mégawatt dès 2027. Pour les acteurs du transport et du commerce dépendant de la logistique routière, cette expansion indique une montée en capacité des infrastructures adaptées aux poids lourds électriques et peut éclairer la planification des flottes et des opérations.",
+      "url": "https://www.bevolt.com/fr-fr/entreprises/actualites/camions-electriques/351151-camions-electriques-oreve-et-abb-vont-ouvrir-12-nouvelles-stations-en-france-dici-2028/",
+      "source": "automobile-propre.com",
+      "lang": "fr",
+      "a_retenir": false,
+      "attrs": {
+        "nature": "annonce",
+        "nouveaute": 3,
+        "profondeur": 2,
+        "qualite_source": 4,
+        "secteur": "transport routier",
+        "sous_theme": "recharge poids lourds",
+        "utilite": 3
+      }
+    },
+    {
       "rubrique": "Commerce",
-      "iso": "2026-11-08T09:30:07.000Z",
-      "titre": "Moins de touristes étrangers dans les commerces parisiens, autre conséquence des manifestations",
-      "resume": "Les mobilisations sociales et les violences éloignent les touristes étrangers des commerces parisiens et conduisent des magasins du Marais à se barricader, signalant un risque de baisse de fréquentation et de perturbation de l’activité pour les enseignes.",
-      "url": "https://www.lemonde.fr/economie/article/2026/11/08/moins-de-touristes-etrangers-dans-les-commerces-parisiens-autre-consequence-des-manifestations_6808417_3234.html",
+      "iso": "2026-11-08T13:00:03.000Z",
+      "titre": "En Nouvelle-Aquitaine, une première dans l’achat groupé d’énergie",
+      "resume": "En Nouvelle-Aquitaine, neuf entreprises se sont regroupées pour acheter de l’énergie décarbonée à un prix prédéfini pendant quinze ans, dans une première susceptible de faire école. Cette démarche mutualise l’achat et donne aux entreprises une visibilité de long terme sur le prix de leur énergie ; elle peut intéresser les acteurs du commerce, dont les activités dépendent de leurs coûts énergétiques. L’extrait ne précise ni les entreprises concernées ni les modalités du dispositif.",
+      "url": "https://www.lemonde.fr/economie/article/2026/11/08/en-nouvelle-aquitaine-une-premiere-dans-l-achat-groupe-d-energie_6808429_3234.html",
       "source": "lemonde.fr",
       "lang": "fr",
+      "a_retenir": false,
+      "attrs": {
+        "nature": "initiative",
+        "nouveaute": 4,
+        "profondeur": 2,
+        "qualite_source": 5,
+        "secteur": "Énergie décarbonée",
+        "sous_theme": "Achat groupé d’énergie",
+        "utilite": 3
+      }
+    },
+    {
       "a_retenir": false,
       "attrs": {
         "nature": "actualité",
@@ -23,16 +149,35 @@
         "secteur": "Commerce",
         "sous_theme": "Fréquentation touristique",
         "utilite": 3
-      }
+      },
+      "iso": "2026-11-08T09:30:07.000Z",
+      "lang": "fr",
+      "resume": "Les mobilisations sociales et les violences éloignent les touristes étrangers des commerces parisiens et conduisent des magasins du Marais à se barricader, signalant un risque de baisse de fréquentation et de perturbation de l’activité pour les enseignes.",
+      "rubrique": "Commerce",
+      "source": "lemonde.fr",
+      "titre": "Moins de touristes étrangers dans les commerces parisiens, autre conséquence des manifestations",
+      "url": "https://www.lemonde.fr/economie/article/2026/11/08/moins-de-touristes-etrangers-dans-les-commerces-parisiens-autre-consequence-des-manifestations_6808417_3234.html"
     },
     {
       "rubrique": "Recharge",
-      "iso": "2026-11-08T07:28:00.000Z",
-      "titre": "Recharge électrique : pourquoi il vaut mieux être un client volage",
-      "resume": "Les opérateurs de recharge électrique doivent désormais convaincre les automobilistes de leur rester fidèles au-delà du simple déploiement de bornes, un enjeu de rétention client utile aux stratégies marketing.",
-      "url": "https://www.numerama.com/vroom/2369955-recharge-electrique-pourquoi-il-vaut-mieux-etre-un-client-volage.html",
-      "source": "numerama.com",
+      "iso": "2026-11-08T08:19:59.000Z",
+      "titre": "Cette ombrière photovoltaïque géante de 22 000 m² est l’une des plus grandes de France",
+      "resume": "Bordeaux a inauguré une ombrière photovoltaïque de 22 000 m² sur un vaste parking consacré au transport routier, dans le cadre de ses efforts pour accroître sa production d’électricité solaire. Présentée comme l’une des plus grandes de France, l’installation illustre le déploiement de production solaire sur des espaces de stationnement. Pour les acteurs du commerce et de la logistique, elle met en lumière une piste d’équipement des sites, sans que l’extrait précise sa puissance ni son modèle d’exploitation.",
+      "url": "https://www.revolution-energetique.com/actus/cette-ombriere-photovoltaique-geante-de-22-000-m%c2%b2-est-lune-des-plus-grandes-de-france/",
+      "source": "revolution-energetique.com",
       "lang": "fr",
+      "a_retenir": false,
+      "attrs": {
+        "nature": "infrastructure",
+        "nouveaute": 3,
+        "profondeur": 2,
+        "qualite_source": 3,
+        "secteur": "Transport routier",
+        "sous_theme": "Ombrière photovoltaïque",
+        "utilite": 2
+      }
+    },
+    {
       "a_retenir": false,
       "attrs": {
         "nature": "analyse",
@@ -42,16 +187,16 @@
         "secteur": "Mobilité",
         "sous_theme": "Fidélisation client",
         "utilite": 2
-      }
+      },
+      "iso": "2026-11-08T07:28:00.000Z",
+      "lang": "fr",
+      "resume": "Les opérateurs de recharge électrique doivent désormais convaincre les automobilistes de leur rester fidèles au-delà du simple déploiement de bornes, un enjeu de rétention client utile aux stratégies marketing.",
+      "rubrique": "Recharge",
+      "source": "numerama.com",
+      "titre": "Recharge électrique : pourquoi il vaut mieux être un client volage",
+      "url": "https://www.numerama.com/vroom/2369955-recharge-electrique-pourquoi-il-vaut-mieux-etre-un-client-volage.html"
     },
     {
-      "rubrique": "Contenus",
-      "iso": "2026-11-08T06:00:12.000Z",
-      "titre": "Morrisons on its ‘disruptive’ Christmas reinvention of Goldilocks and the Three Bears",
-      "resume": "Morrisons déploie pour Noël une réinterprétation de Boucle d’or et les trois ours sur l’ensemble de ses points de contact, alors que ses investissements sur les réseaux sociaux ont augmenté de 40 % en un an, un exemple d’articulation entre création de campagne et choix des canaux.",
-      "url": "https://www.marketingweek.com/morrisons-christmas-goldilocks-three-bears/",
-      "source": "marketingweek.com",
-      "lang": "en",
       "a_retenir": true,
       "attrs": {
         "nature": "actualité",
@@ -61,7 +206,14 @@
         "secteur": "Commerce alimentaire",
         "sous_theme": "Campagne de Noël",
         "utilite": 3
-      }
+      },
+      "iso": "2026-11-08T06:00:12.000Z",
+      "lang": "en",
+      "resume": "Morrisons déploie pour Noël une réinterprétation de Boucle d’or et les trois ours sur l’ensemble de ses points de contact, alors que ses investissements sur les réseaux sociaux ont augmenté de 40 % en un an, un exemple d’articulation entre création de campagne et choix des canaux.",
+      "rubrique": "Contenus",
+      "source": "marketingweek.com",
+      "titre": "Morrisons on its ‘disruptive’ Christmas reinvention of Goldilocks and the Three Bears",
+      "url": "https://www.marketingweek.com/morrisons-christmas-goldilocks-three-bears/"
     },
     {
       "a_retenir": true,
@@ -140,13 +292,6 @@
       "url": "https://insideevs.com/news/814749/europeans-pay-more-save-carmakers/"
     },
     {
-      "rubrique": "Commerce",
-      "iso": "2026-11-08T05:25:07.000Z",
-      "titre": "Le « super El Niño » inquiète les horticulteurs kényans, qui fournissent un tiers des fleurs importées de l’UE",
-      "resume": "Les horticulteurs kényans, qui fournissent un tiers des fleurs importées par l’Union européenne, se préparent à un possible El Niño exceptionnel, un risque à suivre pour les distributeurs dépendants de cette source d’approvisionnement.",
-      "url": "https://www.lemonde.fr/economie/article/2026/11/08/le-super-el-nino-inquiete-les-horticulteurs-kenyans-qui-fournissent-un-tiers-des-fleurs-importees-de-l-ue_6808402_3234.html",
-      "source": "lemonde.fr",
-      "lang": "fr",
       "a_retenir": true,
       "attrs": {
         "nature": "actualité",
@@ -156,16 +301,16 @@
         "secteur": "Horticulture",
         "sous_theme": "Approvisionnement floral",
         "utilite": 3
-      }
+      },
+      "iso": "2026-11-08T05:25:07.000Z",
+      "lang": "fr",
+      "resume": "Les horticulteurs kényans, qui fournissent un tiers des fleurs importées par l’Union européenne, se préparent à un possible El Niño exceptionnel, un risque à suivre pour les distributeurs dépendants de cette source d’approvisionnement.",
+      "rubrique": "Commerce",
+      "source": "lemonde.fr",
+      "titre": "Le « super El Niño » inquiète les horticulteurs kényans, qui fournissent un tiers des fleurs importées de l’UE",
+      "url": "https://www.lemonde.fr/economie/article/2026/11/08/le-super-el-nino-inquiete-les-horticulteurs-kenyans-qui-fournissent-un-tiers-des-fleurs-importees-de-l-ue_6808402_3234.html"
     },
     {
-      "rubrique": "Regulation",
-      "iso": "2026-11-07T13:30:00.000Z",
-      "titre": "Flottes d'entreprise : les eurodéputés veulent réserver les aides aux véhicules propres « made in Europe »",
-      "resume": "En commission, les eurodéputés ont adopté une position prévoyant des objectifs nationaux de 67 à 95 % de véhicules à émissions nulles ou faibles et la réservation, dès 2028, des aides publiques aux modèles propres fabriqués en Europe, une orientation susceptible d’influer sur le coût et le choix de renouvellement des flottes des enseignes.",
-      "url": "https://www.bevolt.com/fr-fr/entreprises/actualites/flotte-d-entreprise/351157-flottes-dentreprise-les-eurodeputes-veulent-reserver-les-aides-aux-vehicules-propres-made-in-europe/",
-      "source": "automobile-propre.com",
-      "lang": "fr",
       "a_retenir": true,
       "attrs": {
         "nature": "actualité",
@@ -175,7 +320,14 @@
         "secteur": "Mobilité",
         "sous_theme": "Flottes d’entreprise",
         "utilite": 4
-      }
+      },
+      "iso": "2026-11-07T13:30:00.000Z",
+      "lang": "fr",
+      "resume": "En commission, les eurodéputés ont adopté une position prévoyant des objectifs nationaux de 67 à 95 % de véhicules à émissions nulles ou faibles et la réservation, dès 2028, des aides publiques aux modèles propres fabriqués en Europe, une orientation susceptible d’influer sur le coût et le choix de renouvellement des flottes des enseignes.",
+      "rubrique": "Regulation",
+      "source": "automobile-propre.com",
+      "titre": "Flottes d'entreprise : les eurodéputés veulent réserver les aides aux véhicules propres « made in Europe »",
+      "url": "https://www.bevolt.com/fr-fr/entreprises/actualites/flotte-d-entreprise/351157-flottes-dentreprise-les-eurodeputes-veulent-reserver-les-aides-aux-vehicules-propres-made-in-europe/"
     },
     {
       "a_retenir": false,
