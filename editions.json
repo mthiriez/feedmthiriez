@@ -1,11 +1,163 @@
 {
   "meta": {
-    "updated": "2026-11-09T05:52:15.323Z",
+    "updated": "2026-11-10T05:57:49.367Z",
     "sources_count": 35,
-    "day": "Édition du 9 novembre 2026",
-    "version": 13
+    "day": "Édition du 10 novembre 2026",
+    "version": 14
   },
   "items": [
+    {
+      "rubrique": "Adtech",
+      "iso": "2026-11-10T05:01:00.000Z",
+      "titre": "Amid a difficult transitional year, The Trade Desk posts a rare quarterly revenue decline",
+      "resume": "The Trade Desk a enregistré une rare baisse trimestrielle de son chiffre d’affaires, au cours d’une année qualifiée de difficile et de transition. Son dirigeant Jeff Green a évoqué de possibles opérations de fusion-acquisition, tandis que le DSP concurrent Viant a racheté Waymark : ces mouvements signalent des évolutions stratégiques dans l’adtech.",
+      "url": "https://digiday.com/marketing/amid-a-difficult-transitional-year-the-trade-desk-posts-a-rare-quarterly-revenue-decline/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss",
+      "source": "digiday.com",
+      "lang": "en",
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 3,
+        "profondeur": 1,
+        "qualite_source": 4,
+        "secteur": "Publicité numérique",
+        "sous_theme": "DSP et acquisitions",
+        "utilite": 3
+      }
+    },
+    {
+      "rubrique": "Adtech",
+      "iso": "2026-11-10T01:03:53.000Z",
+      "titre": "Viant Buys Waymark For $20 Million, Because CTV Needs More Ads (More!)",
+      "resume": "Au troisième trimestre, Viant a réalisé un chiffre d’affaires de plus de 110 millions de dollars, en hausse de 29 % sur un an. Les dépenses publicitaires en CTV ont progressé de près de 40 % et représentent plus de la moitié du total, confirmant le poids de ce canal dans l’activité de l’entreprise et son intérêt pour les professionnels de la publicité numérique.",
+      "url": "https://www.adexchanger.com/tv/viant-buys-waymark-for-20-million-because-ctv-needs-more-ads-more/",
+      "source": "adexchanger.com",
+      "lang": "en",
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 3,
+        "profondeur": 1,
+        "qualite_source": 4,
+        "secteur": "Publicité CTV",
+        "sous_theme": "Croissance des dépenses CTV",
+        "utilite": 3
+      }
+    },
+    {
+      "rubrique": "Mesure",
+      "iso": "2026-11-09T23:02:24.000Z",
+      "titre": "AI Overviews : les sites d’info perdent encore 20 % de visites en octobre, la PQR résiste, selon l’ACPM",
+      "resume": "Trois mois après l’arrivée de Google AI Overviews en France, le classement ACPM d’octobre 2026 indique que les 20 premières marques d’information ont perdu 19,7 % de visites sur un an ; la PQR résiste, sans précision supplémentaire dans l’extrait. Ce recul est à surveiller par les professionnels qui s’appuient sur l’audience des médias d’information pour planifier ou évaluer leur visibilité.",
+      "url": "https://fr.themedialeader.com/ai-overviews-les-sites-dinfo-perdent-encore-20-de-visites-en-octobre-la-pqr-resiste-selon-lacpm/",
+      "source": "fr.themedialeader.com",
+      "lang": "fr",
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 3,
+        "profondeur": 2,
+        "qualite_source": 4,
+        "secteur": "Médias d’information",
+        "sous_theme": "Trafic des sites d’information",
+        "utilite": 3
+      }
+    },
+    {
+      "rubrique": "Régulation",
+      "iso": "2026-11-09T22:50:00.000Z",
+      "titre": "L’UE veut encadrer les influenceurs et bannir les dark patterns",
+      "resume": "D’après l’AFP, la Commission européenne prévoit d’interdire les pratiques abusives d’influenceurs et les « dark patterns » dans son Digital Fairness Act. Cette orientation pourrait renforcer les exigences applicables aux campagnes d’influence et aux parcours numériques, mais l’extrait ne précise ni les modalités ni le calendrier.",
+      "url": "https://fr.themedialeader.com/lue-veut-encadrer-les-influenceurs-et-bannir-les-dark-patterns/",
+      "source": "fr.themedialeader.com",
+      "lang": "fr",
+      "a_retenir": true,
+      "attrs": {
+        "nature": "brève",
+        "nouveaute": 3,
+        "profondeur": 1,
+        "qualite_source": 4,
+        "secteur": "Influence numérique",
+        "sous_theme": "Encadrement des pratiques numériques",
+        "utilite": 3
+      }
+    },
+    {
+      "rubrique": "Mesure",
+      "iso": "2026-11-09T19:39:41.000Z",
+      "titre": "YouTube streaming data returns to Billboard charts, ending major disagreement",
+      "resume": "YouTube reprendra en 2027 le partage de ses données d’écoute avec Billboard, après une modification de la formule des classements qui donnera davantage de poids aux écoutes gratuites financées par la publicité. Cette évolution est à suivre par les professionnels de la musique et de la mesure, car elle change la pondération de ces écoutes dans les classements.",
+      "url": "https://techcrunch.com/2026/11/09/youtube-streaming-data-returns-to-billboard-charts-ending-major-disagreement/",
+      "source": "techcrunch.com",
+      "lang": "en",
+      "a_retenir": false,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 3,
+        "profondeur": 1,
+        "qualite_source": 4,
+        "secteur": "Musique",
+        "sous_theme": "Mesure des écoutes musicales",
+        "utilite": 2
+      }
+    },
+    {
+      "rubrique": "Commerce",
+      "iso": "2026-11-09T16:52:00.000Z",
+      "titre": "The Children’s Place, in search of new ownership, files for bankruptcy",
+      "resume": "The Children’s Place a déposé le bilan et cherche un repreneur. Après avoir lancé des ventes de fermeture de magasins la semaine dernière, l’enseigne vise une cession d’ici la fin de l’année, avec des offres attendues dans un mois : un calendrier à suivre pour les acteurs de l’habillement et leurs partenaires.",
+      "url": "https://www.retaildive.com/news/the-childrens-place-in-search-of-new-ownership-files-for-bankruptcy/874078/",
+      "source": "retaildive.com",
+      "lang": "en",
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 3,
+        "profondeur": 1,
+        "qualite_source": 4,
+        "secteur": "Habillement",
+        "sous_theme": "Faillite et cession",
+        "utilite": 3
+      }
+    },
+    {
+      "rubrique": "Régulation",
+      "iso": "2026-11-09T10:14:59.000Z",
+      "titre": "Loi résilience : le gouvernement renonce aux portes dérobées dans les messageries chiffrées",
+      "resume": "Le gouvernement relance l’examen de la loi résilience à l’Assemblée nationale et renonce à imposer des portes dérobées dans les messageries chiffrées afin de sortir d’un blocage politique. Pour les professionnels du numérique, cette décision maintient les échanges chiffrés sans accès dérobé dans le texte relancé.",
+      "url": "https://www.journaldunet.com/business/action-publique/1557749-le-gouvernement-renonce-aux-portes-derobees-dans-les-messageries-chiffrees/",
+      "source": "journaldunet.com",
+      "lang": "fr",
+      "a_retenir": false,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 2,
+        "profondeur": 1,
+        "qualite_source": 3,
+        "secteur": "Messageries chiffrées",
+        "sous_theme": "Accès aux communications chiffrées",
+        "utilite": 2
+      }
+    },
+    {
+      "rubrique": "Commerce",
+      "iso": "2026-11-09T08:50:02.000Z",
+      "titre": "Ikea sales drop for the third consecutive year",
+      "resume": "IKEA a enregistré une baisse de son chiffre d’affaires mondial pour la troisième année consécutive et investit 1,2 milliard d’euros dans des baisses de prix. Après avoir supprimé 850 emplois, l’enseigne accélère aussi le déploiement de magasins plus petits, signalant aux professionnels du commerce un ajustement simultané de ses prix et de son réseau.",
+      "url": "https://www.retaildetail.eu/news/wonen/ikea-sees-sales-drop-for-the-third-consecutive-year/",
+      "source": "retaildetail.eu",
+      "lang": "en",
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 3,
+        "profondeur": 1,
+        "qualite_source": 4,
+        "secteur": "Ameublement",
+        "sous_theme": "Ventes, prix et formats de magasins",
+        "utilite": 4
+      }
+    },
     {
       "rubrique": "Adtech",
       "iso": "2026-11-09T05:03:39.000Z",
