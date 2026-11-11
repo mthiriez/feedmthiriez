@@ -1,11 +1,163 @@
 {
   "meta": {
-    "updated": "2026-11-10T05:57:49.367Z",
+    "updated": "2026-11-11T05:47:21.000Z",
     "sources_count": 35,
-    "day": "Édition du 10 novembre 2026",
-    "version": 14
+    "day": "Édition du 11 novembre 2026",
+    "version": 15
   },
   "items": [
+    {
+      "rubrique": "Commerce",
+      "iso": "2026-11-11T05:01:00.000Z",
+      "titre": "Mars wants to future proof impulse buys as AI is poised to take over more grocery runs",
+      "resume": "Mars se prépare à l’essor des agents d’achat alimentaire fondés sur l’IA en cherchant à gagner en visibilité auprès des grands modèles de langage et en misant sur des magasins immersifs. L’entreprise veut pérenniser les achats d’impulsion alors que l’IA devrait prendre en charge davantage de courses alimentaires.",
+      "url": "https://digiday.com/marketing/mars-wants-to-future-proof-impulse-buys-as-ai-poised-to-take-over-more-grocery-runs/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss",
+      "source": "digiday.com",
+      "lang": "en",
+      "a_retenir": true,
+      "attrs": {
+        "nature": "analyse",
+        "nouveaute": 3,
+        "profondeur": 2,
+        "qualite_source": 4,
+        "secteur": "Grande consommation",
+        "sous_theme": "Agents IA et achats",
+        "utilite": 5
+      }
+    },
+    {
+      "rubrique": "IA",
+      "iso": "2026-11-11T05:00:00.000Z",
+      "titre": "Anthropic dévoile Claude Fable 5.2 et Claude Mythos 5.2 dans un contexte d’obsolescence éclair des modèles d’IA",
+      "resume": "Anthropic annonce le 10 novembre 2026 Claude Fable 5.2 et Claude Mythos 5.2, deux nouvelles itérations de ses modèles les plus avancés. Cette annonce intervient alors que l’entreprise a lancé le roadshow de son introduction en Bourse, avant son arrivée attendue au Nasdaq.",
+      "url": "https://www.usine-digitale.fr/intelligence-artificielle/anthropic/anthropic-devoile-claude-fable-52-et-claude-mythos-52-dans-un-contexte-dobsolescence-eclair-des-modeles-dia.IYBTK5CJKRHSRMPTQEDHBPOAAI.html",
+      "source": "usine-digitale.fr",
+      "lang": "fr",
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 3,
+        "profondeur": 1,
+        "qualite_source": 4,
+        "secteur": "Intelligence artificielle",
+        "sous_theme": "Modèles et marché",
+        "utilite": 3
+      }
+    },
+    {
+      "rubrique": "Adtech",
+      "iso": "2026-11-10T22:32:59.000Z",
+      "titre": "\"Ça aurait pu prendre deux mois, et là, on a mis deux semaines\" : la conception des publicités en pleine mue à l'heure de l'IA",
+      "resume": "L’IA s’invite dans les campagnes publicitaires des grandes marques : mannequins, paysages et voix peuvent désormais être créés sur ordinateur. Les annonceurs espèrent produire plus vite et dépenser moins, tandis que se pose la question du devenir des comédiens, photographes et équipes de tournage.",
+      "url": "https://www.franceinfo.fr/internet/intelligence-artificielle/ca-aurait-pu-prendre-deux-mois-et-la-on-a-mis-deux-semaines-la-conception-des-publicites-en-pleine-mue-a-l-heure-de-l-ia_8276996.html#xtor=RSS-3-%5Beconomie%5D",
+      "source": "franceinfo.fr",
+      "lang": "fr",
+      "a_retenir": true,
+      "attrs": {
+        "nature": "analyse",
+        "nouveaute": 2,
+        "profondeur": 2,
+        "qualite_source": 4,
+        "secteur": "Publicité numérique",
+        "sous_theme": "Production publicitaire et IA",
+        "utilite": 4
+      }
+    },
+    {
+      "rubrique": "Commerce",
+      "iso": "2026-11-10T19:33:20.000Z",
+      "titre": "Le milliardaire tchèque Daniel Kretinsky remporte son OPA sur Fnac Darty",
+      "resume": "Daniel Kretinsky remporte son OPA sur Fnac Darty. À l’issue de l’offre lancée le 26 janvier, EP Group devient l’actionnaire de contrôle du distributeur, avec 69,3 % du capital.",
+      "url": "https://www.lemonde.fr/economie/article/2026/11/10/le-milliardaire-tcheque-daniel-kretinsky-remporte-son-opa-sur-fnac-darty_6808902_3234.html",
+      "source": "lemonde.fr",
+      "lang": "fr",
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 2,
+        "profondeur": 2,
+        "qualite_source": 5,
+        "secteur": "Distribution",
+        "sous_theme": "Contrôle capitalistique",
+        "utilite": 4
+      }
+    },
+    {
+      "rubrique": "Mesure",
+      "iso": "2026-11-10T14:55:03.000Z",
+      "titre": "Visibilité dans les IA : mesurer en anglais, c'est mesurer un autre marché",
+      "resume": "À question et pays identiques, les moteurs d’IA citent presque jamais les mêmes marques selon la langue. Selon une étude inédite de Stellarcast, mesurer la visibilité en anglais revient à mesurer un autre marché, ce qui change le suivi GEO.",
+      "url": "https://www.journaldunet.com/seo/1557429-visibilite-dans-les-ia-mesurer-en-anglais-c-est-mesurer-un-autre-marche/",
+      "source": "journaldunet.com",
+      "lang": "fr",
+      "a_retenir": true,
+      "attrs": {
+        "nature": "étude",
+        "nouveaute": 3,
+        "profondeur": 2,
+        "qualite_source": 4,
+        "secteur": "Mesure et visibilité",
+        "sous_theme": "Visibilité dans les moteurs IA",
+        "utilite": 5
+      }
+    },
+    {
+      "rubrique": "Mesure",
+      "iso": "2026-11-10T14:30:00.000Z",
+      "titre": "Synthetic audiences fall short: What marketers need to know",
+      "resume": "Les simulations d’audience générées par l’IA montrent leurs limites. Elles pourraient compliquer la tâche des marques qui cherchent à atteindre de nouveaux publics, écrit Mark Himmelsbach, cofondateur de RYA.",
+      "url": "https://www.marketingdive.com/news/synthetic-audiences-fall-short-what-marketers-need-to-know/833664/",
+      "source": "marketingdive.com",
+      "lang": "en",
+      "a_retenir": true,
+      "attrs": {
+        "nature": "analyse",
+        "nouveaute": 2,
+        "profondeur": 2,
+        "qualite_source": 4,
+        "secteur": "Mesure et audiences",
+        "sous_theme": "Audiences synthétiques",
+        "utilite": 4
+      }
+    },
+    {
+      "rubrique": "Commerce",
+      "iso": "2026-11-10T11:11:19.000Z",
+      "titre": "Le groupe Plesio, ex-Casino, s’accorde avec ses créanciers sur la restructuration de sa dette",
+      "resume": "Le groupe Plesio, ex-Casino, s’est entendu avec ses créanciers et son actionnaire majoritaire, Daniel Kretinsky, sur la restructuration de sa dette. Après un an de discussions, l’accord prévoit de réduire celle-ci de 610 millions d’euros et d’en repousser le remboursement.",
+      "url": "https://www.lemonde.fr/economie/article/2026/11/10/le-groupe-plesio-ex-casino-s-accorde-avec-ses-creanciers-sur-la-restructuration-de-sa-dette_6808826_3234.html",
+      "source": "lemonde.fr",
+      "lang": "fr",
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 2,
+        "profondeur": 2,
+        "qualite_source": 5,
+        "secteur": "Distribution",
+        "sous_theme": "Restructuration financière",
+        "utilite": 4
+      }
+    },
+    {
+      "rubrique": "Mesure",
+      "iso": "2026-11-10T07:44:37.000Z",
+      "titre": "Jean-Paul Dietsch (ACPM) : « L’ACPM étend son contrôle sur la diffusion audio numérique »",
+      "resume": "L’ACPM étend son contrôle sur la diffusion audio numérique. À l’approche d’Innov’Audio, Jean-Paul Dietsch revient sur l’intégration des podcasts vidéo dans la diffusion certifiée, la convergence entre audio et vidéo et le rôle de tiers de confiance de l’ACPM.",
+      "url": "https://fr.themedialeader.com/jean-paul-dietsch-acpm-lacpm-etend-son-controle-sur-la-diffusion-audio-numerique/",
+      "source": "fr.themedialeader.com",
+      "lang": "fr",
+      "a_retenir": true,
+      "attrs": {
+        "nature": "interview",
+        "nouveaute": 2,
+        "profondeur": 3,
+        "qualite_source": 5,
+        "secteur": "Mesure et audiences",
+        "sous_theme": "Certification audio numérique",
+        "utilite": 3
+      }
+    },
     {
       "rubrique": "Adtech",
       "iso": "2026-11-10T05:01:00.000Z",
