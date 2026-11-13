@@ -1,11 +1,163 @@
 {
   "meta": {
-    "day": "Édition du 12 novembre 2026",
+    "day": "Édition du 13 novembre 2026",
     "sources_count": 35,
-    "updated": "2026-11-12T05:48:12.000Z",
-    "version": 16
+    "updated": "2026-11-13T05:50:41.000Z",
+    "version": 17
   },
   "items": [
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 4,
+        "profondeur": 1,
+        "qualite_source": 3,
+        "secteur": "Mesure",
+        "sous_theme": "Mesure de la qualité média",
+        "utilite": 3
+      },
+      "iso": "2026-11-12T22:45:00.000Z",
+      "lang": "fr",
+      "resume": "Integral Ad Science étend sa mesure Total Media Quality à CapCut et à Lemon8, ainsi qu’à de nouveaux formats publicitaires de TikTok, dont TopView et GMV Max. L’offre couvre désormais ces environnements en plus du périmètre historique de l’outil.",
+      "rubrique": "Mesure",
+      "source": "The Media Leader FR",
+      "titre": "IAS étend sa mesure Total Media Quality à CapCut et TikTok",
+      "url": "https://fr.themedialeader.com/ias-etend-sa-mesure-total-media-quality-a-capcut-et-tiktok/"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "étude",
+        "nouveaute": 4,
+        "profondeur": 2,
+        "qualite_source": 3,
+        "secteur": "Retail media",
+        "sous_theme": "Trafic e-commerce issu des IA",
+        "utilite": 3
+      },
+      "iso": "2026-11-12T22:30:00.000Z",
+      "lang": "fr",
+      "resume": "Selon Valiuz, le trafic issu des IA génératives a été multiplié par 4 en un an et dépasse désormais 1 % des sessions e-commerce sur les sites des 12 enseignes analysées. Le GEO franchit donc le seuil du pourcent dans le périmètre mesuré par l’alliance de retailers.",
+      "rubrique": "Retail media",
+      "source": "The Media Leader FR",
+      "titre": "Le GEO dépasse 1% des sessions e-commerce, selon Valiuz",
+      "url": "https://fr.themedialeader.com/le-geo-depasse-1-des-sessions-e-commerce-selon-valiuz/"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "produit",
+        "nouveaute": 4,
+        "profondeur": 2,
+        "qualite_source": 3,
+        "secteur": "Recharge",
+        "sous_theme": "Recharge domestique bidirectionnelle",
+        "utilite": 3
+      },
+      "iso": "2026-11-12T21:41:32.000Z",
+      "lang": "en",
+      "resume": "Lunar Energy dévoile un chargeur rapide à courant continu de 25 kW destiné au domicile, conçu pour être associé à son système de batterie résidentielle de nouvelle génération. Avec un véhicule électrique compatible, l’équipement peut contribuer à alimenter la maison lors d’une coupure de courant et pourrait aussi permettre de générer des revenus en réinjectant de l’électricité dans le réseau.",
+      "rubrique": "Recharge",
+      "source": "Electrek",
+      "titre": "Lunar’s new home DC fast charger puts your EV battery to work",
+      "url": "https://electrek.co/2026/11/12/lunars-new-home-dc-fast-charger-puts-your-ev-battery-to-work/"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 4,
+        "profondeur": 2,
+        "qualite_source": 3,
+        "secteur": "IA",
+        "sous_theme": "Financement des infrastructures IA",
+        "utilite": 3
+      },
+      "iso": "2026-11-12T21:27:10.000Z",
+      "lang": "en",
+      "resume": "Nebius prévoit 40 milliards de dollars de dépenses pour développer son infrastructure d’intelligence artificielle et entend financer cette expansion par des paiements anticipés de ses clients et par des prêts, en s’appuyant sur le modèle des fournisseurs de « neocloud ». Les retards sur un centre de données de Microsoft soulèvent des interrogations sur ce mode de financement, alors que l’entreprise met à l’épreuve cette stratégie d’expansion.",
+      "rubrique": "IA",
+      "source": "TechCrunch",
+      "titre": "Nebius tests the neocloud playbook with $40 billion in planned spending",
+      "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 3,
+        "profondeur": 2,
+        "qualite_source": 4,
+        "secteur": "Publicité digitale et presse",
+        "sous_theme": "Création vidéo par IA générative",
+        "utilite": 3
+      },
+      "iso": "2026-11-12T11:00:14.000Z",
+      "lang": "en",
+      "resume": "Viant annonce l’acquisition de Waymark pour 20 millions de dollars, une plateforme de génération de publicités vidéo par IA générative. Au cours de l’année écoulée, des sociétés de médias comme Comcast, Fox, NBCU, Spectrum Reach et Gray Television l’ont utilisée pour produire plus d’un million de publicités destinées à des annonceurs locaux. Viant cherche ainsi à prendre part à la création de publicités pour la télévision connectée.",
+      "rubrique": "Adtech",
+      "source": "AdExchanger",
+      "titre": "Viant’s Vanderhook Brothers Want To Make Your Next CTV Ad",
+      "url": "https://www.adexchanger.com/tv/viants-vanderhook-brothers-want-to-make-your-next-ctv-ad/"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 3,
+        "profondeur": 2,
+        "qualite_source": 3,
+        "secteur": "Commerce",
+        "sous_theme": "Prise de contrôle de Fnac Darty",
+        "utilite": 4
+      },
+      "iso": "2026-11-12T09:47:18.000Z",
+      "lang": "en",
+      "resume": "Après Casino, Fnac Darty passe à son tour sous contrôle tchèque : le milliardaire Daniel Kretinsky acquiert 69,3 % des actions du distributeur français de produits électroniques et en prend officiellement le contrôle. Sa participation pourrait encore augmenter au-delà de ce seuil.",
+      "rubrique": "Commerce",
+      "source": "Retail Detail",
+      "titre": "Czech billionaire Kretinsky takes control of Fnac Darty",
+      "url": "https://www.retaildetail.eu/news/electronics/czech-billionaire-kretinsky-also-takes-control-of-fnac-darty/"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 3,
+        "profondeur": 2,
+        "qualite_source": 3,
+        "secteur": "Commerce",
+        "sous_theme": "Redressement commercial de B&M",
+        "utilite": 3
+      },
+      "iso": "2026-11-12T09:26:28.000Z",
+      "lang": "en",
+      "resume": "B&M annonce un retour à la croissance des ventes au Royaume-Uni et une hausse de 16,6 % de son bénéfice ajusté avant impôt au premier semestre, alors que sa stratégie de redressement commence à attirer de nouveau les consommateurs attentifs aux prix. Sur les 26 semaines closes le 26 septembre, le chiffre d’affaires du groupe progresse de 3,6 %, à 2,85 milliards de livres sterling, contre 2,75 milliards un an plus tôt.",
+      "rubrique": "Commerce",
+      "source": "Retail Gazette",
+      "titre": "B&M profits rise as turnaround begins to win back shoppers",
+      "url": "https://www.retailgazette.co.uk/blog/2026/11/bm-profits-rise-turnaround/"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 3,
+        "profondeur": 2,
+        "qualite_source": 3,
+        "secteur": "Commerce",
+        "sous_theme": "Résultats financiers du commerce",
+        "utilite": 3
+      },
+      "iso": "2026-11-12T09:13:48.000Z",
+      "lang": "en",
+      "resume": "WH Smith, détaillant de voyage, annonce une hausse de 5 % de son chiffre d’affaires annuel, à 1,63 Md£, mais une baisse marquée de ses bénéfices. Pour l’exercice clos le 31 août 2026, son bénéfice avant impôt hors éléments exceptionnels recule de 30 %, à 76 M£ contre 108 M£, tandis que le groupe poursuit la résolution de difficultés opérationnelles et la restructuration de ses activités internationales.",
+      "rubrique": "Commerce",
+      "source": "Retail Gazette",
+      "titre": "WH Smith profits fall 30% despite revenue climbing to £1.6bn",
+      "url": "https://www.retailgazette.co.uk/blog/2026/11/wh-smith-profits-fall/"
+    },
     {
       "a_retenir": true,
       "attrs": {
