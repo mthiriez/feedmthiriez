@@ -1,11 +1,163 @@
 {
   "meta": {
-    "day": "Édition du 14 novembre 2026",
+    "day": "Édition du 15 novembre 2026",
     "sources_count": 35,
-    "updated": "2026-11-14T05:50:00.000Z",
-    "version": 18
+    "updated": "2026-11-15T05:50:00.000Z",
+    "version": 19
   },
   "items": [
+    {
+      "a_retenir": false,
+      "attrs": {
+        "nature": "analyse",
+        "nouveaute": 4,
+        "profondeur": 3,
+        "qualite_source": 4,
+        "secteur": "Commerce",
+        "sous_theme": "pressions politiques sur les marques",
+        "utilite": 2
+      },
+      "iso": "2026-11-14T21:53:29.000Z",
+      "lang": "fr",
+      "resume": "En Chine, les propos de Kylian Mbappé qualifiant Mao de « dictateur » entraînent son boycott et la suspension de contrats de sponsoring, avec 22 millions d’euros de recettes annuelles en jeu. Le Parti communiste orchestre la campagne en ligne ; les marques doivent ménager le pouvoir pour accéder au marché chinois.",
+      "rubrique": "Commerce",
+      "source": "franceinfo — Économie",
+      "titre": "Comment la Chine fait-elle plier les grandes marques ?",
+      "url": "https://www.franceinfo.fr/replay-jt/france-2/20-heures/comment-la-chine-fait-elle-plier-les-grandes-marques_8282879.html#xtor=RSS-3-%5Beconomie%5D"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 4,
+        "profondeur": 2,
+        "qualite_source": 3,
+        "secteur": "Régulation",
+        "sous_theme": "sanction rgpd",
+        "utilite": 3
+      },
+      "iso": "2026-11-14T17:31:31.000Z",
+      "lang": "fr",
+      "resume": "La Data Protection Commission irlandaise a infligé le 13 novembre une amende de 11 millions d'euros à MTCH Technology Services, filiale de Match Group qui exploite Tinder en Europe. Le régulateur sanctionne des manquements au RGPD dans le traitement des données personnelles des utilisateurs de l'application.",
+      "rubrique": "Régulation",
+      "source": "La Revue du Digital",
+      "titre": "Les omissions de Tinder lui coûtent 11 millions d’euros d’amende au titre du RGPD",
+      "url": "https://www.larevuedudigital.com/les-omissions-de-tinder-lui-coutent-11-millions-deuros-damende-au-titre-du-rgpd/"
+    },
+    {
+      "a_retenir": false,
+      "attrs": {
+        "nature": "opinion",
+        "nouveaute": 3,
+        "profondeur": 3,
+        "qualite_source": 5,
+        "secteur": "Régulation",
+        "sous_theme": "vie privée et lunettes",
+        "utilite": 2
+      },
+      "iso": "2026-11-14T16:00:18.000Z",
+      "lang": "fr",
+      "resume": "Dans une tribune au « Monde », un collectif de chercheurs conteste que les usages récréatifs des lunettes dotées de caméras et de micros justifient de faire peser sur l'ensemble de la population un risque de surveillance diffuse. Ils interrogent la position de l'Europe, qui se présente comme la championne mondiale de la protection de la vie privée.",
+      "rubrique": "Régulation",
+      "source": "Le Monde — Économie",
+      "titre": "Lunettes connectées : « Où est donc l’Europe, qui aime tant se présenter comme la championne mondiale de la protection de la vie privée ? »",
+      "url": "https://www.lemonde.fr/idees/article/2026/11/14/lunettes-connectees-ou-est-donc-l-europe-qui-aime-tant-se-presenter-comme-la-championne-mondiale-de-la-protection-de-la-vie-privee_6810448_3232.html"
+    },
+    {
+      "a_retenir": false,
+      "attrs": {
+        "nature": "interview",
+        "nouveaute": 3,
+        "profondeur": 4,
+        "qualite_source": 4,
+        "secteur": "IA",
+        "sous_theme": "gouvernance de l’ia",
+        "utilite": 2
+      },
+      "iso": "2026-11-14T15:00:00.000Z",
+      "lang": "en",
+      "resume": "Helen Toner, directrice du CSET et l’une des quatre membres du conseil d’OpenAI ayant voté pour évincer Sam Altman, estime que la sécurité de l’IA ne peut dépendre de la confiance en un dirigeant. L’accord volontaire de la Maison-Blanche repose en partie sur une responsabilité des conseils qui a échoué chez OpenAI.",
+      "rubrique": "IA",
+      "source": "The Verge",
+      "titre": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
+      "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview"
+    },
+    {
+      "a_retenir": false,
+      "attrs": {
+        "nature": "produit",
+        "nouveaute": 3,
+        "profondeur": 2,
+        "qualite_source": 3,
+        "secteur": "Adtech",
+        "sous_theme": "découverte des profils",
+        "utilite": 2
+      },
+      "iso": "2026-11-14T14:30:00.000Z",
+      "lang": "en",
+      "resume": "Wizz App, qui compte plus de 16 millions d’utilisateurs, dit ne pas utiliser d’algorithme de recommandation : la découverte repose sur l’âge vérifié par Yoti, le statut en ligne et les intérêts. AWS compare les photos au selfie de vérification par apprentissage automatique ; aucun filtre par ville ou langue n’est proposé.",
+      "rubrique": "Adtech",
+      "source": "ExchangeWire",
+      "titre": "How Does Wizz App Decide Who You See?",
+      "url": "https://www.exchangewire.com/blog/2026/11/14/how-does-wizz-app-decide-who-you-see/"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "produit",
+        "nouveaute": 4,
+        "profondeur": 2,
+        "qualite_source": 3,
+        "secteur": "Recharge",
+        "sous_theme": "abonnement du Cybercab",
+        "utilite": 3
+      },
+      "iso": "2026-11-14T13:33:00.000Z",
+      "lang": "en",
+      "resume": "Tesla vend le Cybercab 29 990 $ et impose un abonnement Autonomy de 299 $/mois, dont le tarif est révisable avec un mois de préavis ; sans abonnement, il ne fonctionne pas. L’usage est limité aux zones géorepérées et reste personnel : l’accès au réseau Robotaxi ou à la location exige une autorisation écrite.",
+      "rubrique": "Recharge",
+      "source": "Electrek",
+      "titre": "Tesla Cybercab’s autonomy agreement is insane: $299/mo or it doesn’t move",
+      "url": "https://electrek.co/2026/11/14/tesla-cybercab-autonomy-subscription-agreement-terms/"
+    },
+    {
+      "a_retenir": false,
+      "attrs": {
+        "nature": "analyse",
+        "nouveaute": 3,
+        "profondeur": 4,
+        "qualite_source": 4,
+        "secteur": "IA",
+        "sous_theme": "rançongiciels et ia",
+        "utilite": 2
+      },
+      "iso": "2026-11-14T13:00:00.000Z",
+      "lang": "en",
+      "resume": "Près de 3 000 attaques par rançongiciel sont revendiquées en été 2026, soit une hausse estimée de 20 à 40 % depuis le printemps ; 111 groupes revendiquent des attaques entre juillet et septembre. L’IA facilite le hameçonnage et l’émergence de groupes ; l’extorsion de données sans chiffrement expose les entreprises aux fuites.",
+      "rubrique": "IA",
+      "source": "Wired",
+      "titre": "Beware the New AI-Fueled Ransomware Boom",
+      "url": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/"
+    },
+    {
+      "a_retenir": false,
+      "attrs": {
+        "nature": "analyse",
+        "nouveaute": 2,
+        "profondeur": 3,
+        "qualite_source": 3,
+        "secteur": "Commerce",
+        "sous_theme": "expérience en magasin",
+        "utilite": 2
+      },
+      "iso": "2026-11-14T05:00:00.000Z",
+      "lang": "en",
+      "resume": "Les magasins demeurent un moteur majeur des ventes, mais produits verrouillés, caisses en libre-service confuses, attente de vendeurs et écarts d’assortiment avec le e-commerce frustrent les clients. Modern Retail examine les réponses technologiques et d’aménagement des enseignes.",
+      "rubrique": "Commerce",
+      "source": "Modern Retail",
+      "titre": "The in-store shopping experience is broken. Can we fix it?",
+      "url": "https://www.modernretail.co/podcasts/in-store-shopping-experience-broken/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+    },
     {
       "a_retenir": false,
       "attrs": {
