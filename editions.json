@@ -1,11 +1,163 @@
 {
   "meta": {
-    "day": "Édition du 15 novembre 2026",
+    "day": "Édition du 16 novembre 2026",
     "sources_count": 35,
-    "updated": "2026-11-15T05:50:00.000Z",
-    "version": 19
+    "updated": "2026-11-16T05:50:00.000Z",
+    "version": 20
   },
   "items": [
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "analyse",
+        "nouveaute": 4,
+        "profondeur": 2,
+        "qualite_source": 4,
+        "secteur": "Adtech",
+        "sous_theme": "consolidation retail media",
+        "utilite": 2
+      },
+      "iso": "2026-11-16T05:35:41.000Z",
+      "lang": "en",
+      "resume": "AdExchanger décrit un écosystème technologique publicitaire saturé : G2 recense plus de 175 000 fournisseurs de logiciels, le secteur compte plus de 15 000 solutions de marketing technology et plus de 12 000 acteurs adtech seraient en activité. Dans ce contexte de forte intensité concurrentielle, l’article estime que la plupart des réseaux de retail media ne devraient pas exister et examine comment ils peuvent démontrer leur valeur, alors que le marché est présenté comme particulièrement mûr pour une consolidation.",
+      "rubrique": "Adtech",
+      "source": "AdExchanger",
+      "titre": "Most Retail Media Networks Shouldn’t Exist. Here’s How They Can Prove Their Worth",
+      "url": "https://www.adexchanger.com/data-driven-thinking/most-retail-media-networks-shouldnt-exist-heres-how-they-can-prove-their-worth/"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "analyse",
+        "nouveaute": 4,
+        "profondeur": 1,
+        "qualite_source": 4,
+        "secteur": "Adtech",
+        "sous_theme": "mesure et reporting",
+        "utilite": 2
+      },
+      "iso": "2026-11-16T05:01:00.000Z",
+      "lang": "en",
+      "resume": "Les acheteurs média doivent composer avec les changements de reporting à venir chez Amazon, qui pourraient compliquer leurs plans pour l’année prochaine. La plateforme de commerce en ligne est centrale pour de nombreux annonceurs de marques grand public, et les évolutions de la mesure risquent donc d’influer sur leur planification média au cours de cette période.",
+      "rubrique": "Adtech",
+      "source": "Digiday",
+      "titre": "Media Buying Briefing: Buyers grapple with incoming Amazon reporting changes",
+      "url": "https://digiday.com/media-buying/media-buying-briefing-buyers-grapple-with-incoming-amazon-reporting-changes/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 4,
+        "profondeur": 1,
+        "qualite_source": 4,
+        "secteur": "Adtech",
+        "sous_theme": "visibilité dans l’IA",
+        "utilite": 2
+      },
+      "iso": "2026-11-16T05:01:00.000Z",
+      "lang": "en",
+      "resume": "Bustle Digital Group s’est associé à Profound autour d’une nouvelle offre de GEO destinée à aider des marques comme Pampers et Innisfree à renforcer leur visibilité dans les recommandations de l’intelligence artificielle. L’offre vise à accroître la présence de ces marques dans ce type de recommandations ; l’extrait ne précise pas ses modalités ni les résultats attendus.",
+      "rubrique": "Adtech",
+      "source": "Digiday",
+      "titre": "How Bustle Digital Group is helping Pampers and Innisfree show up in AI recommendations",
+      "url": "https://digiday.com/media/how-bustle-digital-group-is-helping-pampers-and-innisfree-show-up-in-ai-recommendations/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 4,
+        "profondeur": 1,
+        "qualite_source": 4,
+        "secteur": "Retail media",
+        "sous_theme": "marketing sportif",
+        "utilite": 2
+      },
+      "iso": "2026-11-16T05:00:00.000Z",
+      "lang": "en",
+      "resume": "Celsius renforce en 2026 ses campagnes de marketing sportif, avec ESPN College GameDay, la F1, des marathons et des événements de fitness. La marque se positionne comme une boisson énergisante fonctionnelle. Son expansion porte notamment sur plusieurs rendez-vous sportifs et événements liés au fitness, intégrés à ses campagnes de marque au cours de l’année 2026.",
+      "rubrique": "Retail media",
+      "source": "Modern Retail",
+      "titre": "How Celsius doubled down on sports marketing campaigns in 2026",
+      "url": "https://www.modernretail.co/marketing/how-celsius-doubled-down-on-sports-marketing-campaigns-in-2026/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 4,
+        "profondeur": 1,
+        "qualite_source": 4,
+        "secteur": "Retail media",
+        "sous_theme": "développement européen",
+        "utilite": 2
+      },
+      "iso": "2026-11-16T05:00:00.000Z",
+      "lang": "en",
+      "resume": "Saucony, marque américaine de sport, considère l’Europe comme un moteur clé de croissance et poursuit l’ouverture de magasins à l’international. Pour gagner le marché européen de la course à pied, elle articule son développement autour de magasins flagships, de clubs de course et de courses, combinant ainsi présence commerciale et initiatives liées à la pratique sportive.",
+      "rubrique": "Retail media",
+      "source": "Modern Retail",
+      "titre": "Saucony sees Europe as a ‘key growth engine’ as it opens more international stores",
+      "url": "https://www.modernretail.co/operations/saucony-sees-europe-as-a-key-growth-engine-as-it-opens-more-international-stores/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 4,
+        "profondeur": 1,
+        "qualite_source": 4,
+        "secteur": "Retail media",
+        "sous_theme": "régulation du numérique",
+        "utilite": 2
+      },
+      "iso": "2026-11-15T23:01:00.000Z",
+      "lang": "fr",
+      "resume": "À quelques semaines de la fin de son second mandat à la tête d’Alliance Digitale, Nicolas Rieul évoque un forum consacré à l’intelligence artificielle, des propositions pour la présidentielle et l’affaire Apple ATT. Il aborde également la rémunération des contenus à l’heure des résumés générés par IA et estime que le droit de la concurrence n’est pas adapté à la rapidité du digital.",
+      "rubrique": "Retail media",
+      "source": "The Media Leader FR",
+      "titre": "Nicolas Rieul (Alliance Digitale) : « Le droit de la concurrence n’est pas adapté à la rapidité du digital »",
+      "url": "https://fr.themedialeader.com/nicolas-rieul-alliance-digitale-le-droit-de-la-concurrence-classique-nest-pas-adapte-a-la-rapidite-du-digital/"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 4,
+        "profondeur": 2,
+        "qualite_source": 4,
+        "secteur": "Retail media",
+        "sous_theme": "IA et achats",
+        "utilite": 2
+      },
+      "iso": "2026-11-15T22:20:00.000Z",
+      "lang": "fr",
+      "resume": "Une étude YouGov réalisée pour Pinterest indique que 92% des Américains souhaitent conserver la décision finale concernant leurs achats en ligne, même lorsqu’une intelligence artificielle les a aidés à choisir. Le résultat distingue ainsi l’aide apportée par l’IA au choix et la prise de décision finale, que la grande majorité des répondants souhaite garder à sa charge.",
+      "rubrique": "Retail media",
+      "source": "The Media Leader FR",
+      "titre": "Achats en ligne : 92% des Américains refusent de laisser l’IA décider à leur place",
+      "url": "https://fr.themedialeader.com/achats-en-ligne-92-des-americains-refusent-de-laisser-lia-decider-a-leur-place/"
+    },
+    {
+      "a_retenir": true,
+      "attrs": {
+        "nature": "actualité",
+        "nouveaute": 4,
+        "profondeur": 2,
+        "qualite_source": 3,
+        "secteur": "Recharge",
+        "sous_theme": "aides à l’électrique",
+        "utilite": 2
+      },
+      "iso": "2026-11-15T10:30:00.000Z",
+      "lang": "fr",
+      "resume": "Le Luxembourg prolonge jusqu’en 2030 son dispositif de soutien à l’achat de voitures électriques, avec des primes pouvant atteindre 6 000 euros. Le gouvernement privilégie ainsi la continuité de l’aide à l’électrification du parc automobile, tandis qu’une nouveauté doit également faciliter la vie des électromobilistes. L’extrait ne détaille toutefois ni le contenu de cette mesure ni sa date d’application.",
+      "rubrique": "Recharge",
+      "source": "Automobile Propre",
+      "titre": "Le Luxembourg envoie un signal fort aux conducteurs qui veulent passer à l'électrique",
+      "url": "https://www.bevolt.com/fr-fr/automobile/actualites/aides-bonus-et-primes/352126-le-luxembourg-envoie-un-signal-fort-aux-conducteurs-qui-veulent-passer-a-lelectrique/"
+    },
     {
       "a_retenir": false,
       "attrs": {
