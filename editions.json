@@ -1,11 +1,163 @@
 {
  "meta": {
-  "day": "Édition du 18 novembre 2026",
+  "day": "Édition du 19 novembre 2026",
   "sources_count": 35,
-  "updated": "2026-11-18T05:50:00.000Z",
-  "version": 22
+  "updated": "2026-11-19T05:49:34.000Z",
+  "version": 23
  },
  "items": [
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 2,
+    "qualite_source": 4,
+    "secteur": "Commerce",
+    "sous_theme": "redressement des hypermarchés",
+    "utilite": 4
+   },
+   "iso": "2026-11-18T13:45:05.000Z",
+   "lang": "en",
+   "resume": "Carrefour consacrera 200 millions d’euros supplémentaires par an au redressement de ses hypermarchés déficitaires en France, avec des investissements sur les prix, la modernisation, le commerce en ligne, l’IA, le retail media, les services et la franchise. À Montesson, le PDG Alexandre Bompard a présenté ce format comme un pilier de la croissance du groupe en France, soutenu par la technologie et le numérique, selon Retail Detail.",
+   "rubrique": "Commerce",
+   "source": "Retail Detail",
+   "titre": "How Carrefour plans to get its hypermarkets back on track",
+   "url": "https://www.retaildetail.eu/news/food/how-carrefour-plans-to-get-its-hypermarkets-back-on-track/"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 4,
+    "profondeur": 3,
+    "qualite_source": 4,
+    "secteur": "Adtech",
+    "sous_theme": "sécurité publicitaire sur tiktok",
+    "utilite": 4
+   },
+   "iso": "2026-11-19T05:01:00.000Z",
+   "lang": "en",
+   "resume": "En Espagne, Banco Santander, Moeve et trois clients de Mediaplus Equmedia ont suspendu leurs dépenses sur TikTok après une enquête de Maldita.es, qui a relevé des contenus pédocriminels près des publicités de 21 marques, dont Samsung, Apple et Pringles. Le parquet enquête depuis le 17 novembre ; Mediaplus estime que les pauses pourraient durer jusqu’en 2027 et TikTok dit renforcer ses contrôles, selon Digiday.",
+   "rubrique": "Adtech",
+   "source": "Digiday",
+   "titre": "Advertisers suspend TikTok activity in response to Spanish CSAM investigation",
+   "url": "https://digiday.com/media-buying/advertisers-suspend-tiktok-activity-in-response-to-spanish-csam-investigation/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 2,
+    "qualite_source": 4,
+    "secteur": "Commerce",
+    "sous_theme": "implantations et fiscalité immobilière",
+    "utilite": 4
+   },
+   "iso": "2026-11-18T05:54:11.000Z",
+   "lang": "en",
+   "resume": "Ikea abandonne plusieurs ouvertures britanniques, invoquant les taxes immobilières les plus élevées de ses marchés européens et les coûts d’exploitation ; David McCabe évoque un possible transfert des investissements ailleurs en Europe. Les ventes britanniques ont progressé de 0,5 %, à 2,26 Md£, sur l’exercice clos en août ; 54 M£ ont financé des baisses de prix moyennes de 20 % sur 425 produits, selon Retail Gazette.",
+   "rubrique": "Commerce",
+   "source": "Retail Gazette",
+   "titre": "Ikea scraps UK store openings as rising business rates hit expansion plans",
+   "url": "https://www.retailgazette.co.uk/blog/2026/11/ikea-scraps-uk-store-openings-as-rising-business-rates-hit-expansion-plans/"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 2,
+    "qualite_source": 4,
+    "secteur": "Contenus",
+    "sous_theme": "accords de licence avec openai",
+    "utilite": 3
+   },
+   "iso": "2026-11-18T16:10:46.000Z",
+   "lang": "fr",
+   "resume": "Le groupe Figaro a signé un accord de licence avec OpenAI, qui rend ses articles et ses archives accessibles dans ChatGPT sous forme de résumés et d’extraits. Ce partenariat suit celui du pôle médias de LVMH, annoncé le 16 novembre, et celui du Monde signé en mars 2024, selon mind Media.",
+   "rubrique": "Contenus",
+   "source": "Mind Media",
+   "titre": "Le groupe Figaro signe à son tour un accord de licence avec OpenAI",
+   "url": "https://www.mind.eu.com/media/article/le-groupe-figaro-signe-a-son-tour-un-accord-de-licence-avec-openai/"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "réglementation",
+    "nouveaute": 3,
+    "profondeur": 2,
+    "qualite_source": 4,
+    "secteur": "Régulation",
+    "sous_theme": "tarification personnalisée des plateformes",
+    "utilite": 4
+   },
+   "iso": "2026-11-18T21:53:00.000Z",
+   "lang": "en",
+   "resume": "Après une demande d’enquête de la FTC, DoorDash affirme que les clients achetant les mêmes articles dans un même magasin paient les mêmes prix, sans personnalisation selon leur téléphone, historique d’achat ou caractéristiques protégées, ni hausse liée à la demande. Elle admet des frais liés à la météo, à l’adresse et au coût de livraison, et soutient une interdiction qui préserverait coupons et programmes de fidélité, selon Grocery Dive.",
+   "rubrique": "Régulation",
+   "source": "Grocery Dive",
+   "titre": "DoorDash denies using surveillance pricing",
+   "url": "https://www.grocerydive.com/news/doordash-rejects-surveillance-pricing-political-backlash/875078/"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 3,
+    "qualite_source": 4,
+    "secteur": "Retail media",
+    "sous_theme": "offre retail media omnicanale",
+    "utilite": 4
+   },
+   "iso": "2026-11-18T22:03:00.000Z",
+   "lang": "fr",
+   "resume": "Mr.Bricolage confie à Unlimitail son offre retail media via Epsilon Retail Media : Product Ads, Display et vidéo onsite, Display et vidéo offsite. La carte fidélité permet une mesure des ventes en ligne et en magasin ; l’enseigne compte 330 magasins, plus de 2 millions de porteurs et 1,2 million de visiteurs uniques mensuels. En septembre-octobre, le ROAS a dépassé 8x sur Product Ads et 6x sur Display, selon The Media Leader FR.",
+   "rubrique": "Retail media",
+   "source": "The Media Leader FR",
+   "titre": "Mr.Bricolage lance son retail media online avec Unlimitail",
+   "url": "https://fr.themedialeader.com/mr-bricolage-lance-son-retail-media-online-avec-unlimitail/"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "étude",
+    "nouveaute": 3,
+    "profondeur": 3,
+    "qualite_source": 4,
+    "secteur": "Commerce",
+    "sous_theme": "assistants ia et parcours d achat",
+    "utilite": 4
+   },
+   "iso": "2026-11-18T11:04:48.000Z",
+   "lang": "fr",
+   "resume": "L’étude de la Fevad et de la chaire Trend(s) de l’université de Toulouse montre que l’usage des assistants IA ne dépend ni de l’âge ni du goût pour la technologie, et distingue deux profils, les pragmatiques et les affectifs. Les consommateurs utilisent de deux à quatre assistants, ChatGPT, Gemini et Claude en tête, mais veulent garder la décision : l’IA accompagne la recherche, Google restant un point d’entrée majeur, selon La Revue du Digital.",
+   "rubrique": "Commerce",
+   "source": "La Revue du Digital",
+   "titre": "Evolution de l’achat en ligne : l’IA nouveau copilote des consommateurs selon la Fevad",
+   "url": "https://www.larevuedudigital.com/evolution-de-lachat-en-ligne-lia-nouveau-copilote-des-consommateurs-selon-la-fevad/"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 2,
+    "qualite_source": 4,
+    "secteur": "IA",
+    "sous_theme": "économie du web agentique",
+    "utilite": 4
+   },
+   "iso": "2026-11-18T22:58:11.000Z",
+   "lang": "en",
+   "resume": "Au DealBook Summit, Satya Nadella estime que les agents d’IA pourraient bouleverser l’économie du web et les modèles financés par la publicité : la monétisation fondée sur l’audience pourrait évoluer vers le coût par clic (CPC) ou la transaction. Il cite le blocage par Amazon des agents sur son site marchand ; si cette politique perdure, Shopify pourrait les accueillir et capter un avantage, selon TechCrunch.",
+   "rubrique": "IA",
+   "source": "TechCrunch",
+   "titre": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
+   "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/"
+  },
   {
    "a_retenir": true,
    "attrs": {
