@@ -1,163 +1,231 @@
 {
  "meta": {
-  "day": "Édition du 21 novembre 2026",
+  "day": "Édition du 22 novembre 2026",
   "sources_count": 35,
-  "updated": "2026-11-21T05:52:00.000Z",
-  "version": 25
+  "updated": "2026-11-22T05:48:50.000Z",
+  "version": 26
  },
  "items": [
- {
-  "a_retenir": true,
-  "attrs": {
-   "nature": "brève",
-   "nouveaute": 3,
-   "profondeur": 1,
-   "qualite_source": 3,
-   "secteur": "Recharge",
-   "sous_theme": "promotions véhicules électriques",
-   "utilite": 2
+  {
+   "rubrique": "Régulation",
+   "source": "The Verge",
+   "iso": "2026-11-21T21:59:31.000Z",
+   "titre": "Amazon is complaining about NYC Council on shipping labels, too",
+   "url": "https://www.theverge.com/tech/1039564/amazon-nyc-council-packages-shipping-label",
+   "resume": "Amazon appose sur les colis livrés à New York un avertissement affirmant que le Delivery Protection Act pourrait renchérir chaque commande de 5 dollars. Le texte imposerait une licence municipale et l'embauche directe des livreurs aux opérateurs du dernier kilomètre exploitant des entrepôts.",
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 2,
+    "profondeur": 1,
+    "qualite_source": 4,
+    "secteur": "livraison du dernier kilomètre",
+    "sous_theme": "encadrement des livreurs à New York",
+    "utilite": 3
+   }
   },
-  "iso": "2026-11-20T19:59:48.000Z",
-  "lang": "en",
-  "resume": "Kia, Lucid et Volkswagen proposent actuellement au moins 10 000 dollars de réduction sur certains véhicules électriques à l’occasion du Black Friday.",
-  "rubrique": "Recharge",
-  "source": "Electrek",
-  "titre": "Kia, Lucid, and Volkswagen are slashing EV prices by $10,000+ for Black Friday",
-  "url": "https://electrek.co/2026/11/20/kia-lucid-vw-slash-ev-prices-by-10000-black-friday/"
- },
- {
-  "a_retenir": true,
-  "attrs": {
-   "nature": "actualité",
-   "nouveaute": 3,
-   "profondeur": 1,
-   "qualite_source": 4,
-   "secteur": "Adtech",
-   "sous_theme": "restructuration d'entreprise",
-   "utilite": 3
+  {
+   "rubrique": "Commerce",
+   "source": "La Revue du Digital",
+   "iso": "2026-11-21T17:13:48.000Z",
+   "titre": "Conex, spécialiste des opérations douanières, rachète la start-up allemande traide AI",
+   "url": "https://www.larevuedudigital.com/conex-specialiste-des-operations-douanieres-rachete-la-start-up-allemande-traide-ai/",
+   "resume": "L'éditeur européen Conex, spécialisé dans les opérations douanières, rachète la start-up allemande traide AI pour enrichir ses logiciels douaniers d'agents d'intelligence artificielle.",
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 2,
+    "profondeur": 1,
+    "qualite_source": 4,
+    "secteur": "douane et logistique",
+    "sous_theme": "acquisition d'une start-up d'IA douanière",
+    "utilite": 2
+   }
   },
-  "iso": "2026-11-20T16:15:55.000Z",
-  "lang": "en",
-  "resume": "Créée en 2019, Ampersand, plateforme publicitaire TV, transfère son activité destinée aux agences indépendantes à Comcast et Spectrum. Cette réorganisation intervient après des licenciements massifs.",
-  "rubrique": "Adtech",
-  "source": "AdExchanger",
-  "titre": "Ampersand Is Offloading Its Indie Agency Business To Comcast And Spectrum Following Mass Layoffs",
-  "url": "https://www.adexchanger.com/tv-2/ampersand-is-offloading-its-indie-agency-business-to-comcast-and-spectrum-following-mass-layoffs/"
- },
- {
-  "a_retenir": true,
-  "attrs": {
-   "nature": "étude",
-   "nouveaute": 3,
-   "profondeur": 2,
-   "qualite_source": 4,
-   "secteur": "Contenus",
-   "sous_theme": "creator economy",
-   "utilite": 3
+  {
+   "rubrique": "Régulation",
+   "source": "Journal du Net",
+   "iso": "2026-11-21T13:00:03.000Z",
+   "titre": "Les quatre clauses qui rendent une entreprise propriétaire de son logiciel métier sur mesure",
+   "url": "https://www.journaldunet.com/management/direction-generale/1558119-la-propriete-du-code-clause-oubliee-des-contrats-de-developpement-web/",
+   "resume": "Payer le développement d'un logiciel sur mesure ne transfère aucun droit sur le code : la cession doit nommer chaque droit, se renouveler à chaque livraison et couvrir les briques réutilisées, la remise du code et des accès, sous peine de recréer la dépendance au prestataire.",
+   "attrs": {
+    "nature": "analyse",
+    "nouveaute": 1,
+    "profondeur": 3,
+    "qualite_source": 3,
+    "secteur": "logiciels métiers",
+    "sous_theme": "propriété du code sur mesure",
+    "utilite": 4
+   }
   },
-  "iso": "2026-11-20T15:32:12.000Z",
-  "lang": "fr",
-  "resume": "Selon l’étude publiée le 18 novembre par Madison & Wall, les investissements marketing et publicitaires dans la creator economy devraient atteindre 116 milliards de dollars dans le monde en 2026, en hausse de 15 % sur 2025.",
-  "rubrique": "Contenus",
-  "source": "Mind Media",
-  "titre": "La creator economy, un marché mondial de 116 milliards de dollars en 2026 selon Madison & Wall",
-  "url": "https://www.mind.eu.com/media/article/la-creator-economy-un-marche-mondial-de-116-milliards-de-dollars-en-2026-selon-madison-wall/"
- },
- {
-  "a_retenir": true,
-  "attrs": {
-   "nature": "actualité",
-   "nouveaute": 3,
-   "profondeur": 1,
-   "qualite_source": 4,
-   "secteur": "Commerce",
-   "sous_theme": "acquisition de participation",
-   "utilite": 3
+  {
+   "rubrique": "IA",
+   "source": "Le Monde — Économie",
+   "iso": "2026-11-21T10:30:10.000Z",
+   "titre": "Anthropic ou le pari de plus en plus vertigineux de l’IA",
+   "url": "https://www.lemonde.fr/idees/article/2026/11/21/anthropic-ou-le-pari-de-plus-en-plus-vertigineux-de-l-ia_6813980_3232.html",
+   "resume": "L'introduction en Bourse d'Anthropic, puis la correction du titre dès le lendemain, résument les promesses et les doutes du modèle économique de l'IA. Le déploiement dépendra aussi de l'acceptation des centres de données par les populations concernées.",
+   "attrs": {
+    "nature": "analyse",
+    "nouveaute": 1,
+    "profondeur": 2,
+    "qualite_source": 5,
+    "secteur": "intelligence artificielle",
+    "sous_theme": "modèle économique de l'IA",
+    "utilite": 2
+   }
   },
-  "iso": "2026-11-20T14:00:37.000Z",
-  "lang": "en",
-  "resume": "L’Oréal et EssilorLuxottica sont en discussions avancées pour acquérir conjointement 15 % de la maison italienne Giorgio Armani. Une introduction en Bourse est envisagée à plus long terme.",
-  "rubrique": "Commerce",
-  "source": "Retail Detail",
-  "titre": "L’Oréal and EssilorLuxottica are teaming up to acquire Armani",
-  "url": "https://www.retaildetail.eu/news/fashion/loreal-and-essilorluxottica-are-teaming-up-to-acquire-armani/"
- },
- {
-  "a_retenir": true,
-  "attrs": {
-   "nature": "actualité",
-   "nouveaute": 3,
-   "profondeur": 1,
-   "qualite_source": 4,
-   "secteur": "Adtech",
-   "sous_theme": "ciblage CTV",
-   "utilite": 3
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "brève",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "Recharge",
+    "sous_theme": "promotions véhicules électriques",
+    "utilite": 2
+   },
+   "iso": "2026-11-20T19:59:48.000Z",
+   "lang": "en",
+   "resume": "Kia, Lucid et Volkswagen proposent actuellement au moins 10 000 dollars de réduction sur certains véhicules électriques à l’occasion du Black Friday.",
+   "rubrique": "Recharge",
+   "source": "Electrek",
+   "titre": "Kia, Lucid, and Volkswagen are slashing EV prices by $10,000+ for Black Friday",
+   "url": "https://electrek.co/2026/11/20/kia-lucid-vw-slash-ev-prices-by-10000-black-friday/"
   },
-  "iso": "2026-11-20T12:27:21.000Z",
-  "lang": "en",
-  "resume": "Nexxen et Gracenote (Nielsen) nouent un partenariat pour intégrer les données et l’intelligence de contenu CTV de Gracenote à la plateforme côté offre de Nexxen, afin d’élargir le ciblage fondé sur les contenus.",
-  "rubrique": "Adtech",
-  "source": "ExchangeWire",
-  "titre": "Nexxen & Gracenote Partner to Expand Content-Based Targeting for CTV",
-  "url": "https://www.exchangewire.com/blog/2026/11/20/nexxen-gracenote-partner-to-expand-content-based-targeting-for-ctv/"
- },
- {
-  "a_retenir": true,
-  "attrs": {
-   "nature": "actualité",
-   "nouveaute": 3,
-   "profondeur": 1,
-   "qualite_source": 5,
-   "secteur": "Régulation",
-   "sous_theme": "pixels de suivi",
-   "utilite": 2
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 4,
+    "secteur": "Adtech",
+    "sous_theme": "restructuration d'entreprise",
+    "utilite": 3
+   },
+   "iso": "2026-11-20T16:15:55.000Z",
+   "lang": "en",
+   "resume": "Créée en 2019, Ampersand, plateforme publicitaire TV, transfère son activité destinée aux agences indépendantes à Comcast et Spectrum. Cette réorganisation intervient après des licenciements massifs.",
+   "rubrique": "Adtech",
+   "source": "AdExchanger",
+   "titre": "Ampersand Is Offloading Its Indie Agency Business To Comcast And Spectrum Following Mass Layoffs",
+   "url": "https://www.adexchanger.com/tv-2/ampersand-is-offloading-its-indie-agency-business-to-comcast-and-spectrum-following-mass-layoffs/"
   },
-  "iso": "2026-11-20T12:00:00.000Z",
-  "lang": "fr",
-  "resume": "Après avoir publié le 14 avril 2026 sa recommandation sur les pixels de suivi dans les courriels, la CNIL invite les expéditeurs de messages et les fournisseurs de solutions à transmettre leur retour d’expérience jusqu’au 3 décembre 2026.",
-  "rubrique": "Régulation",
-  "source": "CNIL",
-  "titre": "Pixels de suivi dans les courriels : la CNIL sollicite un premier retour d’expérience sur sa recommandation",
-  "url": "https://www.cnil.fr/fr/recommandation-pixels-retour-dexperience"
- },
- {
-  "a_retenir": true,
-  "attrs": {
-   "nature": "actualité",
-   "nouveaute": 4,
-   "profondeur": 1,
-   "qualite_source": 3,
-   "secteur": "Commerce",
-   "sous_theme": "acquisitions numériques",
-   "utilite": 3
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "étude",
+    "nouveaute": 3,
+    "profondeur": 2,
+    "qualite_source": 4,
+    "secteur": "Contenus",
+    "sous_theme": "creator economy",
+    "utilite": 3
+   },
+   "iso": "2026-11-20T15:32:12.000Z",
+   "lang": "fr",
+   "resume": "Selon l’étude publiée le 18 novembre par Madison & Wall, les investissements marketing et publicitaires dans la creator economy devraient atteindre 116 milliards de dollars dans le monde en 2026, en hausse de 15 % sur 2025.",
+   "rubrique": "Contenus",
+   "source": "Mind Media",
+   "titre": "La creator economy, un marché mondial de 116 milliards de dollars en 2026 selon Madison & Wall",
+   "url": "https://www.mind.eu.com/media/article/la-creator-economy-un-marche-mondial-de-116-milliards-de-dollars-en-2026-selon-madison-wall/"
   },
-  "iso": "2026-11-20T08:15:41.000Z",
-  "lang": "en",
-  "resume": "Bending Spoons, soutenue par Berkshire, a signé l’acquisition de Mailchimp auprès d’Intuit pour 3,35 Md€, avec un réinvestissement de 335 M€ d’Intuit. L’opération s’accompagne d’un placement privé de 1,18 Md€.",
-  "rubrique": "Commerce",
-  "source": "EU-Startups",
-  "titre": "Berkshire-backed Bending Spoons to buy Mailchimp for €3.35 billion; announces €1.18 billion private placement",
-  "url": "https://www.eu-startups.com/2026/11/berkshire-hathaway-backed-bending-spoons-to-buy-mailchimp-for-e3-35-billion-announces-e1-18-billion-private-placement/"
- },
- {
-  "a_retenir": true,
-  "attrs": {
-   "nature": "actualité",
-   "nouveaute": 3,
-   "profondeur": 1,
-   "qualite_source": 4,
-   "secteur": "Commerce",
-   "sous_theme": "prévisions financières",
-   "utilite": 3
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 4,
+    "secteur": "Commerce",
+    "sous_theme": "acquisition de participation",
+    "utilite": 3
+   },
+   "iso": "2026-11-20T14:00:37.000Z",
+   "lang": "en",
+   "resume": "L’Oréal et EssilorLuxottica sont en discussions avancées pour acquérir conjointement 15 % de la maison italienne Giorgio Armani. Une introduction en Bourse est envisagée à plus long terme.",
+   "rubrique": "Commerce",
+   "source": "Retail Detail",
+   "titre": "L’Oréal and EssilorLuxottica are teaming up to acquire Armani",
+   "url": "https://www.retaildetail.eu/news/fashion/loreal-and-essilorluxottica-are-teaming-up-to-acquire-armani/"
   },
-  "iso": "2026-11-20T07:50:14.000Z",
-  "lang": "en",
-  "resume": "JD Sports abaisse pour la deuxième fois en quatre mois sa prévision de bénéfice avant impôts et éléments d’ajustement pour l’exercice clos en janvier 2027, à 700–750 M£ contre 700–800 M£ auparavant. Le groupe évoque le recul des ventes sur ses marchés clés, notamment au Royaume-Uni, et les troubles en France.",
-  "rubrique": "Commerce",
-  "source": "Retail Gazette",
-  "titre": "JD Sports cuts profit outlook again as UK sales fall and French unrest hits trading",
-  "url": "https://www.retailgazette.co.uk/blog/2026/11/jd-sports-cuts-profit-outlook-again-as-uk-sales-fall-and-french-unrest-hits-trading/"
- },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 4,
+    "secteur": "Adtech",
+    "sous_theme": "ciblage CTV",
+    "utilite": 3
+   },
+   "iso": "2026-11-20T12:27:21.000Z",
+   "lang": "en",
+   "resume": "Nexxen et Gracenote (Nielsen) nouent un partenariat pour intégrer les données et l’intelligence de contenu CTV de Gracenote à la plateforme côté offre de Nexxen, afin d’élargir le ciblage fondé sur les contenus.",
+   "rubrique": "Adtech",
+   "source": "ExchangeWire",
+   "titre": "Nexxen & Gracenote Partner to Expand Content-Based Targeting for CTV",
+   "url": "https://www.exchangewire.com/blog/2026/11/20/nexxen-gracenote-partner-to-expand-content-based-targeting-for-ctv/"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 5,
+    "secteur": "Régulation",
+    "sous_theme": "pixels de suivi",
+    "utilite": 2
+   },
+   "iso": "2026-11-20T12:00:00.000Z",
+   "lang": "fr",
+   "resume": "Après avoir publié le 14 avril 2026 sa recommandation sur les pixels de suivi dans les courriels, la CNIL invite les expéditeurs de messages et les fournisseurs de solutions à transmettre leur retour d’expérience jusqu’au 3 décembre 2026.",
+   "rubrique": "Régulation",
+   "source": "CNIL",
+   "titre": "Pixels de suivi dans les courriels : la CNIL sollicite un premier retour d’expérience sur sa recommandation",
+   "url": "https://www.cnil.fr/fr/recommandation-pixels-retour-dexperience"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 4,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "Commerce",
+    "sous_theme": "acquisitions numériques",
+    "utilite": 3
+   },
+   "iso": "2026-11-20T08:15:41.000Z",
+   "lang": "en",
+   "resume": "Bending Spoons, soutenue par Berkshire, a signé l’acquisition de Mailchimp auprès d’Intuit pour 3,35 Md€, avec un réinvestissement de 335 M€ d’Intuit. L’opération s’accompagne d’un placement privé de 1,18 Md€.",
+   "rubrique": "Commerce",
+   "source": "EU-Startups",
+   "titre": "Berkshire-backed Bending Spoons to buy Mailchimp for €3.35 billion; announces €1.18 billion private placement",
+   "url": "https://www.eu-startups.com/2026/11/berkshire-hathaway-backed-bending-spoons-to-buy-mailchimp-for-e3-35-billion-announces-e1-18-billion-private-placement/"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 4,
+    "secteur": "Commerce",
+    "sous_theme": "prévisions financières",
+    "utilite": 3
+   },
+   "iso": "2026-11-20T07:50:14.000Z",
+   "lang": "en",
+   "resume": "JD Sports abaisse pour la deuxième fois en quatre mois sa prévision de bénéfice avant impôts et éléments d’ajustement pour l’exercice clos en janvier 2027, à 700–750 M£ contre 700–800 M£ auparavant. Le groupe évoque le recul des ventes sur ses marchés clés, notamment au Royaume-Uni, et les troubles en France.",
+   "rubrique": "Commerce",
+   "source": "Retail Gazette",
+   "titre": "JD Sports cuts profit outlook again as UK sales fall and French unrest hits trading",
+   "url": "https://www.retailgazette.co.uk/blog/2026/11/jd-sports-cuts-profit-outlook-again-as-uk-sales-fall-and-french-unrest-hits-trading/"
+  },
   {
    "a_retenir": true,
    "attrs": {
