@@ -1,11 +1,79 @@
 {
  "meta": {
-  "day": "Édition du 22 novembre 2026",
+  "day": "Édition du 23 novembre 2026",
   "sources_count": 35,
-  "updated": "2026-11-22T05:48:50.000Z",
-  "version": 26
+  "updated": "2026-11-23T05:11:19.671Z",
+  "version": 27
  },
  "items": [
+  {
+   "rubrique": "Adtech",
+   "source": "Digiday",
+   "iso": "2026-11-23T05:01:00.000Z",
+   "titre": "Brands boost Black Friday CTV, retail and search spending",
+   "url": "https://digiday.com/media-buying/brands-boost-black-friday-ctv-retail-and-search-spending/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss",
+   "resume": "Les marques augmentent leurs dépenses publicitaires du Black Friday en CTV, retail media et recherche ; aucun montant par canal n’est précisé dans les éléments fournis.",
+   "attrs": {
+    "nature": "analyse",
+    "nouveaute": 3,
+    "profondeur": 2,
+    "qualite_source": 3,
+    "secteur": "commerce et publicité numérique",
+    "sous_theme": "budgets black friday",
+    "utilite": 2
+   }
+  },
+  {
+   "rubrique": "Adtech",
+   "source": "The Media Leader FR",
+   "iso": "2026-11-22T23:04:00.000Z",
+   "titre": "smartclip intègre un agent IA de validation des créations",
+   "url": "https://fr.themedialeader.com/smartclip-integre-un-agent-ia-de-validation-des-creations",
+   "resume": "La branche adtech du groupe RTL, smartclip, a lancé dans sa plateforme smartx un agent IA chargé de vérifier les créations publicitaires afin d’accélérer leur validation.",
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "publicité numérique",
+    "sous_theme": "validation créations publicitaires",
+    "utilite": 2
+   }
+  },
+  {
+   "rubrique": "Retail media",
+   "source": "The Media Leader FR",
+   "iso": "2026-11-22T22:01:00.000Z",
+   "titre": "Coopérative U inaugure Puissance Max, la nouvelle offre de TF1 PUB",
+   "url": "https://fr.themedialeader.com/cooperative-u-inaugure-puissance-max-la-nouvelle-offre-de-tf1-pub",
+   "resume": "Coopérative U et son agence Heroiks ont réalisé la première activation de Puissance Max, offre vidéo de TF1 PUB associant télévision linéaire, live adressable et streaming.",
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "publicité vidéo",
+    "sous_theme": "vidéo multiscreen",
+    "utilite": 2
+   }
+  },
+  {
+   "rubrique": "IA",
+   "source": "La Revue du Digital",
+   "iso": "2026-11-22T18:20:43.000Z",
+   "titre": "La PME 1001pneus.fr s’autonomise côté logiciels grâce à l’IA générative",
+   "url": "https://www.larevuedudigital.com/la-pme-1001pneus-fr-sautonomise-cote-logiciels-grace-a-lia-generative",
+   "resume": "Le vendeur en ligne de pneus 1001pneus.fr, PME de 35 salariés créée en 2009, utilise l’IA générative pour accroître son autonomie dans le développement logiciel.",
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 2,
+    "secteur": "commerce en ligne",
+    "sous_theme": "intelligence artificielle générative",
+    "utilite": 2
+   }
+  },
   {
    "rubrique": "Régulation",
    "source": "The Verge",
