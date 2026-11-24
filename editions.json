@@ -1,11 +1,163 @@
 {
  "meta": {
-  "day": "Édition du 23 novembre 2026",
+  "day": "Édition du 24 novembre 2026",
   "sources_count": 35,
-  "updated": "2026-11-23T05:11:19.671Z",
-  "version": 27
+  "updated": "2026-11-24T05:12:33.658Z",
+  "version": 28
  },
  "items": [
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "brève",
+    "nouveaute": 2,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "Adtech",
+    "sous_theme": "consolidation de l’adtech indépendante",
+    "utilite": 2
+   },
+   "iso": "2026-11-24T05:01:00.000Z",
+   "lang": "en",
+   "resume": "Meta envisagerait une expansion dans la télévision connectée, tandis qu’AppLovin aurait manifesté un intérêt pour Criteo, renforçant les inquiétudes sur la pression exercée sur l’adtech indépendante.",
+   "rubrique": "Adtech",
+   "source": "Digiday",
+   "titre": "Ad Tech Briefing: Meta eyes CTV as AppLovin circles Criteo, signs of the squeeze on independent ad tech",
+   "url": "https://digiday.com/media-buying/ad-tech-briefing-meta-eyes-ctv-as-applovin-circles-criteo-signs-of-the-squeeze-on-independent-ad-tech"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 2,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "Commerce et parfumerie",
+    "sous_theme": "partenariats de marque",
+    "utilite": 2
+   },
+   "iso": "2026-11-24T05:00:00.000Z",
+   "lang": "en",
+   "resume": "Pura multiplie les collaborations, notamment avec le New York City Ballet et Calm, pour fidéliser ses abonnés et ambitionne de devenir le « Spotify du parfum ».",
+   "rubrique": "Commerce",
+   "source": "Modern Retail",
+   "titre": "Pura doubles down on brand collaborations: ‘We want to be the Spotify of fragrance’",
+   "url": "https://www.modernretail.co/marketing/pura-doubles-down-on-brand-collaborations-we-want-to-be-the-spotify-of-fragrance"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "brève",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "Commerce de détail",
+    "sous_theme": "arrondi des paiements espèces",
+    "utilite": 2
+   },
+   "iso": "2026-11-23T23:04:00.000Z",
+   "lang": "en",
+   "resume": "La loi Common Cents offre aux épiciers et autres commerçants une base juridique pour arrondir les paiements en espèces, alors que les pièces d’un cent disparaissent.",
+   "rubrique": "Commerce",
+   "source": "Grocery Dive",
+   "titre": "Trump signs Common Cents bill",
+   "url": "https://www.grocerydive.com/news/trump-signs-common-cents-bill/875493"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "brève",
+    "nouveaute": 2,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "Retail media",
+    "sous_theme": "évolution des indicateurs de performance",
+    "utilite": 2
+   },
+   "iso": "2026-11-23T22:08:00.000Z",
+   "lang": "fr",
+   "resume": "La part des acheteurs de retail media demandant un ROAS recule à 49 %, contre 89 % un an plus tôt, tandis que l’incrémentalité gagne du terrain.",
+   "rubrique": "Retail media",
+   "source": "The Media Leader FR",
+   "titre": "Retail media, seuls 49% des acheteurs exigent encore un ROAS",
+   "url": "https://fr.themedialeader.com/retail-media-seuls-49-des-acheteurs-exigent-encore-un-roas"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "brève",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "Publicité numérique",
+    "sous_theme": "extension des campagnes search",
+    "utilite": 2
+   },
+   "iso": "2026-11-23T22:07:00.000Z",
+   "lang": "fr",
+   "resume": "Pinterest conclut un accord avec Microsoft pour permettre aux annonceurs search de Microsoft d’étendre leurs campagnes publicitaires à sa plateforme.",
+   "rubrique": "Adtech",
+   "source": "The Media Leader FR",
+   "titre": "Pinterest ouvre son inventaire aux annonceurs search de Microsoft",
+   "url": "https://fr.themedialeader.com/pinterest-ouvre-son-inventaire-aux-annonceurs-search-de-microsoft"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "brève",
+    "nouveaute": 2,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "Commerce de détail",
+    "sous_theme": "achats des fêtes anticipés",
+    "utilite": 2
+   },
+   "iso": "2026-11-23T20:39:00.000Z",
+   "lang": "en",
+   "resume": "Les achats de Black Friday et Cyber Monday devraient reculer, tandis que les ventes prolongées incitent les consommateurs à entamer plus tôt leurs achats des fêtes, selon la NRF.",
+   "rubrique": "Commerce",
+   "source": "Retail Dive",
+   "titre": "Black Friday, Cyber Monday shopping projected to slip",
+   "url": "https://www.retaildive.com/news/black-friday-cyber-monday-shopping-projected-to-slip/875473"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "tribune",
+    "nouveaute": 1,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "Adtech",
+    "sous_theme": "agents ia des annonceurs",
+    "utilite": 1
+   },
+   "iso": "2026-11-23T19:56:14.000Z",
+   "lang": "en",
+   "resume": "Les annonceurs conçoivent des systèmes d’IA adaptés aux méthodes de travail de leurs équipes, avec des agents, des données et des règles propres à chacune.",
+   "rubrique": "Adtech",
+   "source": "Digiday",
+   "titre": "The next test for agentic media",
+   "url": "https://digiday.com/sponsored/the-next-test-for-agentic-media"
+  },
+  {
+   "a_retenir": true,
+   "attrs": {
+    "nature": "actualité",
+    "nouveaute": 3,
+    "profondeur": 1,
+    "qualite_source": 3,
+    "secteur": "Recharge électrique",
+    "sous_theme": "recharge ultra-rapide des batteries",
+    "utilite": 2
+   },
+   "iso": "2026-11-23T18:00:00.000Z",
+   "lang": "fr",
+   "resume": "Des chercheurs de l’université du Maryland identifient qu’à forte puissance, certaines zones des batteries lithium-ion s’appauvrissent en solvant, perturbant la circulation et freinant potentiellement la recharge ultra-rapide.",
+   "rubrique": "Recharge",
+   "source": "Automobile Propre",
+   "titre": "Des chercheurs découvrent un phénomène méconnu qui freine la recharge des batteries",
+   "url": "https://www.bevolt.com/fr-fr/automobile/actualites/actualites-recharge/352510-des-chercheurs-decouvrent-un-phenomene-meconnu-qui-freine-la-recharge-des-batteries"
+  },
   {
    "rubrique": "Adtech",
    "source": "Digiday",
