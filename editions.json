@@ -2,10 +2,162 @@
  "meta": {
   "day": "Édition du 24 novembre 2026",
   "sources_count": 35,
-  "updated": "2026-11-24T05:12:33.658Z",
-  "version": 28
+  "updated": "2026-11-25T05:12:07.304Z",
+  "version": 29
  },
  "items": [
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "brève",
+   "nouveaute": 3,
+   "profondeur": 1,
+   "qualite_source": 2,
+   "secteur": "Retail media",
+   "sous_theme": "parcours shopper",
+   "utilite": 2
+  },
+  "iso": "2026-11-24T23:01:28.000Z",
+  "lang": "fr",
+  "resume": "Azerion et Westfield Rise ont réuni marques, agences et spécialistes autour du parcours shopper, de l’audio en galerie à la mesure des ventes en magasin.",
+  "rubrique": "Retail media",
+  "source": "The Media Leader FR",
+  "titre": "Azerion Morning : de la galerie au ticket de caisse, le parcours shopper devient un média",
+  "url": "https://fr.themedialeader.com/azerion-morning-de-la-galerie-au-ticket-de-caisse-le-parcours-shopper-devient-un-media/"
+ },
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "étude",
+   "nouveaute": 3,
+   "profondeur": 1,
+   "qualite_source": 2,
+   "secteur": "Publicité / retail media",
+   "sous_theme": "TV segmentée",
+   "utilite": 3
+  },
+  "iso": "2026-11-24T22:07:00.000Z",
+  "lang": "fr",
+  "resume": "Les médias ciblés ont surpassé les campagnes de masse pour les visites en magasin en 2025 ; la TV segmentée était près de cinq fois plus efficace que la TV linéaire.",
+  "rubrique": "Adtech",
+  "source": "The Media Leader FR",
+  "titre": "La TV segmentée près de cinq fois plus efficace que la TV linéaire",
+  "url": "https://fr.themedialeader.com/la-tv-segmentee-pres-de-cinq-fois-plus-efficace-que-la-tv-lineaire/"
+ },
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "brève",
+   "nouveaute": 3,
+   "profondeur": 1,
+   "qualite_source": 3,
+   "secteur": "Retail media",
+   "sous_theme": "Réglementation publicitaire",
+   "utilite": 2
+  },
+  "iso": "2026-11-25T00:01:55.000Z",
+  "lang": "en",
+  "resume": "Une publicité retail media de Tony’s Chocolonely a été interdite au titre des règles sur les aliments moins sains. La marque affirme avoir cru ces placements autorisés.",
+  "rubrique": "Retail media",
+  "source": "Marketing Week",
+  "titre": "Tony’s Chocolonely retail media ad banned under ‘less healthy food’ rules",
+  "url": "https://www.marketingweek.com/tony-chocolonely-ad-banned-lhf/"
+ },
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "brève",
+   "nouveaute": 3,
+   "profondeur": 1,
+   "qualite_source": 2,
+   "secteur": "commerce",
+   "sous_theme": "résultats trimestriels",
+   "utilite": 2
+  },
+  "iso": "2026-11-24T17:12:00.000Z",
+  "lang": "en",
+  "resume": "Au troisième trimestre, Kohl’s affiche des ventes comparables positives dans la plupart de ses catégories, mais son partenariat avec Sephora pèse sur ses résultats.",
+  "rubrique": "Commerce",
+  "source": "Retail Dive",
+  "titre": "Kohl’s turns a corner in Q3, no thanks to Sephora",
+  "url": "https://www.retaildive.com/news/kohls-turns-corner-q3-sephora-falls/875593/"
+ },
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "brève",
+   "nouveaute": 3,
+   "profondeur": 1,
+   "qualite_source": 3,
+   "secteur": "Commerce",
+   "sous_theme": "Fermeture d’enseignes",
+   "utilite": 3
+  },
+  "iso": "2026-11-24T17:29:19.000Z",
+  "lang": "fr",
+  "resume": "Après sa liquidation judiciaire début octobre, faute de repreneur, Office Depot ferme définitivement ses 27 magasins et son site français ; 185 salariés sont concernés par un licenciement économique.",
+  "rubrique": "Commerce",
+  "source": "Le Monde — Économie",
+  "titre": "Office Depot ferme définitivement ses 27 magasins et son site Internet en France, faute d’avoir trouvé un repreneur",
+  "url": "https://www.lemonde.fr/economie/article/2026/11/24/office-depot-ferme-definitivement-ses-27-magasins-et-son-site-internet-en-france-faute-d-avoir-trouve-un-repreneur_6814829_3234.html"
+ },
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "brève",
+   "nouveaute": 2,
+   "profondeur": 1,
+   "qualite_source": 2,
+   "secteur": "commerce alimentaire",
+   "sous_theme": "e-commerce alimentaire",
+   "utilite": 2
+  },
+  "iso": "2026-11-24T20:10:17.000Z",
+  "lang": "en",
+  "resume": "Walmart et Amazon dominent le commerce électronique dans l’alimentaire, mais de nombreux autres distributeurs sont aussi actifs et réalisent des avancées sur ce marché.",
+  "rubrique": "Commerce",
+  "source": "Supermarket News",
+  "titre": "Ecommerce in grocery",
+  "url": "https://www.supermarketnews.comhttps://catalog.sndigitalmagazine.com/Fall-2026/"
+ },
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "brève",
+   "nouveaute": 3,
+   "profondeur": 1,
+   "qualite_source": 2,
+   "secteur": "Commerce de détail",
+   "sous_theme": "ventes informatiques",
+   "utilite": 2
+  },
+  "iso": "2026-11-24T18:28:03.000Z",
+  "lang": "en",
+  "resume": "Les ventes informatiques de Best Buy ont résisté ce trimestre à la hausse des prix de la mémoire, soutenues par les besoins de puissance du jeu et de l’IA.",
+  "rubrique": "Commerce",
+  "source": "Modern Retail",
+  "titre": "Best Buy sales outperform even as computing gets more expensive",
+  "url": "https://www.modernretail.co/operations/best-buy-customers-undeterred-by-rising-prices/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+ },
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "brève",
+   "nouveaute": 3,
+   "profondeur": 1,
+   "qualite_source": 2,
+   "secteur": "Banque et finance",
+   "sous_theme": "Modélisation média",
+   "utilite": 2
+  },
+  "iso": "2026-11-25T05:01:00.000Z",
+  "lang": "en",
+  "resume": "FutureSight propose SpendSight, un nouvel outil de modélisation média destiné aux banques de toutes tailles, pour les aider à comparer leur mix média à celui de concurrents.",
+  "rubrique": "Mesure",
+  "source": "Digiday",
+  "titre": "Banking gets a helping hand in media modeling from SpendSight",
+  "url": "https://digiday.com/media-buying/banking-gets-a-helping-hand-in-media-modeling-from-spendsight/?utm_campaign=digidaydis&utm_medium=rss&utm_source=general-rss"
+ },
   {
    "a_retenir": true,
    "attrs": {
