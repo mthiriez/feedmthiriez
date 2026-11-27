@@ -2,10 +2,162 @@
  "meta": {
   "day": "Édition du 26 novembre 2026",
   "sources_count": 35,
-  "updated": "2026-11-26T05:10:00.000Z",
-  "version": 30
+  "updated": "2026-11-27T05:11:42.741Z",
+  "version": 31
  },
  "items": [
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "analyse",
+   "nouveaute": 2,
+   "profondeur": 1,
+   "qualite_source": 3,
+   "secteur": "Commerce et luxe",
+   "sous_theme": "Revente de luxe en Chine",
+   "utilite": 2
+  },
+  "iso": "2026-11-27T05:00:22.000Z",
+  "lang": "fr",
+  "resume": "À Shanghai, des plateformes chinoises de revente installées dans de vastes magasins attirent de jeunes clients qui revendent des articles de luxe, bousculant le marché du neuf.",
+  "rubrique": "Commerce",
+  "source": "Le Monde — Économie",
+  "titre": "A Shanghaï, le boom de la seconde main bouscule le marché du luxe",
+  "url": "https://www.lemonde.fr/economie/article/2026/11/27/a-shanghai-le-boom-de-la-seconde-main-bouscule-le-marche-du-luxe_6815800_3234.html"
+ },
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "analyse",
+   "nouveaute": 2,
+   "profondeur": 1,
+   "qualite_source": 2,
+   "secteur": "Retail media et publicité numérique",
+   "sous_theme": "Publicité Reddit pendant BFCM",
+   "utilite": 2
+  },
+  "iso": "2026-11-27T05:00:00.000Z",
+  "lang": "en",
+  "resume": "Pour les fêtes et le BFCM, les annonceurs utilisent de plus en plus Reddit comme outil couvrant l’ensemble du parcours client, après y avoir diffusé des publicités depuis plusieurs années.",
+  "rubrique": "Adtech",
+  "source": "Modern Retail",
+  "titre": "Brands and retailers are taking a full-funnel approach to Reddit holiday advertising this BFCM",
+  "url": "https://www.modernretail.co/marketing/brands-and-retailers-are-taking-a-full-funnel-approach-to-reddit-holiday-advertising-this-bfcm/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+ },
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "analyse",
+   "nouveaute": 2,
+   "profondeur": 1,
+   "qualite_source": 2,
+   "secteur": "Commerce de détail et joaillerie",
+   "sous_theme": "Diamants non montés sur les réseaux sociaux",
+   "utilite": 2
+  },
+  "iso": "2026-11-27T05:00:00.000Z",
+  "lang": "en",
+  "resume": "La marque de joaillerie en ligne Ring Concierge a repéré l’attrait des diamants non montés auprès de ses clients et veut proposer davantage, tout en orientant les acheteurs vers ses propres canaux.",
+  "rubrique": "Commerce",
+  "source": "Modern Retail",
+  "titre": "How Ring Concierge is using the loose diamond social media trend to funnel buyers to its own channels",
+  "url": "https://www.modernretail.co/marketing/how-ring-concierge-is-using-the-loose-diamond-social-media-trend-to-funnel-buyers-to-its-own-channels/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+ },
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "étude",
+   "nouveaute": 2,
+   "profondeur": 1,
+   "qualite_source": 2,
+   "secteur": "Commerce et retail",
+   "sous_theme": "Adoption du commerce agentique",
+   "utilite": 2
+  },
+  "iso": "2026-11-26T22:12:00.000Z",
+  "lang": "fr",
+  "resume": "Selon une étude d’Akeneo, 96 % des décideurs IT français se disent prêts pour le commerce agentique, mais seuls 43 % des acteurs du secteur auraient entamé un projet.",
+  "rubrique": "IA",
+  "source": "The Media Leader FR",
+  "titre": "96% des décideurs se disent prêts pour le commerce agentique",
+  "url": "https://fr.themedialeader.com/96-des-decideurs-se-disent-prets-pour-le-commerce-agentique/"
+ },
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "analyse",
+   "nouveaute": 1,
+   "profondeur": 1,
+   "qualite_source": 2,
+   "secteur": "Commerce et retail media",
+   "sous_theme": "Audiences après le Black Friday",
+   "utilite": 1
+  },
+  "iso": "2026-11-26T22:10:00.000Z",
+  "lang": "fr",
+  "resume": "Grégoire Bruni, Director, Global Agency chez Criteo, examine dans une tribune les audiences et comportements d’achat qui subsistent après le pic du Black Friday.",
+  "rubrique": "Commerce",
+  "source": "The Media Leader FR",
+  "titre": "Black Friday : et après le pic, que reste-t-il ?",
+  "url": "https://fr.themedialeader.com/black-friday-et-apres-le-pic-que-reste-t-il/"
+ },
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "analyse",
+   "nouveaute": 2,
+   "profondeur": 1,
+   "qualite_source": 3,
+   "secteur": "Logistique et e-commerce",
+   "sous_theme": "Automatisation des entrepôts logistiques",
+   "utilite": 2
+  },
+  "iso": "2026-11-26T21:51:14.000Z",
+  "lang": "fr",
+  "resume": "Dans un entrepôt de l’Essonne, des robots autonomes préparent les commandes en ligne et peuvent traiter un flux important de colis pendant le Black Friday.",
+  "rubrique": "Commerce",
+  "source": "franceinfo — Économie",
+  "titre": "Black Friday : quand des robots préparent des commandes",
+  "url": "https://www.franceinfo.fr/economie/black-friday-quand-des-robots-preparent-des-commandes_8302092.html#xtor=RSS-3-%5Beconomie%5D"
+ },
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "annonce",
+   "nouveaute": 2,
+   "profondeur": 1,
+   "qualite_source": 2,
+   "secteur": "Mobilité électrique",
+   "sous_theme": "Recharge électrique en Île-de-France",
+   "utilite": 1
+  },
+  "iso": "2026-11-26T19:00:00.000Z",
+  "lang": "fr",
+  "resume": "Electra et RATP Solutions Ville prévoient de créer une société commune afin d’installer des stations de recharge ultra-rapide sur les terrains de la RATP en Île-de-France.",
+  "rubrique": "Recharge",
+  "source": "Automobile Propre",
+  "titre": "Recharge ultra-rapide : Electra et la RATP s'associent pour mailler l'Île-de-France",
+  "url": "https://www.bevolt.com/fr-fr/automobile/actualites/actualites-recharge/353861-recharge-ultra-rapide-electra-et-la-ratp-sassocient-pour-mailler-lile-de-france/"
+ },
+ {
+  "a_retenir": true,
+  "attrs": {
+   "nature": "annonce",
+   "nouveaute": 2,
+   "profondeur": 1,
+   "qualite_source": 2,
+   "secteur": "Mobilité électrique",
+   "sous_theme": "Recharge mobile pour déplacements",
+   "utilite": 1
+  },
+  "iso": "2026-11-26T17:33:21.000Z",
+  "lang": "en",
+  "resume": "Tesla a déployé 29 bornes Supercharger mobiles dans certaines de ses stations les plus fréquentées en Californie et en Arizona pour gérer l’affluence des déplacements de Thanksgiving.",
+  "rubrique": "Recharge",
+  "source": "Electrek",
+  "titre": "Tesla deploys 29 mobile Supercharger stalls for Thanksgiving travel rush",
+  "url": "https://electrek.co/2026/11/26/tesla-deploys-mobile-superchargers-thanksgiving-travel/"
+ },
  {
   "a_retenir": true,
   "attrs": {
