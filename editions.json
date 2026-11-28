@@ -2,10 +2,124 @@
  "meta": {
   "day": "Édition du 27 novembre 2026",
   "sources_count": 35,
-  "updated": "2026-11-27T05:11:42.741Z",
-  "version": 31
+  "updated": "2026-11-28T05:11:00.987Z",
+  "version": 32
  },
  "items": [
+{
+  "a_retenir": true,
+  "attrs": {
+   "nature": "analyse",
+   "nouveaute": 2,
+   "profondeur": 2,
+   "qualite_source": 4,
+   "secteur": "Commerce et retail",
+   "sous_theme": "Tendances des fêtes",
+   "utilite": 3
+  },
+  "iso": "2026-11-28T05:00:00.000Z",
+  "lang": "en",
+  "resume": "Le titre annonce un panorama des tendances des achats de fin d’année, autour de TikTok Shop, de la recherche par IA et des publicités de célébrités.",
+  "rubrique": "Commerce",
+  "source": "Modern Retail",
+  "titre": "Holiday shopping trends: TikTok Shop, AI search and glitzy celebrity ads",
+  "url": "https://www.modernretail.co/podcasts/holiday-shopping-trends-tiktok-shop-ai-search-and-glitzy-celebrity-ads/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss"
+ },
+{
+  "a_retenir": true,
+  "attrs": {
+   "nature": "actualité",
+   "nouveaute": 3,
+   "profondeur": 1,
+   "qualite_source": 4,
+   "secteur": "commerce et distribution",
+   "sous_theme": "Réouverture magasin",
+   "utilite": 3
+  },
+  "iso": "2026-11-27T20:18:51.000Z",
+  "lang": "fr",
+  "resume": "La commission de sécurité a validé la réouverture du BHV Marais à Paris, après un délai dont la durée n’est pas précisée.",
+  "rubrique": "Commerce",
+  "source": "franceinfo — Économie",
+  "titre": "La commission de sécurité valide la réouverture du BHV Marais à Paris après trois semaines de fermeture",
+  "url": "https://www.franceinfo.fr/economie/la-commission-de-securite-valide-la-reouverture-du-bhv-marais-a-paris-apres-trois-semaines-de-fermeture_8303787.html#xtor=RSS-3-%5Beconomie%5D"
+ },
+{
+  "a_retenir": true,
+  "attrs": {
+   "nature": "actualité",
+   "nouveaute": 3,
+   "profondeur": 1,
+   "qualite_source": 3,
+   "secteur": "Commerce et distribution",
+   "sous_theme": "Développement logiciel",
+   "utilite": 3
+  },
+  "iso": "2026-11-27T20:07:26.000Z",
+  "lang": "fr",
+  "resume": "Carrefour attribue une réduction de 15 à 25 % de son cycle de développement logiciel à un dispositif dont le nom est tronqué dans le titre.",
+  "rubrique": "IA",
+  "source": "La Revue du Digital",
+  "titre": "Carrefour raccourcit son cycle de développement logiciel de 15 à 25% avec l’agentique",
+  "url": "https://www.larevuedudigital.com/carrefour-raccourcit-son-cycle-de-developpement-logiciel-de-15-a-25-avec-lagentique/"
+ },
+{
+  "a_retenir": true,
+  "attrs": {
+   "nature": "actualité",
+   "nouveaute": 2,
+   "profondeur": 1,
+   "qualite_source": 4,
+   "secteur": "Commerce et retail",
+   "sous_theme": "Black Friday en novembre",
+   "utilite": 3
+  },
+  "iso": "2026-11-27T19:25:58.000Z",
+  "lang": "fr",
+  "resume": "L’article relaie une comparaison concernant novembre et le Black Friday, sans préciser dans le titre l’indicateur concerné ni identifier l’auteur de la déclaration.",
+  "rubrique": "Commerce",
+  "source": "franceinfo — Économie",
+  "titre": "\"Un mois comme novembre, avec le Black Friday, c'est comme deux mois normaux\", déclare le PDG de Fnac Darty",
+  "url": "https://www.franceinfo.fr/replay-radio/l-interview-eco/un-mois-comme-novembre-avec-le-black-friday-c-est-comme-deux-mois-normaux-declare-le-pdg-de-fnac-darty_8280245.html#xtor=RSS-3-%5Beconomie%5D"
+ },
+{
+  "a_retenir": false,
+  "attrs": {
+   "nature": "actualité",
+   "nouveaute": 2,
+   "profondeur": 2,
+   "qualite_source": 4,
+   "secteur": "Télécommunications",
+   "sous_theme": "Rachat de SFR",
+   "utilite": 3
+  },
+  "iso": "2026-11-27T17:39:21.000Z",
+  "lang": "fr",
+  "resume": "Le titre indique que des distributeurs indépendants de SFR craignent de ne pas pouvoir poursuivre leur activité après le rachat, dont les modalités ne sont pas précisées.",
+  "rubrique": "Commerce",
+  "source": "Le Monde — Économie",
+  "titre": "Les distributeurs indépendants de SFR, qui craignent de ne pas survivre au rachat de l’opérateur, l’attaquent en justice",
+  "url": "https://www.lemonde.fr/economie/article/2026/11/27/les-distributeurs-independants-de-sfr-qui-craignent-de-ne-pas-survivre-au-rachat-de-l-operateur-l-attaquent-en-justice_6815915_3234.html"
+ },
+{
+  "a_retenir": true,
+  "attrs": {
+   "nature": "actualité",
+   "nouveaute": 3,
+   "profondeur": 1,
+   "qualite_source": 3,
+   "secteur": "Commerce et distribution",
+   "sous_theme": "Collaborations retail",
+   "utilite": 2
+  },
+  "iso": "2026-11-27T17:23:43.000Z",
+  "lang": "fr",
+  "resume": "La source signale douze collaborations présentées à Tech for Retail 2026 ; le titre seul ne permet pas d’identifier les partenaires, les projets ni les résultats.",
+  "rubrique": "Commerce",
+  "source": "La Revue du Digital",
+  "titre": "Douze collaborations réussies présentées à Tech for Retail 2026 par La Retail Tech",
+  "url": "https://www.larevuedudigital.com/douze-collaborations-reussies-presentees-a-tech-for-retail-2026-par-la-retail-tech/"
+ },
  {
   "a_retenir": true,
   "attrs": {
